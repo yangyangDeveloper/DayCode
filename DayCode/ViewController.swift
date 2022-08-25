@@ -6,12 +6,19 @@
 //
 
 import UIKit
-class ListNode {
+
+// 你可以在集合中存储自定义的类型。这种类型可以是类或者结构体。为了能正常使用集合，该类型必须遵循 hashable 协议。
+
+class ListNode: Hashable {
     var val: Int
     var next: ListNode?
-    init() { self.val = 0; self.next = nil }
     init(_ val: Int) { self.val = val; self.next = nil }
-    init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next}
+    var hashValue: Int {
+        return val.hashValue ^ next.hashValue
+    }
+    static func == (lhs: ListNode, rhs: ListNode) -> Bool {
+        return lhs.val == rhs.val && lhs.next == rhs.next
+    }
 }
 
 class TreeNode {
