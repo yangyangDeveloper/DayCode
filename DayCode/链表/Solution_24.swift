@@ -5,7 +5,7 @@
 //  Created by zhangyangyang on 2022/8/23.
 //
 
-
+// 24. 两两交换链表中的节点
 class Solution_24 {
     func swapPairs(_ head: ListNode?) -> ListNode? {
         guard head != nil else { return nil }
