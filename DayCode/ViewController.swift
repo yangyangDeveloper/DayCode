@@ -30,16 +30,34 @@ class TreeNode {
     }
 }
 
+
+
 class ViewController: UIViewController {
     var str:String = "A"
     var strs = ["eat","tea","tan","ate","nat","bat"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        var temp = str.first?.asciiValue
-        print(temp)
-        let s = Solution_49()
-        s.groupAnagrams(strs)
+        //        var temp = str.first?.asciiValue
+        //        print(temp)
+        //        let s = Solution_49()
+        //        s.groupAnagrams(strs)
         
+        // 数组排序
+        let sort = Solution_Sort()
+        let nums = [1,4,5,3,2,9,11]
+        
+        let nums2 = [1,3,7,2,4,5,9,0]
+        
+        // 冒泡排序
+        let n = sort.sortArray(nums2)
+        
+        // 插入排序
+        let n2 = sort.sortArray2(nums2)
+        
+        // 插入排序
+        let n3 = sort.sortArray3(nums)
+        print(n)
+        print(n2)
     }
 }
 

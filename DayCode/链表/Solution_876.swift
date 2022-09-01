@@ -5,6 +5,7 @@
 //  Created by zhangyangyang on 2022/8/29.
 //
 
+// 876. 找中间结点
 class Solution_876 {
     func middleNode(_ head: ListNode?) -> ListNode? {
         guard head != nil else { return head }

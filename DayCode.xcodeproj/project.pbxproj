@@ -16,6 +16,12 @@
 		A41DCF3B28B9D48000FB6012 /* Solution_237.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF3A28B9D48000FB6012 /* Solution_237.swift */; };
 		A41DCF3D28BB23E900FB6012 /* Solution_61.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF3C28BB23E900FB6012 /* Solution_61.swift */; };
 		A41DCF3F28BC6E1B00FB6012 /* Solution_876.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF3E28BC6E1B00FB6012 /* Solution_876.swift */; };
+		A41DCF4128BDB28200FB6012 /* Solution_86.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF4028BDB28200FB6012 /* Solution_86.swift */; };
+		A41DCF4328BDB49600FB6012 /* Solution_83.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF4228BDB49600FB6012 /* Solution_83.swift */; };
+		A41DCF4528BDB64F00FB6012 /* Solution_82.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF4428BDB64F00FB6012 /* Solution_82.swift */; };
+		A41DCF4728BF021500FB6012 /* Solution_148.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF4628BF021500FB6012 /* Solution_148.swift */; };
+		A41DCF4928BF270400FB6012 /* Solution_Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF4828BF270400FB6012 /* Solution_Sort.swift */; };
+		A41DCF4C28BF861400FB6012 /* Solution_offer50.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF4B28BF861400FB6012 /* Solution_offer50.swift */; };
 		A49B0B8D28A5EC7B003F9DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B0B8C28A5EC7B003F9DC1 /* AppDelegate.swift */; };
 		A49B0B8F28A5EC7B003F9DC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B0B8E28A5EC7B003F9DC1 /* SceneDelegate.swift */; };
 		A49B0B9128A5EC7B003F9DC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B0B9028A5EC7B003F9DC1 /* ViewController.swift */; };
@@ -49,6 +55,12 @@
 		A41DCF3A28B9D48000FB6012 /* Solution_237.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_237.swift; sourceTree = "<group>"; };
 		A41DCF3C28BB23E900FB6012 /* Solution_61.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_61.swift; sourceTree = "<group>"; };
 		A41DCF3E28BC6E1B00FB6012 /* Solution_876.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_876.swift; sourceTree = "<group>"; };
+		A41DCF4028BDB28200FB6012 /* Solution_86.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_86.swift; sourceTree = "<group>"; };
+		A41DCF4228BDB49600FB6012 /* Solution_83.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_83.swift; sourceTree = "<group>"; };
+		A41DCF4428BDB64F00FB6012 /* Solution_82.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_82.swift; sourceTree = "<group>"; };
+		A41DCF4628BF021500FB6012 /* Solution_148.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_148.swift; sourceTree = "<group>"; };
+		A41DCF4828BF270400FB6012 /* Solution_Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_Sort.swift; sourceTree = "<group>"; };
+		A41DCF4B28BF861400FB6012 /* Solution_offer50.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_offer50.swift; sourceTree = "<group>"; };
 		A49B0B8928A5EC7B003F9DC1 /* DayCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49B0B8C28A5EC7B003F9DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A49B0B8E28A5EC7B003F9DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A41DCF4A28BF85F900FB6012 /* 哈希 */ = {
+			isa = PBXGroup;
+			children = (
+				A41DCF4B28BF861400FB6012 /* Solution_offer50.swift */,
+			);
+			path = "哈希";
+			sourceTree = "<group>";
+		};
 		A49B0B8028A5EC7B003F9DC1 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +124,7 @@
 		A49B0B8B28A5EC7B003F9DC1 /* DayCode */ = {
 			isa = PBXGroup;
 			children = (
+				A41DCF4A28BF85F900FB6012 /* 哈希 */,
 				A49B0BB628A5ECA0003F9DC1 /* 二叉树 */,
 				A49B0BAB28A5EC9B003F9DC1 /* 链表 */,
 				A49B0BA828A5EC96003F9DC1 /* 滚动窗口 */,
@@ -125,6 +146,7 @@
 			children = (
 				A49B0BA128A5EC8B003F9DC1 /* Solution_49.swift */,
 				A49B0BA228A5EC8B003F9DC1 /* Solution_215.swift */,
+				A41DCF4828BF270400FB6012 /* Solution_Sort.swift */,
 			);
 			path = "数组";
 			sourceTree = "<group>";
@@ -153,6 +175,9 @@
 				A41DCF2E28B46A8D00FB6012 /* Solution_24.swift */,
 				A41DCF3028B46BF000FB6012 /* Solution_25.swift */,
 				A41DCF3C28BB23E900FB6012 /* Solution_61.swift */,
+				A41DCF4428BDB64F00FB6012 /* Solution_82.swift */,
+				A41DCF4228BDB49600FB6012 /* Solution_83.swift */,
+				A41DCF4028BDB28200FB6012 /* Solution_86.swift */,
 				A49B0BAC28A5EC9B003F9DC1 /* Solution_141.swift */,
 				A41DCF3228B7228E00FB6012 /* Solution_142.swift */,
 				A49B0BB028A5EC9B003F9DC1 /* Solution_160.swift */,
@@ -162,6 +187,7 @@
 				A41DCF3628B878A700FB6012 /* Solution_328.swift */,
 				A41DCF3A28B9D48000FB6012 /* Solution_237.swift */,
 				A41DCF3E28BC6E1B00FB6012 /* Solution_876.swift */,
+				A41DCF4628BF021500FB6012 /* Solution_148.swift */,
 			);
 			path = "链表";
 			sourceTree = "<group>";
@@ -261,18 +287,24 @@
 				A49B0BA728A5EC92003F9DC1 /* Solution_53.swift in Sources */,
 				A41DCF3528B863A800FB6012 /* Solution_234.swift in Sources */,
 				A49B0BB328A5EC9B003F9DC1 /* Soluton_21.swift in Sources */,
+				A41DCF4728BF021500FB6012 /* Solution_148.swift in Sources */,
 				A41DCF3F28BC6E1B00FB6012 /* Solution_876.swift in Sources */,
 				A41DCF3128B46BF000FB6012 /* Solution_25.swift in Sources */,
 				A41DCF3328B7228E00FB6012 /* Solution_142.swift in Sources */,
 				A49B0BB228A5EC9B003F9DC1 /* Solution_203.swift in Sources */,
 				A49B0B9128A5EC7B003F9DC1 /* ViewController.swift in Sources */,
+				A41DCF4328BDB49600FB6012 /* Solution_83.swift in Sources */,
+				A41DCF4928BF270400FB6012 /* Solution_Sort.swift in Sources */,
 				A49B0BBE28A5ECA0003F9DC1 /* Solution_104.swift in Sources */,
 				A49B0BBF28A5ECA0003F9DC1 /* Solution_102.swift in Sources */,
+				A41DCF4128BDB28200FB6012 /* Solution_86.swift in Sources */,
 				A49B0BA428A5EC8B003F9DC1 /* Solution_215.swift in Sources */,
 				A49B0BA328A5EC8B003F9DC1 /* Solution_49.swift in Sources */,
 				A49B0BC128A5ECA0003F9DC1 /* Solution_226.swift in Sources */,
 				A49B0BAA28A5EC96003F9DC1 /* Solution_3.swift in Sources */,
+				A41DCF4528BDB64F00FB6012 /* Solution_82.swift in Sources */,
 				A49B0BB528A5EC9B003F9DC1 /* Solution_160.swift in Sources */,
+				A41DCF4C28BF861400FB6012 /* Solution_offer50.swift in Sources */,
 				A49B0B8D28A5EC7B003F9DC1 /* AppDelegate.swift in Sources */,
 				A49B0B8F28A5EC7B003F9DC1 /* SceneDelegate.swift in Sources */,
 				A41DCF3728B878A700FB6012 /* Solution_328.swift in Sources */,
