@@ -44,20 +44,31 @@ class ViewController: UIViewController {
         
         // 数组排序
         let sort = Solution_Sort()
-        let nums = [1,4,5,3,2,9,11]
+        //let nums = [1,4,5,3,2,9,11]
         
-        let nums2 = [1,3,7,2,4,5,9,0]
+        
+        let nums2 = [8,1,7,4,5,2,3,6]
         
         // 冒泡排序
         let n = sort.sortArray(nums2)
+        print("冒泡排序\(n)")
         
-        // 插入排序
+        // 选择排序
         let n2 = sort.sortArray2(nums2)
+        print("选择排序\(n2)")
         
         // 插入排序
-        let n3 = sort.sortArray3(nums)
-        print(n)
-        print(n2)
+        let n3 = sort.sortArray3(nums2)
+        print("插入排序\(n3)")
+ 
+        // 归并排序
+        //let n4 = sort.sortArray4(nums2)
+        //print("归并排序\(n4)")
+        
+        // 快速排序
+        let n5 = sort.sortArray5(nums2)
+        print("快速排序\(n5)")
+        
     }
 }
 

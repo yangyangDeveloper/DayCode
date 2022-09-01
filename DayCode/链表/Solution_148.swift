@@ -9,12 +9,11 @@
 class Solution_148 {
     // 时间复杂度 logn
     func sortList(_ head: ListNode?) -> ListNode? {
-        if head != nil || head?.next != nil {
+        if head == nil || head?.next == nil {
             return head
         }
-        var slow = head
-        var fast = head
-        
+    
+    
         let mid = getMidNode(head)
         let t = mid?.next
         mid?.next = nil
@@ -76,4 +75,38 @@ class Solution_148 {
         }
         return dumpty.next
     }
+    
+    
+    // func merge(_ node1: ListNode?, _ node2: ListNode?) -> ListNode? {
+
+    //     var head1 = node1
+    //     var head2 = node2
+    //     var dumpty:ListNode? = ListNode(-1)
+    //     var temp = dumpty
+
+    //     while head1 != nil && head2 != nil {
+    //         if head1!.val < head2!.val {
+    //             temp?.next = head1
+    //             temp = temp?.next
+    //             head1 = head1?.next
+    //         } else {
+    //             temp?.next = head2
+    //             temp = temp?.next
+    //             head2 = head2?.next
+    //         }
+    //     }
+    //     // 一旦有提前结束的
+
+    //     if head1 != nil {
+    //         temp?.next = head1
+    //     }
+
+    //     if head2 != nil {
+    //         temp?.next = head2
+    //     }
+
+    //     return dumpty?.next
+    // }
+    
+    
 }

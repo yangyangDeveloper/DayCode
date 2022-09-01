@@ -216,6 +216,7 @@
 				A41DCF4028BDB28200FB6012 /* Solution_86.swift */,
 				A49B0BAC28A5EC9B003F9DC1 /* Solution_141.swift */,
 				A41DCF3228B7228E00FB6012 /* Solution_142.swift */,
+				A41DCF4628BF021500FB6012 /* Solution_148.swift */,
 				A49B0BB028A5EC9B003F9DC1 /* Solution_160.swift */,
 				A49B0BAD28A5EC9B003F9DC1 /* Solution_203.swift */,
 				A49B0BAF28A5EC9B003F9DC1 /* Solution_206.swift */,
@@ -223,7 +224,6 @@
 				A41DCF3628B878A700FB6012 /* Solution_328.swift */,
 				A41DCF3A28B9D48000FB6012 /* Solution_237.swift */,
 				A41DCF3E28BC6E1B00FB6012 /* Solution_876.swift */,
-				A41DCF4628BF021500FB6012 /* Solution_148.swift */,
 			);
 			path = "链表";
 			sourceTree = "<group>";
