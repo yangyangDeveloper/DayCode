@@ -151,8 +151,7 @@ class Solution_Sort {
        l 到 i 是小于 pivot的    [i i)
        i 到 j 是大于pviot的     [i j]
        j 到 r-1 是 未探索区域    [j ,r-1]
-       */
-    
+    */
     func subSort(_ nums:inout [Int], _ l:Int, _ r: Int) -> Int {
         let pivot = nums[r] // 分界值，一般选数组排序区间末尾元素
         
