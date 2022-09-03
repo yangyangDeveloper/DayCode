@@ -9,8 +9,7 @@
 class Solution_94 {
    
     /*
-     1、处理：将元素放进result数组中
-     2、访问：遍历节点
+        遍历遇到节点 不能访问 先放到栈内 回头访问栈左边 在访问他
      */
     func inorderTraversal(_ root: TreeNode?) -> [Int] {
         guard root != nil else { return [] }
@@ -18,14 +17,14 @@ class Solution_94 {
         var stack = [TreeNode]()
         var curnode = root
         while curnode != nil || stack.count > 0 {
-            while curnode != nil {
+            if curnode != nil {
                 stack.append(curnode!)
                 curnode = curnode?.left
+            }else {
+                curnode = stack.removeLast()
+                res.append(curnode!.val)
+                curnode = curnode?.right
             }
-            
-            curnode = stack.removeLast()
-            res.append(curnode!.val)
-            curnode = curnode?.right
         }
         return res
     }

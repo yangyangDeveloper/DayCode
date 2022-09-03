@@ -15,7 +15,7 @@ class Solution_Sort {
         // i 没走一次 就会确定一个队尾的 值
         for i in 0 ..< n.count - 1 {  // 3个 只需要比2次  所以 0<2   0 1 就行了
             // 每走一次 剩下的元素就越来越少
-            for j in 0 ..< n.count - 1 - i {
+            for j in 0 ..< n.count - 1 - i {  // 没走完一次 就会确定一个  第一次进来 i = 0
                 // 两个两个比较
                 if n[j] > n[j+1] {
                     var temp = n[j]
@@ -44,7 +44,7 @@ class Solution_Sort {
     }
     
     
-    // 插入排序
+    // 插入排序   维护一个有序队列 一般拿第一个元素 当成一个有序队列
     func sortArray3(_ nums: [Int]) -> [Int] {
         var arr = nums
         var j = 0
@@ -69,6 +69,15 @@ class Solution_Sort {
     /*
      分治思想
      [8,1,7,4,5,2,3,6]
+     
+     8 1
+     7 4
+     81 74
+     52
+     36
+     5236
+     8174 5236
+     
      */
     func sortArray4(_ nums: [Int]) -> [Int] {
         //var list = nums
@@ -120,6 +129,7 @@ class Solution_Sort {
     
     
     // 快速排序
+    // 找个参考点 然后高低扫描
     func sortArray5(_ nums: [Int]) -> [Int] {
         var a = nums
         return quickSort(&a, 0, nums.count - 1)
@@ -129,6 +139,12 @@ class Solution_Sort {
      * p:排序区间起点下标
      * r:排序区间终点点下标
     */
+    
+    // 不断的寻找 寻找pivot 然后排序数组  左边小于pivot 右边大于pivot   最后返回pivot的小表
+    // 拿到新的pivot下标q 继续划分
+    // 一直拆分到只有一个元素  一个元素不需要排序
+    // 一旦到  a  p  b  时候 其实就结束了
+    
     func quickSort(_ nums: inout [Int], _ l:Int, _ r: Int) -> [Int] {
   
         //  终止条件
@@ -148,7 +164,7 @@ class Solution_Sort {
        * array：传入参数的数组，注意是传址不是传值
        * p:排序区间起点下标
        * r:排序区间终点点下标
-       l 到 i 是小于 pivot的    [i i)
+       l 到 i 是小于 pivot的    [l i)
        i 到 j 是大于pviot的     [i j]
        j 到 r-1 是 未探索区域    [j ,r-1]
     */
@@ -156,6 +172,9 @@ class Solution_Sort {
         let pivot = nums[r] // 分界值，一般选数组排序区间末尾元素
         
         var i:Int = l
+        
+        // 让  [i 到 j 大于
+        // 让  l 到i）小于
         
         for j in l...r-1 {
             if nums[j] < pivot {

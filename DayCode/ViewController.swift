@@ -69,7 +69,91 @@ class ViewController: UIViewController {
         let n5 = sort.sortArray5(nums2)
         print("快速排序\(n5)")
         
+        
+        // 快速排序
+        let n6 = sortArray6(nums2)
+        print("快速排序2\(n6)")
+        
+        
     }
+    
+    
+    func sortArray6(_ nums: [Int]) -> [Int] {
+        var list = nums
+        return quickSort(&list, 0, list.count - 1)
+    }
+    
+//    func quickSort(_ nums: inout [Int], _ l: Int, _ r: Int) -> [Int] {
+//
+//        if r <= 1 {
+//            return nums
+//        }
+//
+//        let q = subSort(&nums, l, r)
+//
+//        quickSort(&nums, l, q - 1)
+//
+//        quickSort(&nums, q + 1, r)
+//
+//        return nums
+//    }
+    
+
+    func quickSort(_ nums: inout [Int], _ left:Int, _ r: Int) -> [Int] {
+
+        //  终止条件
+        if r <= left {
+            return nums
+        }
+
+        let q = subSort(&nums, left, r)
+
+        quickSort(&nums, left, q - 1)
+
+        quickSort(&nums, q + 1, r)
+
+        return nums
+    }
+
+    
+    func subSort(_ nums:inout [Int], _ l:Int, _ r: Int) -> Int {
+        let pivot = nums[r] // 分界值，一般选数组排序区间末尾元素
+
+        var i:Int = l
+
+        // 让  [i 到 j 大于
+        // 让  l 到i）小于
+
+        for j in l...r-1 {
+            if nums[j] < pivot {
+                nums.swapAt(i, j)
+                i += 1 // // 有小于pivot的数字
+            }
+        }
+
+        // 交换 a[i] 与 a[r] 即：将pivot放到相应位置
+        nums[r] = nums[i]
+        nums[i] = pivot
+
+        return i
+    }
+
+    
+//    func subSort(_ nums: inout [Int], _ left: Int, _ right : Int) -> Int {
+//        var poivt = nums[right]
+//        var i = left
+//
+//        for j in left...right - 1 {
+//            if nums[j] < poivt {
+//                nums.swapAt(i, j)
+//                i += 1
+//            }
+//        }
+//        nums[right] = nums[i]
+//        nums[i] = poivt
+//        return i
+//    }
+    
 }
 
 
