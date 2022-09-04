@@ -5,7 +5,7 @@
 //  Created by zhangyangyang on 2022/8/1.
 //
 
-// 94 二叉树的中序遍历
+// 94 二叉树的中序遍历  LDR
 class Solution_94 {
    
     /*
@@ -29,6 +29,24 @@ class Solution_94 {
         return res
     }
     
+    //  递归
+    func inorderTraversal2(_ root: TreeNode?) -> [Int] {
+        if root == nil {
+            return []
+        }
+        var res = [Int]()
+        inorder(root, &res)
+        return res
+    }
+    
+    func inorder(_ root: TreeNode?, _ res: inout [Int]) {
+        if root == nil {
+            return
+        }
+        inorder(root?.left, &res)
+        res.append(root!.val)
+        inorder(root?.right, &res)
+    }
 }
 
 

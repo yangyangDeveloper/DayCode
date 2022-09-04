@@ -41,6 +41,18 @@ class ViewController: UIViewController {
         //        print(temp)
         //        let s = Solution_49()
         //        s.groupAnagrams(strs)
+    
+        let n = Solution_70()
+        
+        let t = n.climbStairs(5)
+        
+        print(t)
+        
+        
+    }
+    
+    // 十大排序
+    func sort() {
         
         // 数组排序
         let sort = Solution_Sort()
@@ -73,32 +85,18 @@ class ViewController: UIViewController {
         // 快速排序
         let n6 = sortArray6(nums2)
         print("快速排序2\(n6)")
-        
-        
     }
     
-    
+}
+
+
+// 排序
+extension ViewController {
     func sortArray6(_ nums: [Int]) -> [Int] {
         var list = nums
         return quickSort(&list, 0, list.count - 1)
     }
     
-//    func quickSort(_ nums: inout [Int], _ l: Int, _ r: Int) -> [Int] {
-//
-//        if r <= 1 {
-//            return nums
-//        }
-//
-//        let q = subSort(&nums, l, r)
-//
-//        quickSort(&nums, l, q - 1)
-//
-//        quickSort(&nums, q + 1, r)
-//
-//        return nums
-//    }
-    
-
     func quickSort(_ nums: inout [Int], _ left:Int, _ r: Int) -> [Int] {
 
         //  终止条件
@@ -115,7 +113,7 @@ class ViewController: UIViewController {
         return nums
     }
 
-    
+
     func subSort(_ nums:inout [Int], _ l:Int, _ r: Int) -> Int {
         let pivot = nums[r] // 分界值，一般选数组排序区间末尾元素
 
@@ -137,23 +135,4 @@ class ViewController: UIViewController {
 
         return i
     }
-
-    
-//    func subSort(_ nums: inout [Int], _ left: Int, _ right : Int) -> Int {
-//        var poivt = nums[right]
-//        var i = left
-//
-//        for j in left...right - 1 {
-//            if nums[j] < poivt {
-//                nums.swapAt(i, j)
-//                i += 1
-//            }
-//        }
-//        nums[right] = nums[i]
-//        nums[i] = poivt
-//        return i
-//    }
-    
 }
-
-
