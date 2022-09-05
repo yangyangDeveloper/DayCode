@@ -29,4 +29,17 @@ class Solution_226 {
         
         return root
     }
+    
+    func invertTree2(_ root: TreeNode?) -> TreeNode? {
+        if root == nil {
+            return nil
+        }
+        
+        var left = invertTree2(root?.left)
+        var right = invertTree2(root?.right)
+        root?.left = right
+        root?.right = left
+        
+        return root 
+    }
 }
