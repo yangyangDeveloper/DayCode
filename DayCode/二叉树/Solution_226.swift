@@ -40,6 +40,6 @@ class Solution_226 {
         root?.left = right
         root?.right = left
         
-        return root 
+        return root
     }
 }
