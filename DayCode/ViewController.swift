@@ -42,12 +42,17 @@ class ViewController: UIViewController {
         //        let s = Solution_49()
         //        s.groupAnagrams(strs)
     
-        let n = Solution_70()
-        
-        let t = n.climbStairs(5)
-        
-        print(t)
-        
+//        let n = Solution_70()
+//
+//        let t = n.climbStairs(5)
+//
+//        print(t)
+//        let nums = [1,2,3,4]
+//        let arr = So21().exchange(nums)
+//        let av = nums[2] & 1
+//        print(arr)
+        let s = "PWWKEW"
+        let n = So48().lengthOfLongestSubstring(s)
         
     }
     
