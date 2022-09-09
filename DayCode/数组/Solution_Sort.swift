@@ -9,7 +9,11 @@ import Foundation
 
 class Solution_Sort {
     
-    // 冒泡排序
+}
+
+
+// 冒泡排序
+extension Solution_Sort {
     func sortArray(_ nums: [Int]) -> [Int] {
         var n = nums
         // i 没走一次 就会确定一个队尾的 值
@@ -26,9 +30,11 @@ class Solution_Sort {
         }
         return n
     }
-    
+}
 
-    // 选择排序
+// 选择排序
+extension Solution_Sort {
+   
     func sortArray2(_ nums: [Int]) -> [Int] {
         var list = nums
         for i in 0..<list.count - 1 {
@@ -38,34 +44,90 @@ class Solution_Sort {
                     minIndex = j  //  记录最小下标
                 }
             }
-            list.swapAt(i, minIndex) // 没论结束 把当论最小值移动到数组前面 
+            list.swapAt(i, minIndex) // 没论结束 把当论最小值移动到数组前面
         }
         return list
     }
+}
+
+// 插入排序
+extension Solution_Sort {
     
-    
-    // 插入排序   维护一个有序队列 一般拿第一个元素 当成一个有序队列
-    func sortArray3(_ nums: [Int]) -> [Int] {
-        var arr = nums
-        var j = 0
-        for i in 0 ..< arr.count {
+    // 维护一个有序队列 一般拿第一个元素 当成一个有序队列
+    func charusortArray(_ nums: [Int]) -> [Int] {
+        var list = nums
+        var length = list.count
+        var j  = 0
+        for i in 0..<length {
             j = i - 1
-            var temp = arr[i]
-            
-            // 循环腾出位置
-            while j > 0 && arr[j] > temp {
-                arr[j + 1] = arr [j]  // arr[j]这张牌比 temp大 那么移动一下
-                j -= 1  // 看下张牌  
-                // 找到了插入位置的前面
+            var tep = list[i]
+            // 移动所有大于tep的牌
+            while j >= 0 && list[j] > tep {    //  手里的最大牌 比摸到的大 需要把最大牌移动出去
+                list[j+1] = list[j]            // arr[j]这张牌比 temp大 那么移动一下
+                j -= 1
             }
-            
-            // j+1  就是插入位置
-            arr[j + 1] = temp
+            list[j+1] = tep // 插入这张牌
         }
+        return list
+    }
+}
+
+// 快速排序
+extension Solution_Sort {
+    
+    func quicksortArray(_ nums: [Int]) -> [Int] {
+        var arr = nums
+        return quickSort(&arr, 0, nums.count - 1)
+    }
+    
+
+    // 拿到新的pivot下标q 继续划分
+    // 一直拆分到只有一个元素  一个元素不需要排序
+    // 一旦到  a  p  b  时候 其实就结束了
+
+    func quickSort(_ arr: inout [Int], _ le: Int, _ r: Int) -> [Int] {
+        if r <= le {
+            return arr
+        }
+        let p = subSort(&arr, le, r)
+        quickSort(&arr, le, p - 1)
+        quickSort(&arr, p + 1, r)
         return arr
     }
     
-    // 归并排序
+    /*
+       * array：传入参数的数组，注意是传址不是传值
+       * p:排序区间起点下标
+       * r:排序区间终点点下标
+       l 到 i 是小于 pivot的    [l i)
+       i 到 j 是大于pviot的     [i j]
+       j 到 r-1 是 未探索区域    [j ,r-1]
+    */
+    func subSort(_ arr: inout [Int], _ le:Int, _ r: Int) -> Int {
+        
+        let pivot = arr[r]
+        var i: Int = le
+        
+        // [le, i) < pivot
+        // [i, j) > pivot
+        // [j, r-1]  未检查区域
+        for j in le...r-1 {
+            if arr[j] < pivot {
+                arr.swapAt(i, j)
+                i += 1
+            }
+        }
+        
+        arr.swapAt(i, r)
+//        arr[r] = arr[i]
+//        arr[i] = pivot
+        return i
+    }
+}
+
+// 归并排序
+extension Solution_Sort {
+    
     /*
      分治思想
      [8,1,7,4,5,2,3,6]
@@ -77,16 +139,16 @@ class Solution_Sort {
      36
      5236
      8174 5236
-     
+    
      */
-    func sortArray4(_ nums: [Int]) -> [Int] {
+    func guibingsortArray(_ nums: [Int]) -> [Int] {
         //var list = nums
         guard nums.count > 1 else { return nums }
         var midindex = nums.count / 2
-        let lefta = sortArray4(Array(nums[0..<midindex]))
+        let lefta = guibingsortArray(Array(nums[0..<midindex]))
         print(lefta)
         
-        let rightb = sortArray4(Array(nums[midindex..<nums.count]))
+        let rightb = guibingsortArray(Array(nums[midindex..<nums.count]))
         print(rightb)
         return merge(lefta, rightb)
     }
@@ -125,68 +187,5 @@ class Solution_Sort {
         }
         print("本轮result=\(result)")
         return result
-    }
-    
-    
-    // 快速排序
-    // 找个参考点 然后高低扫描
-    func sortArray5(_ nums: [Int]) -> [Int] {
-        var a = nums
-        return quickSort(&a, 0, nums.count - 1)
-    }
-    
-    /* array：传入参数的数组，注意是传址不是传值
-     * p:排序区间起点下标
-     * r:排序区间终点点下标
-    */
-    
-    // 不断的寻找 寻找pivot 然后排序数组  左边小于pivot 右边大于pivot   最后返回pivot的小表
-    // 拿到新的pivot下标q 继续划分
-    // 一直拆分到只有一个元素  一个元素不需要排序
-    // 一旦到  a  p  b  时候 其实就结束了
-    
-    func quickSort(_ nums: inout [Int], _ l:Int, _ r: Int) -> [Int] {
-  
-        //  终止条件
-        if r <= l {
-            return nums
-        }
-        
-        let q = subSort(&nums, l, r)
-    
-        quickSort(&nums, l, q - 1)
-        quickSort(&nums, q + 1, r)
-        
-        return nums
-    }
-    
-    /*
-       * array：传入参数的数组，注意是传址不是传值
-       * p:排序区间起点下标
-       * r:排序区间终点点下标
-       l 到 i 是小于 pivot的    [l i)
-       i 到 j 是大于pviot的     [i j]
-       j 到 r-1 是 未探索区域    [j ,r-1]
-    */
-    func subSort(_ nums:inout [Int], _ l:Int, _ r: Int) -> Int {
-        let pivot = nums[r] // 分界值，一般选数组排序区间末尾元素
-        
-        var i:Int = l
-        
-        // 让  [i 到 j 大于
-        // 让  l 到i）小于
-        
-        for j in l...r-1 {
-            if nums[j] < pivot {
-                nums.swapAt(i, j)
-                i += 1 // // 有小于pivot的数字
-            }
-        }
-        
-        // 交换 a[i] 与 a[r] 即：将pivot放到相应位置
-        nums[r] = nums[i]
-        nums[i] = pivot
-        
-        return i
     }
 }
