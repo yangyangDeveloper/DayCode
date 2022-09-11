@@ -56,8 +56,17 @@ class ViewController: UIViewController {
         
        // charuSort()
         
-        quickSort()
-        guibingSort()
+//        quickSort()
+//        guibingSort()
+        
+        test106()
+    }
+    
+    func test106() {
+        let inorder = [9,3,15,20,7]
+        let postorder = [9,15,7,20,3]
+        let t = Solution_106().buildTree(inorder, postorder)
+        
     }
     
     // 冒泡排序

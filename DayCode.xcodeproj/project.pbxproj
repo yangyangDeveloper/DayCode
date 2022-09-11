@@ -73,6 +73,7 @@
 		A4EF360028C74A70006CFA25 /* Solution_235.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF35FF28C74A70006CFA25 /* Solution_235.swift */; };
 		A4EF360228C74AD2006CFA25 /* Solution_101.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF360128C74AD2006CFA25 /* Solution_101.swift */; };
 		A4EF360628C74B34006CFA25 /* So27.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF360528C74B34006CFA25 /* So27.swift */; };
+		A4F7F83228CC5EDA00A7CE2A /* Solution_106.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7F83128CC5EDA00A7CE2A /* Solution_106.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +145,7 @@
 		A4EF35FF28C74A70006CFA25 /* Solution_235.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_235.swift; sourceTree = "<group>"; };
 		A4EF360128C74AD2006CFA25 /* Solution_101.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_101.swift; sourceTree = "<group>"; };
 		A4EF360528C74B34006CFA25 /* So27.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = So27.swift; sourceTree = "<group>"; };
+		A4F7F83128CC5EDA00A7CE2A /* Solution_106.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_106.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +317,7 @@
 				A49B0BBC28A5ECA0003F9DC1 /* Solution_257.swift */,
 				A4C2430128C84B9A00A56245 /* Solution_572.swift */,
 				A4EF35FB28C749EA006CFA25 /* Solution_617.swift */,
+				A4F7F83128CC5EDA00A7CE2A /* Solution_106.swift */,
 			);
 			path = "二叉树";
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F7F83228CC5EDA00A7CE2A /* Solution_106.swift in Sources */,
 				A41A4E6028C06D4C00B7AB96 /* So9.swift in Sources */,
 				A49B0BB428A5EC9B003F9DC1 /* Solution_206.swift in Sources */,
 				A49B0BBD28A5ECA0003F9DC1 /* Solution_94.swift in Sources */,
