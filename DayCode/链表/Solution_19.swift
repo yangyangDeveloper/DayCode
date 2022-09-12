@@ -11,7 +11,6 @@ class Solution_19 {
     // 2、 找到删除点之前的点   length - n - 1 就是该节点
     // 3、 考虑首节点 需要临时节点  length = n
     
-    
     func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? {
         guard head != nil else { return nil }
         var cur = head
