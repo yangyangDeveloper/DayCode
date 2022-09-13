@@ -59,7 +59,21 @@ class ViewController: UIViewController {
 //        quickSort()
 //        guibingSort()
         
-        test106()
+        // test106()
+       // test77()
+        test131()
+//        let t = ["1", "2", "3"]
+//        let v = Array(t)
+        
+    }
+    
+    func test77() {
+       // var t = Solution_77().combine(4, 2)
+        var str:String = "hello"
+        // 把字符串转为字符数组以便于通过索引访问和取子串
+        let s = Array(str)
+        let substring = String(s[0 ... 3])
+        
     }
     
     func test106() {
@@ -67,6 +81,11 @@ class ViewController: UIViewController {
         let postorder = [9,15,7,20,3]
         let t = Solution_106().buildTree(inorder, postorder)
         
+    }
+    
+    func test131() {
+        let s = "aab"
+        let t = Solution_131().partition(s)
     }
     
     // 冒泡排序
