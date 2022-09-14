@@ -61,9 +61,24 @@ class ViewController: UIViewController {
         
         // test106()
        // test77()
-        test131()
+       // test131()
 //        let t = ["1", "2", "3"]
 //        let v = Array(t)
+        
+        // test53_2()
+        
+        test55()
+    }
+    
+    func test55() {
+        let n = [2,3,1,1,4]
+        let t = Solution_55().canJump(n)
+        
+    }
+    
+    func test53_2() {
+        let nums = [1]
+        let t = Solution_53_2().maxSubArray(nums)
         
     }
     
