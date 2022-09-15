@@ -67,8 +67,18 @@ class ViewController: UIViewController {
         
         // test53_2()
         
-        test55()
+        //test55()
+        test121()
     }
+    
+    
+    // 动态规划
+    func test121() {
+        let num = [7,1,5,3,6,4]
+        let n = Solution_121().maxProfit(num)
+        
+    }
+    
     
     func test55() {
         let n = [2,3,1,1,4]
