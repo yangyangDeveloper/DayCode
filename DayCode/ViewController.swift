@@ -68,9 +68,24 @@ class ViewController: UIViewController {
         // test53_2()
         
         //test55()
-        test121()
+        //test121()
+       // test1()
+        
+        var presum: [Int: Int] = [:]
+       // presum[2] = 0
+        //presum[2, default: 100] += 1
+        
+        var arr = [[1,3],[6,9],[7,6],[4,3]]
+        let arr1 = arr[0...2]
+        
     }
     
+    func test1() {
+        let nums = [2,11,7,15]
+        let target = 9
+        let t = Solution_1().twoSum(nums, target)
+        
+    }
     
     // 动态规划
     func test121() {
