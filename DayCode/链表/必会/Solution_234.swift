@@ -5,12 +5,43 @@
 //  Created by zhangyangyang on 2022/8/26.
 //
 
-// 回文链表
+/*
+     考察点： 链表是否是回文链表  可以把链表放到数组种 或者利用系统的递归栈  然后 left right 比较
+     1、判断是否是回文字符串      left right 搞起来
+     2、查找字符串中的回文子串    中心扩展查找
+    
+     直接left right 指针判断  但是链表的话 没办法直接访问最后
+     最容易想到的是 放到一个 数组里面  然后从数组 左右边界对比
+     time o(n)  spaceo(n)
+ 
+     思路二： 用后序递归对比  借助递归提供的栈
+*/
+
+// 234. 回文链表
 class Solution_234 {
+    
+    var left: ListNode?
+    func isPalindrome4(_ head: ListNode?) -> Bool {
+        left = head
+        return traver(head)
+    }
+    
+    func traver(_ head: ListNode?) -> Bool {
+        if head == nil {
+            return true
+        }
+        var res = traver(head?.next)
+        // 后序遍历代码
+        res = res && (head?.val == left?.val)
+        left = left?.next
+        return res
+    }
+    
     func isPalindrome(_ head: ListNode?) -> Bool {
         guard head != nil else {return false}
         var res = [Int]()
         var cur = head
+        
         while cur != nil {
             res.append(cur!.val)
             cur = cur?.next

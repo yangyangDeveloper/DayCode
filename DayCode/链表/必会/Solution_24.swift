@@ -5,8 +5,16 @@
 //  Created by zhangyangyang on 2022/8/23.
 //
 
+/*
+    算是两两交换吧  主要是要记录 subhead
+    1、 subhead的概念   先记录subhead
+    2、 node1 和 node2  的变化   node2.next = node1  node1.next = subhead
+ */
+
 // 24. 两两交换链表中的节点
 class Solution_24 {
+    
+
     func swapPairs(_ head: ListNode?) -> ListNode? {
         guard head != nil else { return nil }
         var dumpty = ListNode(-1)

@@ -5,6 +5,13 @@
 //  Created by zhangyangyang on 2022/8/2.
 //
 
+/*
+    考察：已经是分开的2个链表了，让我们合并单链表
+    就是有一个亚节点  然后 不断的判断  最后合并到一起
+    和下面2道题的套路差不多
+    leetcode 328  奇偶链表
+    leetcode 86   分割链表
+*/
 // 21. 合并两个有序链表
 class Solution_21 {
     func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {

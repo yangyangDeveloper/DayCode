@@ -78,7 +78,39 @@ class ViewController: UIViewController {
         var arr = [[1,3],[6,9],[7,6],[4,3]]
         let arr1 = arr[0...2]
         
+        test206()
+        testListNode()
     }
+    
+    // MARK: -  测试链表
+    func testListNode() {
+        // 反转链表
+        test206()
+    }
+    
+    func test206() {
+        var nod1 = ListNode(1)
+        var nod2 = ListNode(2)
+        var nod3 = ListNode(3)
+        var nod4 = ListNode(4)
+        var nod5 = ListNode(5)
+        
+        nod1.next = nod2
+        nod2.next = nod3
+        nod3.next = nod4
+        nod4.next = nod5
+        nod5.next = nil
+        
+        let t = Solution_206().reverseList3(nod1)
+       
+        var cur = t
+        while cur != nil {
+            print(cur?.val)
+            cur = cur?.next
+        }
+    }
+    
+    
     
     func test1() {
         let nums = [2,11,7,15]
