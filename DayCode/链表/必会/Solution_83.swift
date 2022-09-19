@@ -6,18 +6,65 @@
 //
 
 /*
-   考察的是 删除链表
-   基础： 出现重复的留一个
+   考察的是 双指针中的快慢指针 在链表中的使用
+   [0 slow]为不重复期间
+   链表需要额外的 slow.next = nil  断开操作
+   和leetcode26  删除有序数组中的重复项」 一个模版
+  
    升级： 凡事重复的全部扔掉
-   
  */
 
 // 83. 删除排序链表中的重复元素
 class Solution_83 {
-    // 时间复杂度 o(n) 空间复杂度o(1)
-
-    // 删除写复杂了 当时想用一个 dumpty 实际上不需要使用 dumpty
+    
+     // 套用快慢指针模版
+     // [0 slow] 全是不重复的   fast逐个前进 当和slow不同时候 在给你slow保管
+     func deleteDuplicates3(_ head: ListNode?) -> ListNode? {
+         if head == nil {
+             return nil
+         }
+         
+         var slow = head
+         var fast = head
+         
+         while fast != nil {
+             if fast?.val != slow?.val {
+                 // 相当于 slow += 1
+                 // nums[slow] = nums[fast]
+                 
+                 slow?.next = fast
+                 slow = slow?.next
+             }
+             // 相当于 fast += 1
+             fast = fast?.next
+         }
+         
+         // 断开链接
+         slow?.next = nil
+         
+         return head
+     }
+    
+    
+    
     func deleteDuplicates2(_ head: ListNode?) -> ListNode? {
+        guard head != nil else { return head }
+        var cur = head
+        
+        while cur != nil && cur!.next != nil {
+            if cur!.val == cur!.next!.val {
+                cur?.next = cur?.next?.next
+            } else {
+                cur = cur?.next
+            }
+        }
+        return head
+    }
+    
+    
+    // 时间复杂度 o(n) 空间复杂度o(1)
+    // 这种写法复杂了  套用的亚节点
+    func deleteDuplicates(_ head: ListNode?) -> ListNode? {
         if head == nil {
             return head
         }
@@ -38,21 +85,6 @@ class Solution_83 {
         }
 
         return dumpty?.next
-    }
-    
-    
-    func deleteDuplicates(_ head: ListNode?) -> ListNode? {
-        guard head != nil else { return head }
-        var cur = head
-        
-        while cur != nil && cur!.next != nil {
-            if cur!.val == cur!.next!.val {
-                cur?.next = cur?.next?.next
-            } else {
-                cur = cur?.next
-            }
-        }
-        return head
     }
 }
 

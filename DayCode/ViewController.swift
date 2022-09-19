@@ -78,8 +78,20 @@ class ViewController: UIViewController {
         var arr = [[1,3],[6,9],[7,6],[4,3]]
         let arr1 = arr[0...2]
         
-        test206()
-        testListNode()
+        
+        // testListNode()
+        testArray()
+    }
+    
+    
+    // MARK: -  测试链表
+    func testArray() {
+        test5()
+    }
+    
+    func test5() {
+        let s = "babad"
+        let t = Solution_5().longestPalindrome(s)
     }
     
     // MARK: -  测试链表

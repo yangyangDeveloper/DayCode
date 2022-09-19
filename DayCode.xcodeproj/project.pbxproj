@@ -50,6 +50,13 @@
 		A460BC3A28D0DC7600B8DB24 /* Solution_46.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460BC3928D0DC7600B8DB24 /* Solution_46.swift */; };
 		A475875528D82FFA007E683F /* Solution_2095.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475875428D82FFA007E683F /* Solution_2095.swift */; };
 		A475875728D85F80007E683F /* Solution_92.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475875628D85F80007E683F /* Solution_92.swift */; };
+		A475875928D89B16007E683F /* Solution_26.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475875828D89B16007E683F /* Solution_26.swift */; };
+		A475875B28D8A0C2007E683F /* Solution_27.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475875A28D8A0C2007E683F /* Solution_27.swift */; };
+		A475875D28D8A526007E683F /* Solution_283.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475875C28D8A526007E683F /* Solution_283.swift */; };
+		A475875F28D8A802007E683F /* 数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475875E28D8A802007E683F /* 数组.swift */; };
+		A475876128D8A997007E683F /* Solution_167.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475876028D8A997007E683F /* Solution_167.swift */; };
+		A475876328D8AC67007E683F /* Solution_344.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475876228D8AC67007E683F /* Solution_344.swift */; };
+		A475876528D8AE8C007E683F /* Solution_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475876428D8AE8C007E683F /* Solution_5.swift */; };
 		A49B0B8D28A5EC7B003F9DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B0B8C28A5EC7B003F9DC1 /* AppDelegate.swift */; };
 		A49B0B8F28A5EC7B003F9DC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B0B8E28A5EC7B003F9DC1 /* SceneDelegate.swift */; };
 		A49B0B9128A5EC7B003F9DC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B0B9028A5EC7B003F9DC1 /* ViewController.swift */; };
@@ -143,6 +150,13 @@
 		A475875128D76790007E683F /* 链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "链表.swift"; sourceTree = "<group>"; };
 		A475875428D82FFA007E683F /* Solution_2095.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_2095.swift; sourceTree = "<group>"; };
 		A475875628D85F80007E683F /* Solution_92.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_92.swift; sourceTree = "<group>"; };
+		A475875828D89B16007E683F /* Solution_26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_26.swift; sourceTree = "<group>"; };
+		A475875A28D8A0C2007E683F /* Solution_27.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_27.swift; sourceTree = "<group>"; };
+		A475875C28D8A526007E683F /* Solution_283.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_283.swift; sourceTree = "<group>"; };
+		A475875E28D8A802007E683F /* 数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "数组.swift"; sourceTree = "<group>"; };
+		A475876028D8A997007E683F /* Solution_167.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_167.swift; sourceTree = "<group>"; };
+		A475876228D8AC67007E683F /* Solution_344.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_344.swift; sourceTree = "<group>"; };
+		A475876428D8AE8C007E683F /* Solution_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_5.swift; sourceTree = "<group>"; };
 		A49B0B8928A5EC7B003F9DC1 /* DayCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49B0B8C28A5EC7B003F9DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A49B0B8E28A5EC7B003F9DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -336,6 +350,8 @@
 		A49B0B8B28A5EC7B003F9DC1 /* DayCode */ = {
 			isa = PBXGroup;
 			children = (
+				A49B0BA028A5EC8B003F9DC1 /* 数组 */,
+				A49B0BAB28A5EC9B003F9DC1 /* 链表 */,
 				A45DAE5728D574E6001BAC30 /* 前缀和 */,
 				A45DAE4F28D43486001BAC30 /* 背包 */,
 				A45DAE3728D1D890001BAC30 /* 贪心 */,
@@ -345,10 +361,8 @@
 				A41A4E5A28C0637900B7AB96 /* 剑指Offer */,
 				A41DCF4A28BF85F900FB6012 /* 哈希 */,
 				A49B0BB628A5ECA0003F9DC1 /* 二叉树 */,
-				A49B0BAB28A5EC9B003F9DC1 /* 链表 */,
 				A49B0BA828A5EC96003F9DC1 /* 滚动窗口 */,
 				A49B0BA528A5EC92003F9DC1 /* 动态规划 */,
-				A49B0BA028A5EC8B003F9DC1 /* 数组 */,
 				A49B0B8C28A5EC7B003F9DC1 /* AppDelegate.swift */,
 				A49B0B8E28A5EC7B003F9DC1 /* SceneDelegate.swift */,
 				A49B0B9028A5EC7B003F9DC1 /* ViewController.swift */,
@@ -363,9 +377,16 @@
 		A49B0BA028A5EC8B003F9DC1 /* 数组 */ = {
 			isa = PBXGroup;
 			children = (
+				A475875828D89B16007E683F /* Solution_26.swift */,
+				A475875A28D8A0C2007E683F /* Solution_27.swift */,
+				A475875C28D8A526007E683F /* Solution_283.swift */,
+				A475876028D8A997007E683F /* Solution_167.swift */,
+				A475876228D8AC67007E683F /* Solution_344.swift */,
 				A49B0BA128A5EC8B003F9DC1 /* Solution_49.swift */,
 				A49B0BA228A5EC8B003F9DC1 /* Solution_215.swift */,
 				A41DCF4828BF270400FB6012 /* Solution_Sort.swift */,
+				A475876428D8AE8C007E683F /* Solution_5.swift */,
+				A475875E28D8A802007E683F /* 数组.swift */,
 			);
 			path = "数组";
 			sourceTree = "<group>";
@@ -519,11 +540,13 @@
 				A45DAE4C28D373BF001BAC30 /* Solution_122.swift in Sources */,
 				A41DCF3D28BB23E900FB6012 /* Solution_61.swift in Sources */,
 				A49B0BC028A5ECA0003F9DC1 /* Solution_144.swift in Sources */,
+				A475875D28D8A526007E683F /* Solution_283.swift in Sources */,
 				A49B0BC228A5ECA0003F9DC1 /* Solution_257.swift in Sources */,
 				A4B1C26328C24D0500609C47 /* So22.swift in Sources */,
 				A49B0BA728A5EC92003F9DC1 /* Solution_53.swift in Sources */,
 				A460BC2E28D02DF900B8DB24 /* Solution_77.swift in Sources */,
 				A45DAE3D28D22735001BAC30 /* Solution_322.swift in Sources */,
+				A475876128D8A997007E683F /* Solution_167.swift in Sources */,
 				A4C2430028C8433B00A56245 /* Solution_100.swift in Sources */,
 				A41DCF3528B863A800FB6012 /* Solution_234.swift in Sources */,
 				A45DAE5928D5750B001BAC30 /* Solution_560.swift in Sources */,
@@ -549,6 +572,7 @@
 				A460BC3828D0989800B8DB24 /* Solution_131.swift in Sources */,
 				A460BC3028D0695200B8DB24 /* Solution_17.swift in Sources */,
 				A4C242FC28C832B800A56245 /* So3.swift in Sources */,
+				A475876528D8AE8C007E683F /* Solution_5.swift in Sources */,
 				A49B0B9128A5EC7B003F9DC1 /* ViewController.swift in Sources */,
 				A4C2430228C84B9A00A56245 /* Solution_572.swift in Sources */,
 				A41DCF4328BDB49600FB6012 /* Solution_83.swift in Sources */,
@@ -561,11 +585,13 @@
 				A41A4E6628C072C200B7AB96 /* Solution_704.swift in Sources */,
 				A49B6B0728C347F600537629 /* So32.swift in Sources */,
 				A41DCF4128BDB28200FB6012 /* Solution_86.swift in Sources */,
+				A475875928D89B16007E683F /* Solution_26.swift in Sources */,
 				A49B0BA428A5EC8B003F9DC1 /* Solution_215.swift in Sources */,
 				A460BC3628D078DB00B8DB24 /* Solution_216.swift in Sources */,
 				A4C242FA28C82EE100A56245 /* So21.swift in Sources */,
 				A49B0BA328A5EC8B003F9DC1 /* Solution_49.swift in Sources */,
 				A45DAE3628D1C5E7001BAC30 /* Solution_491.swift in Sources */,
+				A475876328D8AC67007E683F /* Solution_344.swift in Sources */,
 				A49B0BC128A5ECA0003F9DC1 /* Solution_226.swift in Sources */,
 				A4B1C25B28C2475900609C47 /* Sof23.swift in Sources */,
 				A49B0BAA28A5EC96003F9DC1 /* Solution_3.swift in Sources */,
@@ -573,6 +599,7 @@
 				A475875728D85F80007E683F /* Solution_92.swift in Sources */,
 				A45DAE4A28D33D9B001BAC30 /* Solution_121.swift in Sources */,
 				A45DAE3028D17D75001BAC30 /* Solution_47.swift in Sources */,
+				A475875B28D8A0C2007E683F /* Solution_27.swift in Sources */,
 				A49B0BB528A5EC9B003F9DC1 /* Solution_160.swift in Sources */,
 				A45DAE3228D17E60001BAC30 /* Solution_78.swift in Sources */,
 				A41DCF4C28BF861400FB6012 /* Solution_offer50.swift in Sources */,
@@ -581,6 +608,7 @@
 				A4B1C25528C243C800609C47 /* So5.swift in Sources */,
 				A49B0B8D28A5EC7B003F9DC1 /* AppDelegate.swift in Sources */,
 				A4EF35F628C72FBB006CFA25 /* Solution_98.swift in Sources */,
+				A475875F28D8A802007E683F /* 数组.swift in Sources */,
 				A4EF35FC28C749EA006CFA25 /* Solution_617.swift in Sources */,
 				A49B0B8F28A5EC7B003F9DC1 /* SceneDelegate.swift in Sources */,
 				A45DAE5B28D57B18001BAC30 /* Solution_1.swift in Sources */,
