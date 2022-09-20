@@ -61,6 +61,13 @@
 		A475876928D96557007E683F /* Solution_704_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475876828D96557007E683F /* Solution_704_2.swift */; };
 		A475876B28D974FA007E683F /* Solution_875.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475876A28D974FA007E683F /* Solution_875.swift */; };
 		A475876D28D97EBA007E683F /* Solution_1011.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475876C28D97EBA007E683F /* Solution_1011.swift */; };
+		A475876F28D9A6D5007E683F /* Solution_48.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475876E28D9A6D5007E683F /* Solution_48.swift */; };
+		A475877128D9AC82007E683F /* Solution_54.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475877028D9AC82007E683F /* Solution_54.swift */; };
+		A475877328D9BB0C007E683F /* Solution_303.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475877228D9BB0C007E683F /* Solution_303.swift */; };
+		A475877728D9C11F007E683F /* Solution_523.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475877628D9C11F007E683F /* Solution_523.swift */; };
+		A475877928D9F220007E683F /* 滑动窗口.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475877828D9F220007E683F /* 滑动窗口.swift */; };
+		A475877B28D9F938007E683F /* Solution_76.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475877A28D9F938007E683F /* Solution_76.swift */; };
+		A475877D28DA0D9A007E683F /* Solution_567.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475877C28DA0D9A007E683F /* Solution_567.swift */; };
 		A49B0B8D28A5EC7B003F9DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B0B8C28A5EC7B003F9DC1 /* AppDelegate.swift */; };
 		A49B0B8F28A5EC7B003F9DC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B0B8E28A5EC7B003F9DC1 /* SceneDelegate.swift */; };
 		A49B0B9128A5EC7B003F9DC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B0B9028A5EC7B003F9DC1 /* ViewController.swift */; };
@@ -165,6 +172,13 @@
 		A475876828D96557007E683F /* Solution_704_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_704_2.swift; sourceTree = "<group>"; };
 		A475876A28D974FA007E683F /* Solution_875.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_875.swift; sourceTree = "<group>"; };
 		A475876C28D97EBA007E683F /* Solution_1011.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_1011.swift; sourceTree = "<group>"; };
+		A475876E28D9A6D5007E683F /* Solution_48.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_48.swift; sourceTree = "<group>"; };
+		A475877028D9AC82007E683F /* Solution_54.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_54.swift; sourceTree = "<group>"; };
+		A475877228D9BB0C007E683F /* Solution_303.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_303.swift; sourceTree = "<group>"; };
+		A475877628D9C11F007E683F /* Solution_523.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_523.swift; sourceTree = "<group>"; };
+		A475877828D9F220007E683F /* 滑动窗口.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "滑动窗口.swift"; sourceTree = "<group>"; };
+		A475877A28D9F938007E683F /* Solution_76.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_76.swift; sourceTree = "<group>"; };
+		A475877C28DA0D9A007E683F /* Solution_567.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_567.swift; sourceTree = "<group>"; };
 		A49B0B8928A5EC7B003F9DC1 /* DayCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49B0B8C28A5EC7B003F9DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A49B0B8E28A5EC7B003F9DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -296,6 +310,7 @@
 			children = (
 				A45DAE5A28D57B18001BAC30 /* Solution_1.swift */,
 				A45DAE5828D5750B001BAC30 /* Solution_560.swift */,
+				A475877628D9C11F007E683F /* Solution_523.swift */,
 			);
 			path = "前缀和";
 			sourceTree = "<group>";
@@ -399,6 +414,9 @@
 				A41DCF4828BF270400FB6012 /* Solution_Sort.swift */,
 				A49B0BA228A5EC8B003F9DC1 /* Solution_215.swift */,
 				A49B0BA128A5EC8B003F9DC1 /* Solution_49.swift */,
+				A475876E28D9A6D5007E683F /* Solution_48.swift */,
+				A475877028D9AC82007E683F /* Solution_54.swift */,
+				A475877228D9BB0C007E683F /* Solution_303.swift */,
 			);
 			path = "数组";
 			sourceTree = "<group>";
@@ -420,6 +438,9 @@
 			isa = PBXGroup;
 			children = (
 				A49B0BA928A5EC96003F9DC1 /* Solution_3.swift */,
+				A475877A28D9F938007E683F /* Solution_76.swift */,
+				A475877C28DA0D9A007E683F /* Solution_567.swift */,
+				A475877828D9F220007E683F /* 滑动窗口.swift */,
 			);
 			path = "滚动窗口";
 			sourceTree = "<group>";
@@ -544,6 +565,7 @@
 				A41A4E6328C06E2E00B7AB96 /* Sof72.swift in Sources */,
 				A45DAE5128D43498001BAC30 /* Solution_416.swift in Sources */,
 				A41DCF3928B9CCF500FB6012 /* Solution_19.swift in Sources */,
+				A475877928D9F220007E683F /* 滑动窗口.swift in Sources */,
 				A4B1C25D28C2489800609C47 /* So25.swift in Sources */,
 				A4EF360028C74A70006CFA25 /* Solution_235.swift in Sources */,
 				A41DCF3B28B9D48000FB6012 /* Solution_237.swift in Sources */,
@@ -561,6 +583,7 @@
 				A475876128D8A997007E683F /* Solution_167.swift in Sources */,
 				A4C2430028C8433B00A56245 /* Solution_100.swift in Sources */,
 				A41DCF3528B863A800FB6012 /* Solution_234.swift in Sources */,
+				A475877328D9BB0C007E683F /* Solution_303.swift in Sources */,
 				A45DAE5928D5750B001BAC30 /* Solution_560.swift in Sources */,
 				A41A4E5C28C0639A00B7AB96 /* So61.swift in Sources */,
 				A49B0BB328A5EC9B003F9DC1 /* Solution_21.swift in Sources */,
@@ -600,12 +623,14 @@
 				A49B6B0728C347F600537629 /* So32.swift in Sources */,
 				A41DCF4128BDB28200FB6012 /* Solution_86.swift in Sources */,
 				A475875928D89B16007E683F /* Solution_26.swift in Sources */,
+				A475877128D9AC82007E683F /* Solution_54.swift in Sources */,
 				A49B0BA428A5EC8B003F9DC1 /* Solution_215.swift in Sources */,
 				A460BC3628D078DB00B8DB24 /* Solution_216.swift in Sources */,
 				A4C242FA28C82EE100A56245 /* So21.swift in Sources */,
 				A49B0BA328A5EC8B003F9DC1 /* Solution_49.swift in Sources */,
 				A45DAE3628D1C5E7001BAC30 /* Solution_491.swift in Sources */,
 				A475876328D8AC67007E683F /* Solution_344.swift in Sources */,
+				A475877D28DA0D9A007E683F /* Solution_567.swift in Sources */,
 				A49B0BC128A5ECA0003F9DC1 /* Solution_226.swift in Sources */,
 				A4B1C25B28C2475900609C47 /* Sof23.swift in Sources */,
 				A49B0BAA28A5EC96003F9DC1 /* Solution_3.swift in Sources */,
@@ -616,12 +641,15 @@
 				A45DAE3028D17D75001BAC30 /* Solution_47.swift in Sources */,
 				A475876928D96557007E683F /* Solution_704_2.swift in Sources */,
 				A475875B28D8A0C2007E683F /* Solution_27.swift in Sources */,
+				A475877B28D9F938007E683F /* Solution_76.swift in Sources */,
 				A49B0BB528A5EC9B003F9DC1 /* Solution_160.swift in Sources */,
 				A45DAE3228D17E60001BAC30 /* Solution_78.swift in Sources */,
 				A41DCF4C28BF861400FB6012 /* Solution_offer50.swift in Sources */,
 				A4EF35FA28C74997006CFA25 /* Sof27.swift in Sources */,
 				A4B1C25F28C249E000609C47 /* So24.swift in Sources */,
 				A4B1C25528C243C800609C47 /* So5.swift in Sources */,
+				A475876F28D9A6D5007E683F /* Solution_48.swift in Sources */,
+				A475877728D9C11F007E683F /* Solution_523.swift in Sources */,
 				A49B0B8D28A5EC7B003F9DC1 /* AppDelegate.swift in Sources */,
 				A4EF35F628C72FBB006CFA25 /* Solution_98.swift in Sources */,
 				A475875F28D8A802007E683F /* 数组.swift in Sources */,

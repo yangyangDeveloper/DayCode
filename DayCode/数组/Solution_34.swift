@@ -11,6 +11,25 @@
     704. 二分查找
     34. 在排序数组中查找元素的第一个和最后一个位置
     剑指 Offer 53 - I. 在排序数组中查找数字 I
+ 
+    查找边界问题
+
+    情况1：nums = [2,3,5,7] target = 1  那么二分算法返回0 表示nums中 小于1的的元素为0个
+    情况2: nums = [2,3,5,7] target = 8  那么二分算法返回4 表示nums中 小于8的元素有4个
+ 
+    所以我们最终的结果一定是 [0, 4]
+ 
+    最左区间就是
+    if left == nums.count || nums[left] != target {
+        return -1
+    }
+    return  left
+ 
+    最右区间就是
+    if right < 0 || nums[right] != target {
+        return -1
+    }
+    return right
  */
 // 34. 在排序数组中查找元素的第一个和最后一个位置
 class Solution_34 {
@@ -39,20 +58,9 @@ class Solution_34 {
         
         /*
          while循环结束的时候, left = right + 1
-           合理区间
-         1 2 2 3
-         target = 2  就是合理情况
-         target = 8  就是越界情况   left 会有负数情况      left > right  也就是  left = right + 1
          如果使用left判断, target可能是nums[left], 要判断left是否越界
          如果使用right判断, target可能是nums[right+1], 要判断right+1是否越界
-         
-          right 一直就在3
-          若干查找。。。
-          left  也来到了3
-          继续下去找到3的后面 就不合理了都出界了   因为 left <= right   现在 left 比right大了
-         
-         */
-        // 跳出while的时候 left = right + 1
+        */
         if left >= nums.count  || nums[left] != target {
             return -1
         }
@@ -66,7 +74,7 @@ class Solution_34 {
         while left <= right {
             var mid = left + (right - left) / 2
             if nums[mid] == target {
-                // 右边界是固定的 缩小左边
+                // 右边界锁定 不断的收缩左边
                 left = mid + 1
             } else if nums[mid] < target {
                 left = mid + 1
@@ -76,22 +84,13 @@ class Solution_34 {
         }
         
         /*
-           1 2 2 3
-         target = 2  就是合理情况
-         
-         target = 0  就是越界情况   right 会有负数情况   left > right  也就是  left - 1 = right
-         边界情况
-         left 一直在1
-         ....
-         right 来到了1
-         right下一次来到了 left的左右   打破了边界  left <= right
+         while循环结束的时候, left = right + 1 也就是 right = left - 1
+         如果使用left判断, target可能是nums[left], 要判断left是否越界
+         如果使用right判断, target可能是nums[right+1], 要判断right+1是否越界
         */
-    
         if right < 0 || nums[right] != target {
             return -1
         }
         return right
     }
-    
-    
 }

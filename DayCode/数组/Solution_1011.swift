@@ -23,7 +23,8 @@
 // 1011. 在 D 天内送达包裹的能力
 class Solution_1011 {
     func shipWithinDays(_ weights: [Int], _ days: Int) -> Int {
-        
+        // 最大运力保证刚好一次性运完所有包裹   最大值就是超级大船
+        // 包裹不能拆开运所以至少保证载重能承载任意一个包裹； 最小值就是每天一条船  
         var leftvalue = 0
         var maxvalue = 0
         for i in 0..<weights.count {

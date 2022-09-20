@@ -84,14 +84,56 @@ class ViewController: UIViewController {
     }
     
     
-    // MARK: -  测试链表
+    // MARK: -  测试数组
     func testArray() {
-        test5()
+        //test5()
+        //test34()
+        //test54()
+        //test523()
+        //test76()
+        test567()
     }
     
     func test5() {
         let s = "babad"
         let t = Solution_5().longestPalindrome(s)
+    }
+    
+    func test34() {
+        let nums = [2,3,3,3,5,7]
+        let s = Solution_34()
+        let t = s.searchRange(nums, 1)
+    }
+    
+    
+    func test54() {
+        let matrix = [[1,2,3],[4,5,6],[7,8,9]]
+        var t = Solution_54().spiralOrder(matrix)
+        print(t)
+    }
+    
+    func test523() {
+        let nums = [23,2,4,6,7]
+        let k = 6
+        var t = Solution_523().checkSubarraySum(nums, 6)
+        
+    }
+    
+    
+    func test76() {
+        let s = "a"
+        let t = "b"
+        let res = Solution_76().minWindow(s, t)
+        print(res)
+    }
+    
+    func test567() {
+ 
+        let s1 = "abcdxabcde"
+        let s2 = "abcdeabcdx"
+        
+        let res = Solution_567().checkInclusion(s1, s2)
+        
     }
     
     // MARK: -  测试链表

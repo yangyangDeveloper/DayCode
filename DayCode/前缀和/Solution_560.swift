@@ -5,6 +5,11 @@
 //  Created by zhangyangyang on 2022/9/17.
 //
 
+/*
+ 
+   考察点： 前缀和 和 hash的配合使用
+ 
+ */
 // 560. 和为 K 的子数组
 class Solution_560 {
     // 暴力穷举
