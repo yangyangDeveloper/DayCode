@@ -68,6 +68,7 @@
 		A475877928D9F220007E683F /* 滑动窗口.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475877828D9F220007E683F /* 滑动窗口.swift */; };
 		A475877B28D9F938007E683F /* Solution_76.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475877A28D9F938007E683F /* Solution_76.swift */; };
 		A475877D28DA0D9A007E683F /* Solution_567.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475877C28DA0D9A007E683F /* Solution_567.swift */; };
+		A475877F28DAA1CA007E683F /* Solution_438.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475877E28DAA1CA007E683F /* Solution_438.swift */; };
 		A49B0B8D28A5EC7B003F9DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B0B8C28A5EC7B003F9DC1 /* AppDelegate.swift */; };
 		A49B0B8F28A5EC7B003F9DC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B0B8E28A5EC7B003F9DC1 /* SceneDelegate.swift */; };
 		A49B0B9128A5EC7B003F9DC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B0B9028A5EC7B003F9DC1 /* ViewController.swift */; };
@@ -179,6 +180,7 @@
 		A475877828D9F220007E683F /* 滑动窗口.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "滑动窗口.swift"; sourceTree = "<group>"; };
 		A475877A28D9F938007E683F /* Solution_76.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_76.swift; sourceTree = "<group>"; };
 		A475877C28DA0D9A007E683F /* Solution_567.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_567.swift; sourceTree = "<group>"; };
+		A475877E28DAA1CA007E683F /* Solution_438.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_438.swift; sourceTree = "<group>"; };
 		A49B0B8928A5EC7B003F9DC1 /* DayCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49B0B8C28A5EC7B003F9DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A49B0B8E28A5EC7B003F9DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -373,19 +375,19 @@
 		A49B0B8B28A5EC7B003F9DC1 /* DayCode */ = {
 			isa = PBXGroup;
 			children = (
-				A49B0BA028A5EC8B003F9DC1 /* 数组 */,
-				A49B0BAB28A5EC9B003F9DC1 /* 链表 */,
-				A45DAE5728D574E6001BAC30 /* 前缀和 */,
-				A45DAE4F28D43486001BAC30 /* 背包 */,
-				A45DAE3728D1D890001BAC30 /* 贪心 */,
-				A460BC2C28D02DE500B8DB24 /* 回溯 */,
-				A41A4E6428C06F2F00B7AB96 /* 二分查找 */,
 				A41A4E6128C06DE900B7AB96 /* 剑指Offer II */,
 				A41A4E5A28C0637900B7AB96 /* 剑指Offer */,
-				A41DCF4A28BF85F900FB6012 /* 哈希 */,
-				A49B0BB628A5ECA0003F9DC1 /* 二叉树 */,
+				A49B0BAB28A5EC9B003F9DC1 /* 链表 */,
+				A49B0BA028A5EC8B003F9DC1 /* 数组 */,
+				A45DAE5728D574E6001BAC30 /* 前缀和 */,
+				A41A4E6428C06F2F00B7AB96 /* 二分查找 */,
 				A49B0BA828A5EC96003F9DC1 /* 滚动窗口 */,
+				A49B0BB628A5ECA0003F9DC1 /* 二叉树 */,
+				A41DCF4A28BF85F900FB6012 /* 哈希 */,
+				A460BC2C28D02DE500B8DB24 /* 回溯 */,
+				A45DAE3728D1D890001BAC30 /* 贪心 */,
 				A49B0BA528A5EC92003F9DC1 /* 动态规划 */,
+				A45DAE4F28D43486001BAC30 /* 背包 */,
 				A49B0B8C28A5EC7B003F9DC1 /* AppDelegate.swift */,
 				A49B0B8E28A5EC7B003F9DC1 /* SceneDelegate.swift */,
 				A49B0B9028A5EC7B003F9DC1 /* ViewController.swift */,
@@ -437,9 +439,10 @@
 		A49B0BA828A5EC96003F9DC1 /* 滚动窗口 */ = {
 			isa = PBXGroup;
 			children = (
-				A49B0BA928A5EC96003F9DC1 /* Solution_3.swift */,
 				A475877A28D9F938007E683F /* Solution_76.swift */,
 				A475877C28DA0D9A007E683F /* Solution_567.swift */,
+				A475877E28DAA1CA007E683F /* Solution_438.swift */,
+				A49B0BA928A5EC96003F9DC1 /* Solution_3.swift */,
 				A475877828D9F220007E683F /* 滑动窗口.swift */,
 			);
 			path = "滚动窗口";
@@ -603,6 +606,7 @@
 				A4B1C26128C24AFE00609C47 /* So18.swift in Sources */,
 				A460BC3228D06E8A00B8DB24 /* Solution_39.swift in Sources */,
 				A49B0BB228A5EC9B003F9DC1 /* Solution_203.swift in Sources */,
+				A475877F28DAA1CA007E683F /* Solution_438.swift in Sources */,
 				A4B1C25928C2465500609C47 /* So6.swift in Sources */,
 				A460BC3828D0989800B8DB24 /* Solution_131.swift in Sources */,
 				A475876D28D97EBA007E683F /* Solution_1011.swift in Sources */,
