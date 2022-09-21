@@ -6,16 +6,16 @@
 //
 
 /*
- 
-   考察点： 链表找中心点的技巧
-   是个固定模版
+   考察点： 双指针在链表中的技巧 -> 快慢指针找链表中心点
+   思想： fast走2步  slow走1步   偶数链表 fast.next为空 slow在 中间     奇数链表 fast为nil  slow指向中间的右边
+   模版
    while fast != nil && fast?.next != nil  {
       fast = fast?.next?.next
       slow = slow?.next
    }
-    0 1 2 3 4  返回2
-    0 1 2 3    返回2
- */
+    0 1 2 3 4   链表中心点只有2   返回2
+    0 1 2 3     链表中心点右 1 2  但是返回2
+*/
 
 // 876. 找中间结点
 class Solution_876 {

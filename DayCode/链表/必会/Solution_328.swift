@@ -5,6 +5,52 @@
 //  Created by zhangyangyang on 2022/8/26.
 //
 
+
+/*
+    考察点：双指针在链表中的技巧 -> 分隔链表
+
+    思路：原链表1分为2  拆分成l1和l2  拆分规则可以是奇偶 可以是大于某个数值
+    然后 p1在l1上游走 p2在l2上游走  p在原本的链表上游走
+    最后把两个链表p1和p2拼接在一起
+   
+    模版：
+    while cur != nil {
+         // 是奇数
+         if isodd {
+             odd.next = cur
+             odd = odd.next!
+         } else { //偶数
+             even.next = cur
+             even = even.next!
+         }
+         cur = cur?.next
+         isodd = !isodd
+     }
+    最后记得拼接
+    odd?.next = eventHead
+    event?.next = nil
+ 
+    
+    分割链表  从里面分拣 然后合并  只是分拣条件不同
+    cur.val < x {
+        挂到小链表后面
+    }else {
+        挂到大链表后面
+    }
+ 
+    奇偶链表  从里面分拣 然后合并
+    if 是奇数 {
+       挂到奇数链表后面
+    }else {
+       挂到偶数链表后面
+    }
+
+ 类似题目：
+ leetcode 86、 分隔链表
+ leetcode 328、奇偶链表
+*/
+
+
 /*
   考察的是 拆分2个链表 然后合并
   leetcode 86题 是一个套路 只是比较的方式不一样

@@ -7,30 +7,37 @@
 
 
 /*
-   考察点： 查找单链表的倒数第k个节点的技巧
-   有几个边界需要想清楚
-   倒数第k个   k - n - 1   k - n   各自的意思
+   考察点： 双指针在链表中的技巧 -> 查找单链表的倒数第k个节点的技巧
+ 
+   思想： p1先走k步   然后head位置new一个p2  接着两者再一起走n-k步  p1就指向了nil  p2指向了倒数第k个节点
+   这属于一个技巧吧
    
-   1->2->3->4->nil
-   假设 n = 4个节点  k = 1  删除到底第k个节点
-   1、 p1 移动k位   也就是1次  来到 2
-   2、 设置 p2 = 1   p1 p2 再移动 n - k(也就是3)  p1 就来到了 nil  p2就来到了倒数第k元素
+    模版：
+    寻找倒数第k个节点
+     var p1 = head
+     for i in 0..<n {
+         p1 = p1?.next
+     }
+     
+     var p2 = head
+     while p1 != nil {
+         p1 = p1?.next
+         p2 = p2?.next
+     }
+     return p2
    
-   继续往下看
-   正常的需要 遍历一遍 得到长度 n   然后在for一次 来到 n - k - 1 才找到 倒数第k个节点
-   而这里有一个技巧  只需要一次遍历
-
-   ListNode p1 = head;
-    // p1 先走 k 步
-    for (int i = 0; i < k; i++) {
-        p1 = p1.next;
-    }
-    ListNode p2 = head;
-    // p1 和 p2 同时走 n - k 步
-    while (p1 != null) {
-        p2 = p2.next;
-        p1 = p1.next;
-    }
+   
+   本题目是让删除倒数第k个节点
+   可以拆分为：
+    1 找到倒数第k个节点的前驱 也就是k+1 (注意是倒数，所以k+1 是前驱  不要去找k - 1)
+    2、通过前驱x.next = x.next.next  完成删除操作
+    
+     var dumpty = ListNode(-1)
+     dumpty.next = head
+     // 找到倒数第k个节点的前驱 也就是 n + 1
+     var x = findEnd(dumpty, n + 1)
+     x?.next = x?.next?.next
+     return dumpty.next
 */
 
 // 19. 删除链表的倒数第 N 个结点
@@ -63,7 +70,6 @@ class Solution_19 {
         return p2
     }
     
-
     // 1、 求链表长度
     // 2、 找到删除点之前的点   length - n - 1 就是该节点
     // 3、 考虑首节点 需要临时节点  length = n

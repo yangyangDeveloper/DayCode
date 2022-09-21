@@ -6,13 +6,18 @@
 //
 
 /*
-    考察点：判断单链表是否有环技巧
-    有固定模版
- while fast != nil && fast?.next != nil  {
-     fast = fast?.next?.next
-     slow = slow?.next
- }
- */
+    考察点： 双指针在链表中的技巧 -> 判断单链表是否有环技巧
+
+    模版
+    while fast != nil && fast?.next != nil  {
+        fast = fast?.next?.next
+        slow = slow?.next
+         // 双指针相遇 说明有环
+        if slow === fast {
+             return true
+        }
+    }
+*/
 
 // 环形链表
 class Solution_141 {
@@ -24,6 +29,7 @@ class Solution_141 {
         while fast != nil && fast?.next != nil {
             slow = slow?.next
             fast = fast?.next?.next
+            // 双指针相遇 说明有环
             if slow === fast {
                 return true
             }

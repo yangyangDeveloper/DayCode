@@ -6,7 +6,7 @@
 //
 
 /*
-    算是两两交换吧  主要是要记录 subhead
+    考察点：算是两两交换吧  主要是要记录 subhead
     1、 subhead的概念   先记录subhead
     2、 node1 和 node2  的变化   node2.next = node1  node1.next = subhead
  */
