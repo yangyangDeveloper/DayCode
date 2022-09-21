@@ -6,23 +6,35 @@
 //
 
 /*
-   考察点：  二分查找模版的通用写法
- 
-   1、 找一个就返回   1 2 3 4 5  找到一个2就返回
-   2、 存在多个2的找左边界   1 2 2 2 2 5  找2的左边界
-   3、 存在多个2的找右边界   1 2 2 2 2 5  找2的右边界
-    
- */
+    考察点：  二分查找模版的通用写法
+
+    nums = [ 1 2 2 2 5 ]   target 不论是谁
+    查找的最终结果 都在 【0，nums.count】 之间
+
+    一、极端情况
+    nums = [ 1 2 2 2 5 ] target = 0
+    res = 0 代表nums都比target大  有0个元素比 target小
+
+    nums = [ 1 2 2 2 5 ] target = 8
+    res = 5  说明nums都比target小 有5个元素比 target大
+
+    二、合理情况
+    nums = [ 1 2 2 2 5 ] target = 2  寻找target 在nums中左边界
+    res = 1 代表nums中2的最左侧边界是1  也可以理解为nums中有1个数字比2小
+
+    nums = [ 1 2 2 2 5 ] target = 2  寻找target 在nums中右边界
+    res = 3 代表nums中2的最右侧边界是3
+
+    类似题目：
+    704. 二分查找
+    34. 在排序数组中查找元素的第一个和最后一个位置
+    剑指 Offer 53 - I. 在排序数组中查找数字 I
+*/
 
 class Solution_704 {
     /*
       1、有序
       2、分界 mid = left + (right -left) // 防止溢出
-      3、区间选择   while (left <= right)
-          1、mid值 > target  target 就在左区间 那么 [left mid-1]
-          2、mid值 < target  target 就在右区间 那么 [mid+1, right]
-          3、mid值 = target   return mid
-          否则 return - 1
     */
     func search(_ nums: [Int], _ target: Int) -> Int {
         var left = 0

@@ -6,13 +6,31 @@
 //
 
 /*
-    考察点： 二分查找的模版
+    考察点： 二分查找模版的 生活应用
+ 
+    二分查找基础模版 + 打补丁 + （left right supermid）
+ 
+    生活例子中这几个值需要我们自己确定值
+    left
+    right
+    mid
+ 
+    这列题目 通常 target 是别人给的 限制时间
+    然后 left  rihgt 需要我么结合场景去寻找 最小值 和 最大值
+    mid 是我们使用 left + (right - left) / 2   在传递给一个函数 计算出来一个 supermid
+    supermid 和 target 进行对比
     
-    取中间数 然后计算出需要的时间 和  h 比较
-   1、 给你一个速度 求吃完香蕉需要的时间
-   2、 拿时间和 h 对比   如果慢了 就提高速度  如果快了 就降低速度   如果等于 也尝试降低速度 可能还有最优化
+    本题：
+    left：  最慢速度 1次1根
+    right： 最大速度 最大的香蕉堆
+    mid：   用选的速度 交给一个函数 得到 吃完所有香蕉需要的时间  supermid  然后和 target对比
     
+    supermid > target  吃的太慢
+    supermid = target  还有没有最优解
+    supermid < target  吃的太快
+  
  */
+
 // 875. 爱吃香蕉的珂珂
 class Solution_875 {
     

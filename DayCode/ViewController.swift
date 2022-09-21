@@ -89,11 +89,6 @@ extension ViewController {
         //test54()
         //test523()
     }
-
-    func test5() {
-        let s = "babad"
-        let t = Solution_5().longestPalindrome(s)
-    }
     
     func test34() {
         let nums = [2,3,3,3,5,7]
@@ -106,6 +101,33 @@ extension ViewController {
         let matrix = [[1,2,3],[4,5,6],[7,8,9]]
         var t = Solution_54().spiralOrder(matrix)
         print(t)
+    }
+    
+    // 快慢指针
+    func test26() {
+        
+    }
+    
+    func test27() {
+        
+    }
+    
+    func test283() {
+        
+    }
+    
+    // 左右指针
+    func test167() {
+        
+    }
+    
+    func test344() {
+        
+    }
+    
+    func test5() {
+        let s = "babad"
+        let t = Solution_5().longestPalindrome(s)
     }
 }
 

@@ -5,20 +5,36 @@
 //  Created by zhangyangyang on 2022/9/20.
 //
 
+
 /*
+    考察点： 二分查找模版的 生活应用
+    
+    二分查找基础模版 + 打补丁 + （left right supermid）
  
-   考察点 二分查找模版 里面的找最左侧边界
-   只不过 mid 不是数字了 需要我们自己通过一个函数 计算出来
-   left 和 right 也需要我们计算出来 不如以前的 [1 2 3 4 5] 让你找3了
-   mid 需要我们通过一个函数计算出来   而target 是人家的限制条件
-   通过吃香蕉 或者 船运力 来计算出来mid  进行对比
-   
-   类似题目：
-   875
-   1011
-   剑指 Offer II 073. 狒狒吃香蕉
+    生活例子中这几个值需要我们自己确定值
+    left
+    right
+    mid
  
- */
+    这列题目 通常 target 是别人给的 限制时间
+    然后 left  rihgt 需要我么结合场景去寻找 最小值 和 最大值
+    mid 是我们使用 left + (right - left) / 2   在传递给一个函数 计算出来一个 supermid
+    supermid 和 target 进行对比
+    
+    本题：
+    left：  最小运力是一堆货物里面的最大值   最小值就是每天一条船
+    right： 最大运输能力应该是一次性运完     最大值就是超级大船
+    mid：   用选的运力 交给一个函数 得到 运完所有货物的时间  supermid  然后和 target对比
+    
+    supermid > target  运的太慢
+    supermid = target  还有没有最优解
+    supermid < target  云的太快
+ 
+    类似题目：
+    875
+    1011
+    剑指 Offer II 073. 狒狒吃香蕉
+*/
 
 // 1011. 在 D 天内送达包裹的能力
 class Solution_1011 {
