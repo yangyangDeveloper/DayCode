@@ -36,7 +36,8 @@ class ViewController: UIViewController {
         // testLikedList()
         // testArray()
         // testPreSum()
-         testWindows()
+        // testWindows()
+        testArraySort()
     }
     
     // 临时代码
@@ -134,6 +135,19 @@ extension ViewController {
 // MARK: -  数组排序
 extension ViewController {
     
+    func testArraySort() {
+        test912()
+    }
+    
+    // 归并排序
+    func test912() {
+        var nums = [5,2,3,1]
+        //var res = Solution_912().sortArray(nums)
+        
+        var res = Solution_912().merge(&nums, 0, 1, 3)
+        
+        
+    }
     // 冒泡排序
     func maopaoSort() {
         let sort = Solution_Sort()

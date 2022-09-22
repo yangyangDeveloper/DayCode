@@ -5,6 +5,20 @@
 //  Created by zhangyangyang on 2022/9/14.
 //
 
+
+/*
+   考察点： 排列 有重复元素不可复选的框架
+   思路： 使用 2个剪支逻辑
+    if  used[i] {
+        continue
+    }
+    
+    if i > 0 && nums[i] = nums[i - 1] && !used[i - 1] {
+        continue
+    }
+*/
+
+
 // 47. 全排列 II
 class Solution_47 {
 

@@ -5,7 +5,12 @@
 //  Created by zhangyangyang on 2022/9/14.
 //
 
-import Foundation
+
+/*
+   考察点： 子集 有重复元素不可复选的框架
+   思路： 使用 startindex = i + 1  不能满足去除重复   这里需要 nums[i] == nums[i - 1] 来去处重复选择
+*/
+
 // 90. 子集 II
 class Solution_90 {
     /*

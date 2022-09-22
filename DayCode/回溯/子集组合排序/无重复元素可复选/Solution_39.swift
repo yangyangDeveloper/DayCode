@@ -5,7 +5,11 @@
 //  Created by zhangyangyang on 2022/9/13.
 //
 
-import Foundation
+/*
+   考察点： 组合 无重复元素可复选的框架
+   思路： 排列组合子集里最简单的一种形式， 直接 starindex 传递时候 不要 + 1   就可以复选了
+*/
+
 // 39. 组合总和
 class Solution_39 {
     /*

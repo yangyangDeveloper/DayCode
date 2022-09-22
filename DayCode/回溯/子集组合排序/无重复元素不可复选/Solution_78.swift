@@ -5,7 +5,11 @@
 //  Created by zhangyangyang on 2022/9/14.
 //
 
-import Foundation
+/*
+   考察点： 子集 无重复元素不可复选的框架
+   思路： for 循环是从 startindex 开始的  每次传递参数 i + 1  就天然去重了
+*/
+
 // 78. 子集
 class Solution_78 {
     /*

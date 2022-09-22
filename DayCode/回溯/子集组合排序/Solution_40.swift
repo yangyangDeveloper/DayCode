@@ -5,6 +5,13 @@
 //  Created by zhangyangyang on 2022/9/13.
 //
 
+
+/*
+   考察点： 组合 无重复元素不可复选的框架  稍微修改一下base case 
+   思路： for 循环是从 startindex 开始的  每次传递参数 i + 1  就天然去重了
+   
+*/
+
 // 40. 组合总和 II
 import Foundation
 class Solution_40 {
