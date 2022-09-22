@@ -18,26 +18,57 @@ class Solution_46 {
      输入：nums = [1,2,3]
      输出：[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
      */
+//
+//    func permute(_ nums: [Int]) -> [[Int]] {
+//        var res = [[Int]]()
+//        var path = [Int]()
+//        func backtrace() {
+//            if path.count == nums.count {
+//                res.append(Array(path))
+//            }
+//
+//            for i in 0 ..< nums.count {
+//                // 每向下递推一层就是在「可选元素列表」中选择一个「元素」加入到「当前状态」
+//                if path.contains(nums[i]) {
+//                    continue  // 从当前路径中没有出现的数字中选择
+//                }
+//                path.append(nums[i])
+//                backtrace()
+//                path.removeLast()
+//            }
+//        }
+//        backtrace()
+//        return res
+//    }
+//
+     
     
-    func permute(_ nums: [Int]) -> [[Int]] {
-        var res = [[Int]]()
-        var path = [Int]()
-        func backtrace() {
-            if path.count == nums.count {
-                res.append(Array(path))
-            }
-            
-            for i in 0 ..< nums.count {
-                // 每向下递推一层就是在「可选元素列表」中选择一个「元素」加入到「当前状态」
-                if path.contains(nums[i]) {
-                    continue  // 从当前路径中没有出现的数字中选择
-                }
-                path.append(nums[i])
-                backtrace()
-                path.removeLast()
-            }
-        }
-        backtrace()
-        return res
-    }
+     // 模版题解
+     // 无重复元素 不可复选 全排列  used
+
+     var used = [Bool]()
+     var res = [[Int]]()
+     var path = [Int]()
+     func permute(_ nums: [Int]) -> [[Int]] {
+         used = [Bool](repeating:false, count: nums.count)
+         backtrace(nums)
+         return res
+     }
+
+     func backtrace(_ nums: [Int]) {
+         if path.count == nums.count {
+             res.append(path)
+         }
+     
+         for i in 0..<nums.count {
+             if used[i] {
+                 continue
+             }
+             used[i] = true
+             path.append(nums[i])
+             backtrace(nums)
+             path.removeLast()
+             used[i] = false
+         }
+     }
 }

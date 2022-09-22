@@ -37,7 +37,8 @@ class ViewController: UIViewController {
         // testArray()
         // testPreSum()
         // testWindows()
-        testArraySort()
+        //testArraySort()
+         testpailie()
     }
     
     // 临时代码
@@ -59,13 +60,7 @@ class ViewController: UIViewController {
         
     }
     
-    func test77() {
-       // var t = Solution_77().combine(4, 2)
-        var str:String = "hello"
-        // 把字符串转为字符数组以便于通过索引访问和取子串
-        let s = Array(str)
-        let substring = String(s[0 ... 3])
-    }
+
     
     func test106() {
         let inorder = [9,3,15,20,7]
@@ -307,9 +302,26 @@ extension ViewController {
 }
 
 
-// MARK: -  排列组合系列
+// MARK: -  排列组合子集系列
 extension ViewController {
+    func testpailie() {
+        test77()
+    }
     
+//    func test77() {
+//       // var t = Solution_77().combine(4, 2)
+//        var str:String = "hello"
+//        // 把字符串转为字符数组以便于通过索引访问和取子串
+//        let s = Array(str)
+//        let substring = String(s[0 ... 3])
+//    }
+    
+    func test77() {        
+        let n = 4
+        let k = 2
+        let t = Solution_77().combine(4, 2)
+        
+    }
     
 }
 
