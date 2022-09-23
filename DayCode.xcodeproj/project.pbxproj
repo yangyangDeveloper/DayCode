@@ -27,6 +27,13 @@
 		A41DCF4728BF021500FB6012 /* Solution_148.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF4628BF021500FB6012 /* Solution_148.swift */; };
 		A41DCF4928BF270400FB6012 /* Solution_Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF4828BF270400FB6012 /* Solution_Sort.swift */; };
 		A41DCF4C28BF861400FB6012 /* Solution_offer50.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF4B28BF861400FB6012 /* Solution_offer50.swift */; };
+		A4253F8628DD580C00781D91 /* Solution_111.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4253F8528DD580C00781D91 /* Solution_111.swift */; };
+		A4253F8828DD647100781D91 /* Solution_752.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4253F8728DD647100781D91 /* Solution_752.swift */; };
+		A4253F8A28DD92E400781D91 /* Solution_509.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4253F8928DD92E400781D91 /* Solution_509.swift */; };
+		A4253F8C28DD9F1C00781D91 /* 动态规划.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4253F8B28DD9F1C00781D91 /* 动态规划.swift */; };
+		A4253F8E28DDA37000781D91 /* Solution_72.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4253F8D28DDA37000781D91 /* Solution_72.swift */; };
+		A4253F9028DDB01700781D91 /* Solution_300.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4253F8F28DDB01700781D91 /* Solution_300.swift */; };
+		A4253F9328DDFB8F00781D91 /* Solution_931.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4253F9228DDFB8F00781D91 /* Solution_931.swift */; };
 		A43A115B28C894E20011A530 /* So48.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A115A28C894E20011A530 /* So48.swift */; };
 		A45DAE3028D17D75001BAC30 /* Solution_47.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE2F28D17D75001BAC30 /* Solution_47.swift */; };
 		A45DAE3228D17E60001BAC30 /* Solution_78.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE3128D17E60001BAC30 /* Solution_78.swift */; };
@@ -151,6 +158,13 @@
 		A41DCF4628BF021500FB6012 /* Solution_148.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_148.swift; sourceTree = "<group>"; };
 		A41DCF4828BF270400FB6012 /* Solution_Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_Sort.swift; sourceTree = "<group>"; };
 		A41DCF4B28BF861400FB6012 /* Solution_offer50.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_offer50.swift; sourceTree = "<group>"; };
+		A4253F8528DD580C00781D91 /* Solution_111.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_111.swift; sourceTree = "<group>"; };
+		A4253F8728DD647100781D91 /* Solution_752.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_752.swift; sourceTree = "<group>"; };
+		A4253F8928DD92E400781D91 /* Solution_509.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_509.swift; sourceTree = "<group>"; };
+		A4253F8B28DD9F1C00781D91 /* 动态规划.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "动态规划.swift"; sourceTree = "<group>"; };
+		A4253F8D28DDA37000781D91 /* Solution_72.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_72.swift; sourceTree = "<group>"; };
+		A4253F8F28DDB01700781D91 /* Solution_300.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_300.swift; sourceTree = "<group>"; };
+		A4253F9228DDFB8F00781D91 /* Solution_931.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_931.swift; sourceTree = "<group>"; };
 		A43A115A28C894E20011A530 /* So48.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = So48.swift; sourceTree = "<group>"; };
 		A45DAE2F28D17D75001BAC30 /* Solution_47.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_47.swift; sourceTree = "<group>"; };
 		A45DAE3128D17E60001BAC30 /* Solution_78.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_78.swift; sourceTree = "<group>"; };
@@ -316,6 +330,25 @@
 				A41DCF4B28BF861400FB6012 /* Solution_offer50.swift */,
 			);
 			path = "哈希";
+			sourceTree = "<group>";
+		};
+		A4253F8428DD57F300781D91 /* BFS */ = {
+			isa = PBXGroup;
+			children = (
+				A4253F8528DD580C00781D91 /* Solution_111.swift */,
+				A4253F8728DD647100781D91 /* Solution_752.swift */,
+			);
+			path = BFS;
+			sourceTree = "<group>";
+		};
+		A4253F9128DDB81B00781D91 /* 子序列 */ = {
+			isa = PBXGroup;
+			children = (
+				A4253F8F28DDB01700781D91 /* Solution_300.swift */,
+				A49B0BA628A5EC92003F9DC1 /* Solution_53.swift */,
+				A4253F9228DDFB8F00781D91 /* Solution_931.swift */,
+			);
+			path = "子序列";
 			sourceTree = "<group>";
 		};
 		A45DAE3728D1D890001BAC30 /* 贪心 */ = {
@@ -498,6 +531,7 @@
 		A49B0B8B28A5EC7B003F9DC1 /* DayCode */ = {
 			isa = PBXGroup;
 			children = (
+				A4253F8428DD57F300781D91 /* BFS */,
 				A475878228DABAD2007E683F /* 数组排序 */,
 				A41A4E6128C06DE900B7AB96 /* 剑指Offer II */,
 				A41A4E5A28C0637900B7AB96 /* 剑指Offer */,
@@ -543,9 +577,12 @@
 		A49B0BA528A5EC92003F9DC1 /* 动态规划 */ = {
 			isa = PBXGroup;
 			children = (
-				A4CEB4B728C4DA9D002037D5 /* Solution_70.swift */,
-				A49B0BA628A5EC92003F9DC1 /* Solution_53.swift */,
+				A4253F9128DDB81B00781D91 /* 子序列 */,
+				A4253F8B28DD9F1C00781D91 /* 动态规划.swift */,
+				A4253F8928DD92E400781D91 /* Solution_509.swift */,
 				A45DAE3C28D22735001BAC30 /* Solution_322.swift */,
+				A4253F8D28DDA37000781D91 /* Solution_72.swift */,
+				A4CEB4B728C4DA9D002037D5 /* Solution_70.swift */,
 				A45DAE4928D33D9B001BAC30 /* Solution_121.swift */,
 				A45DAE4B28D373BF001BAC30 /* Solution_122.swift */,
 				A45DAE4D28D4119C001BAC30 /* Solution_309.swift */,
@@ -683,10 +720,12 @@
 				A460BC3428D0788300B8DB24 /* Solution_40.swift in Sources */,
 				A4CEB4BA28C4E3B8002037D5 /* Solution_96.swift in Sources */,
 				A4B1C25728C2447800609C47 /* So50.swift in Sources */,
+				A4253F8E28DDA37000781D91 /* Solution_72.swift in Sources */,
 				A41A4E6328C06E2E00B7AB96 /* Sof72.swift in Sources */,
 				A45DAE5128D43498001BAC30 /* Solution_416.swift in Sources */,
 				A41DCF3928B9CCF500FB6012 /* Solution_19.swift in Sources */,
 				A475877928D9F220007E683F /* 滑动窗口.swift in Sources */,
+				A4253F8628DD580C00781D91 /* Solution_111.swift in Sources */,
 				A4B1C25D28C2489800609C47 /* So25.swift in Sources */,
 				A475878E28DB4298007E683F /* Solution_654.swift in Sources */,
 				A4EF360028C74A70006CFA25 /* Solution_235.swift in Sources */,
@@ -705,6 +744,7 @@
 				A45DAE3D28D22735001BAC30 /* Solution_322.swift in Sources */,
 				A475876128D8A997007E683F /* Solution_167.swift in Sources */,
 				A4C2430028C8433B00A56245 /* Solution_100.swift in Sources */,
+				A4253F8828DD647100781D91 /* Solution_752.swift in Sources */,
 				A41DCF3528B863A800FB6012 /* Solution_234.swift in Sources */,
 				A475877328D9BB0C007E683F /* Solution_303.swift in Sources */,
 				A45DAE5928D5750B001BAC30 /* Solution_560.swift in Sources */,
@@ -721,6 +761,7 @@
 				A401D7F728C444C80085EBB5 /* Solution_145.swift in Sources */,
 				A4EF360628C74B34006CFA25 /* So27.swift in Sources */,
 				A460BC3A28D0DC7600B8DB24 /* Solution_46.swift in Sources */,
+				A4253F9328DDFB8F00781D91 /* Solution_931.swift in Sources */,
 				A43A115B28C894E20011A530 /* So48.swift in Sources */,
 				A4B1C26128C24AFE00609C47 /* So18.swift in Sources */,
 				A4987CFF28DC84C90071A912 /* 子集组合排列.swift in Sources */,
@@ -733,6 +774,7 @@
 				A475876D28D97EBA007E683F /* Solution_1011.swift in Sources */,
 				A460BC3028D0695200B8DB24 /* Solution_17.swift in Sources */,
 				A475878C28DB19BA007E683F /* Solution_114.swift in Sources */,
+				A4253F8A28DD92E400781D91 /* Solution_509.swift in Sources */,
 				A4C242FC28C832B800A56245 /* So3.swift in Sources */,
 				A475876528D8AE8C007E683F /* Solution_5.swift in Sources */,
 				A475876728D95CC9007E683F /* Solution_34.swift in Sources */,
@@ -752,6 +794,7 @@
 				A49B6B0728C347F600537629 /* So32.swift in Sources */,
 				A41DCF4128BDB28200FB6012 /* Solution_86.swift in Sources */,
 				A475875928D89B16007E683F /* Solution_26.swift in Sources */,
+				A4253F8C28DD9F1C00781D91 /* 动态规划.swift in Sources */,
 				A4987CF928DC479D0071A912 /* Solution_912.swift in Sources */,
 				A475877128D9AC82007E683F /* Solution_54.swift in Sources */,
 				A49B0BA428A5EC8B003F9DC1 /* Solution_215.swift in Sources */,
@@ -790,6 +833,7 @@
 				A4EF35FC28C749EA006CFA25 /* Solution_617.swift in Sources */,
 				A49B0B8F28A5EC7B003F9DC1 /* SceneDelegate.swift in Sources */,
 				A45DAE5B28D57B18001BAC30 /* Solution_1.swift in Sources */,
+				A4253F9028DDB01700781D91 /* Solution_300.swift in Sources */,
 				A41DCF3728B878A700FB6012 /* Solution_328.swift in Sources */,
 				A49B0BB128A5EC9B003F9DC1 /* Solution_141.swift in Sources */,
 				A4CEB4B828C4DA9D002037D5 /* Solution_70.swift in Sources */,

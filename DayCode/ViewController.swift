@@ -38,7 +38,8 @@ class ViewController: UIViewController {
         // testPreSum()
         // testWindows()
         //testArraySort()
-         testpailie()
+        // testpailie()
+        testdp()
     }
     
     // 临时代码
@@ -286,12 +287,19 @@ extension ViewController {
 extension ViewController {
     
     func testdp() {
-        test121()
+        //test121()
+        test53()
     }
     
     func test121() {
         let num = [7,1,5,3,6,4]
         let n = Solution_121().maxProfit(num)
+    }
+    
+    func test53() {
+        let nums = [-2,1]
+        let t = Solution_53().maxSubArray5(nums)
+            
     }
 }
 
