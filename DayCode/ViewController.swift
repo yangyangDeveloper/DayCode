@@ -288,7 +288,9 @@ extension ViewController {
     
     func testdp() {
         //test121()
-        test53()
+        //test53()
+        //test712()
+        test516()
     }
     
     func test121() {
@@ -300,6 +302,19 @@ extension ViewController {
         let nums = [-2,1]
         let t = Solution_53().maxSubArray5(nums)
             
+    }
+    
+    func test712() {
+        let s1 = "qbdoebkmpnk"
+        let s2 = "vhzwzoougxe"
+        let t = Solution_712().minimumDeleteSum2(s1, s2)
+        
+    }
+    
+    func test516() {
+        let t = "bbbab"
+        let res = Solution_516().longestPalindromeSubseq(t)
+        
     }
 }
 
