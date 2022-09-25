@@ -103,65 +103,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FAFADE2E-34CA-4349-9080-557F2CEE637D"
+            uuid = "0EA6710B-E193-485B-B379-5F49FE34CBB5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DayCode/ViewController.swift"
+            filePath = "DayCode/&#x56de;&#x6eaf;/&#x5c9b;&#x5c7f;/Solution_200.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "316"
-            endingLineNumber = "316"
-            landmarkName = "test516()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6285CA05-8EE9-4FBD-86FC-275DA38A0E39"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DayCode/&#x52a8;&#x6001;&#x89c4;&#x5212;/&#x5b50;&#x5e8f;&#x5217;/Solution_516.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "longestPalindromeSubseq(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BA173FB9-3D2F-41A7-A51C-267B3D238E5A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DayCode/&#x52a8;&#x6001;&#x89c4;&#x5212;/&#x5b50;&#x5e8f;&#x5217;/Solution_516.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "longestPalindromeSubseq(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C5276E0A-127F-4E4F-8643-773CECF707A7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DayCode/&#x52a8;&#x6001;&#x89c4;&#x5212;/&#x5b50;&#x5e8f;&#x5217;/Solution_516.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "longestPalindromeSubseq(_:)"
-            landmarkType = "7">
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
