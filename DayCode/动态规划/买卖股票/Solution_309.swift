@@ -7,8 +7,44 @@
 
 import Foundation
 
-//
+/*
+   考察点：和122题一样 只需要考虑下i-2的问题
+   比 123 188 容易 不需要考虑k的影响
+ */
 class Solution_309 {
+    
+    
+    func maxProfit2(_ prices: [Int]) -> Int {
+        
+        let n = prices.count
+    
+        // 定义二维
+        var dp = [[Int]](repeating: [Int](repeating: 0, count: 2), count: prices.count)
+        
+        for i in 0..<n {
+            if i - 1 == -1 {
+                dp[i][0] = 0
+                dp[i][1] = -prices[i]
+                continue
+            }
+            
+            if i - 2 == -1 {
+                dp[i][0] = max(dp[i-1][0], dp[i-1][1] + prices[i])
+                dp[i][1] = max(dp[i-1][1], 0 - prices[i])
+                continue
+            }
+            
+            // 不持有   前一天就不持有  昨天持有今天卖了
+            dp[i][0] = max(dp[i-1][0], dp[i-1][1] + prices[i])
+            
+            // 持有    前一天就持有  或者 大前天买入 【买入 卖出 冷静区 买入 卖出】
+            dp[i][1] = max(dp[i-1][1], dp[i-2][0] - prices[i])
+        }
+        
+        return dp[n-1][0]
+    }
+    
+    
     // 两种状态  0未持有  1持有
     func maxProfit(_ prices: [Int]) -> Int {
         var dp1 = [Int](repeating: 0, count: 2)

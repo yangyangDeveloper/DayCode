@@ -76,6 +76,6 @@ class Solution_463 {
         // 遍历过
         grid[r][c] = 2
         
-        return dfs(&grid,r - 1, c)  +  dfs(&grid,r + 1, c) + dfs(&grid, r, c - 1) + dfs(&grid, r, c + 1)
+        return dfs2(&grid,r - 1, c)  +  dfs2(&grid,r + 1, c) + dfs2(&grid, r, c - 1) + dfs2(&grid, r, c + 1)
     }
 }
