@@ -41,7 +41,12 @@ class ViewController: UIViewController {
         // testpailie()
         // testdp()
         // testTX()
-        testSX()
+        
+        // 数学规律
+        //testSX()
+        
+        // 经典面试题
+        testMS()
     }
     
     // 临时代码
@@ -399,7 +404,7 @@ extension ViewController {
 }
 
 
-// MARK: -  动态规划
+// MARK: -  数学规律
 
 extension ViewController {
     func testSX() {
@@ -411,5 +416,18 @@ extension ViewController {
         let t = Solution_319().bulbSwitch(6)
         
         
+    }
+}
+
+// MARK: -  经典面试
+extension ViewController {
+    func testMS() {
+        test43()
+    }
+    
+    func test43() {
+       let num1 = "0"
+       let num2 = "0"
+       let t = Solution_43().multiply(num1, num2)
     }
 }
