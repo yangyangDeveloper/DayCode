@@ -11,6 +11,17 @@
 		A414752328E15731001EC901 /* Solution_123.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414752228E15731001EC901 /* Solution_123.swift */; };
 		A414752528E15BE1001EC901 /* Solution_188.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414752428E15BE1001EC901 /* Solution_188.swift */; };
 		A414752728E167C6001EC901 /* Solution_714.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414752628E167C6001EC901 /* Solution_714.swift */; };
+		A414752A28E19063001EC901 /* Solution_198.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414752928E19063001EC901 /* Solution_198.swift */; };
+		A414752C28E19321001EC901 /* Solution_213.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414752B28E19321001EC901 /* Solution_213.swift */; };
+		A414752E28E197A7001EC901 /* Solution_337.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414752D28E197A7001EC901 /* Solution_337.swift */; };
+		A414753128E1AF40001EC901 /* Solution_253.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414753028E1AF40001EC901 /* Solution_253.swift */; };
+		A414753328E1B29A001EC901 /* Solution_252.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414753228E1B29A001EC901 /* Solution_252.swift */; };
+		A414753628E1DEBE001EC901 /* Solution_435.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414753528E1DEBE001EC901 /* Solution_435.swift */; };
+		A414753828E1E6CD001EC901 /* Solution_452.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414753728E1E6CD001EC901 /* Solution_452.swift */; };
+		A414753A28E1EACA001EC901 /* 区间.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414753928E1EACA001EC901 /* 区间.swift */; };
+		A414753C28E1ECC0001EC901 /* Solution_1288.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414753B28E1ECC0001EC901 /* Solution_1288.swift */; };
+		A414753E28E1F7FC001EC901 /* Solution_56.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414753D28E1F7FC001EC901 /* Solution_56.swift */; };
+		A414754028E1FDEA001EC901 /* Solution_986.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414753F28E1FDEA001EC901 /* Solution_986.swift */; };
 		A41A4E5C28C0639A00B7AB96 /* So61.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41A4E5B28C0639A00B7AB96 /* So61.swift */; };
 		A41A4E6028C06D4C00B7AB96 /* So9.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41A4E5F28C06D4C00B7AB96 /* So9.swift */; };
 		A41A4E6328C06E2E00B7AB96 /* Sof72.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41A4E6228C06E2E00B7AB96 /* Sof72.swift */; };
@@ -38,6 +49,7 @@
 		A4253F9028DDB01700781D91 /* Solution_300.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4253F8F28DDB01700781D91 /* Solution_300.swift */; };
 		A4253F9328DDFB8F00781D91 /* Solution_931.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4253F9228DDFB8F00781D91 /* Solution_931.swift */; };
 		A43A115B28C894E20011A530 /* So48.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A115A28C894E20011A530 /* So48.swift */; };
+		A441D83F28E29E1B00F5B99A /* Solution_45.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D83E28E29E1B00F5B99A /* Solution_45.swift */; };
 		A45DAE3028D17D75001BAC30 /* Solution_47.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE2F28D17D75001BAC30 /* Solution_47.swift */; };
 		A45DAE3228D17E60001BAC30 /* Solution_78.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE3128D17E60001BAC30 /* Solution_78.swift */; };
 		A45DAE3428D17EF4001BAC30 /* Solution_90.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE3328D17EF4001BAC30 /* Solution_90.swift */; };
@@ -162,6 +174,17 @@
 		A414752228E15731001EC901 /* Solution_123.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_123.swift; sourceTree = "<group>"; };
 		A414752428E15BE1001EC901 /* Solution_188.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_188.swift; sourceTree = "<group>"; };
 		A414752628E167C6001EC901 /* Solution_714.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_714.swift; sourceTree = "<group>"; };
+		A414752928E19063001EC901 /* Solution_198.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_198.swift; sourceTree = "<group>"; };
+		A414752B28E19321001EC901 /* Solution_213.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_213.swift; sourceTree = "<group>"; };
+		A414752D28E197A7001EC901 /* Solution_337.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_337.swift; sourceTree = "<group>"; };
+		A414753028E1AF40001EC901 /* Solution_253.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_253.swift; sourceTree = "<group>"; };
+		A414753228E1B29A001EC901 /* Solution_252.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_252.swift; sourceTree = "<group>"; };
+		A414753528E1DEBE001EC901 /* Solution_435.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_435.swift; sourceTree = "<group>"; };
+		A414753728E1E6CD001EC901 /* Solution_452.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_452.swift; sourceTree = "<group>"; };
+		A414753928E1EACA001EC901 /* 区间.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "区间.swift"; sourceTree = "<group>"; };
+		A414753B28E1ECC0001EC901 /* Solution_1288.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_1288.swift; sourceTree = "<group>"; };
+		A414753D28E1F7FC001EC901 /* Solution_56.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_56.swift; sourceTree = "<group>"; };
+		A414753F28E1FDEA001EC901 /* Solution_986.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_986.swift; sourceTree = "<group>"; };
 		A41A4E5B28C0639A00B7AB96 /* So61.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = So61.swift; sourceTree = "<group>"; };
 		A41A4E5F28C06D4C00B7AB96 /* So9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = So9.swift; sourceTree = "<group>"; };
 		A41A4E6228C06E2E00B7AB96 /* Sof72.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sof72.swift; sourceTree = "<group>"; };
@@ -189,6 +212,7 @@
 		A4253F8F28DDB01700781D91 /* Solution_300.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_300.swift; sourceTree = "<group>"; };
 		A4253F9228DDFB8F00781D91 /* Solution_931.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_931.swift; sourceTree = "<group>"; };
 		A43A115A28C894E20011A530 /* So48.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = So48.swift; sourceTree = "<group>"; };
+		A441D83E28E29E1B00F5B99A /* Solution_45.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_45.swift; sourceTree = "<group>"; };
 		A45DAE2F28D17D75001BAC30 /* Solution_47.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_47.swift; sourceTree = "<group>"; };
 		A45DAE3128D17E60001BAC30 /* Solution_78.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_78.swift; sourceTree = "<group>"; };
 		A45DAE3328D17EF4001BAC30 /* Solution_90.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_90.swift; sourceTree = "<group>"; };
@@ -334,6 +358,38 @@
 			path = "买卖股票";
 			sourceTree = "<group>";
 		};
+		A414752828E19049001EC901 /* 打家劫舍 */ = {
+			isa = PBXGroup;
+			children = (
+				A414752928E19063001EC901 /* Solution_198.swift */,
+				A414752B28E19321001EC901 /* Solution_213.swift */,
+				A414752D28E197A7001EC901 /* Solution_337.swift */,
+			);
+			path = "打家劫舍";
+			sourceTree = "<group>";
+		};
+		A414752F28E1ABF5001EC901 /* 会议室 */ = {
+			isa = PBXGroup;
+			children = (
+				A414753228E1B29A001EC901 /* Solution_252.swift */,
+				A414753028E1AF40001EC901 /* Solution_253.swift */,
+			);
+			path = "会议室";
+			sourceTree = "<group>";
+		};
+		A414753428E1B82C001EC901 /* 区间调度 */ = {
+			isa = PBXGroup;
+			children = (
+				A414753928E1EACA001EC901 /* 区间.swift */,
+				A414753528E1DEBE001EC901 /* Solution_435.swift */,
+				A414753728E1E6CD001EC901 /* Solution_452.swift */,
+				A414753B28E1ECC0001EC901 /* Solution_1288.swift */,
+				A414753D28E1F7FC001EC901 /* Solution_56.swift */,
+				A414753F28E1FDEA001EC901 /* Solution_986.swift */,
+			);
+			path = "区间调度";
+			sourceTree = "<group>";
+		};
 		A41A4E5A28C0637900B7AB96 /* 剑指Offer */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,11 +464,22 @@
 			path = "子序列";
 			sourceTree = "<group>";
 		};
+		A441D83D28E298F700F5B99A /* 跳跃游戏 */ = {
+			isa = PBXGroup;
+			children = (
+				A45DAE3A28D1E0E5001BAC30 /* Solution_55.swift */,
+				A441D83E28E29E1B00F5B99A /* Solution_45.swift */,
+			);
+			path = "跳跃游戏";
+			sourceTree = "<group>";
+		};
 		A45DAE3728D1D890001BAC30 /* 贪心 */ = {
 			isa = PBXGroup;
 			children = (
+				A414753428E1B82C001EC901 /* 区间调度 */,
+				A414752F28E1ABF5001EC901 /* 会议室 */,
 				A45DAE3828D1D8AE001BAC30 /* Solution_53_2.swift */,
-				A45DAE3A28D1E0E5001BAC30 /* Solution_55.swift */,
+				A441D83D28E298F700F5B99A /* 跳跃游戏 */,
 			);
 			path = "贪心";
 			sourceTree = "<group>";
@@ -689,6 +756,7 @@
 				A496084628DF40D300F31C7A /* 路径和 */,
 				A496084C28DF550800F31C7A /* 子数组 */,
 				A4253F9128DDB81B00781D91 /* 子序列 */,
+				A414752828E19049001EC901 /* 打家劫舍 */,
 				A414751F28E14E3A001EC901 /* 买卖股票 */,
 				A496084B28DF4B2500F31C7A /* 背包 */,
 				A4253F8928DD92E400781D91 /* Solution_509.swift */,
@@ -828,6 +896,7 @@
 				A460BC3428D0788300B8DB24 /* Solution_40.swift in Sources */,
 				A4CEB4BA28C4E3B8002037D5 /* Solution_96.swift in Sources */,
 				A4B1C25728C2447800609C47 /* So50.swift in Sources */,
+				A414753E28E1F7FC001EC901 /* Solution_56.swift in Sources */,
 				A4253F8E28DDA37000781D91 /* Solution_72.swift in Sources */,
 				A41A4E6328C06E2E00B7AB96 /* Sof72.swift in Sources */,
 				A45DAE5128D43498001BAC30 /* Solution_416.swift in Sources */,
@@ -836,19 +905,24 @@
 				A4253F8628DD580C00781D91 /* Solution_111.swift in Sources */,
 				A4B1C25D28C2489800609C47 /* So25.swift in Sources */,
 				A475878E28DB4298007E683F /* Solution_654.swift in Sources */,
+				A414753328E1B29A001EC901 /* Solution_252.swift in Sources */,
 				A4EF360028C74A70006CFA25 /* Solution_235.swift in Sources */,
 				A496085728E0907900F31C7A /* Solution_1020.swift in Sources */,
 				A41DCF3B28B9D48000FB6012 /* Solution_237.swift in Sources */,
 				A496083E28DEF45800F31C7A /* Solution_583.swift in Sources */,
 				A496084828DF444200F31C7A /* Solution_64.swift in Sources */,
 				A45DAE3928D1D8AE001BAC30 /* Solution_53_2.swift in Sources */,
+				A414753C28E1ECC0001EC901 /* Solution_1288.swift in Sources */,
 				A41DCF2F28B46A8D00FB6012 /* Solution_24.swift in Sources */,
+				A414753A28E1EACA001EC901 /* 区间.swift in Sources */,
 				A45DAE4C28D373BF001BAC30 /* Solution_122.swift in Sources */,
 				A475879A28DBFF34007E683F /* BST.swift in Sources */,
+				A414752A28E19063001EC901 /* Solution_198.swift in Sources */,
 				A41DCF3D28BB23E900FB6012 /* Solution_61.swift in Sources */,
 				A49B0BC028A5ECA0003F9DC1 /* Solution_144.swift in Sources */,
 				A475875D28D8A526007E683F /* Solution_283.swift in Sources */,
 				A49B0BC228A5ECA0003F9DC1 /* Solution_257.swift in Sources */,
+				A414752C28E19321001EC901 /* Solution_213.swift in Sources */,
 				A4B1C26328C24D0500609C47 /* So22.swift in Sources */,
 				A49B0BA728A5EC92003F9DC1 /* Solution_53.swift in Sources */,
 				A460BC2E28D02DF900B8DB24 /* Solution_77.swift in Sources */,
@@ -877,6 +951,7 @@
 				A4253F9328DDFB8F00781D91 /* Solution_931.swift in Sources */,
 				A43A115B28C894E20011A530 /* So48.swift in Sources */,
 				A4B1C26128C24AFE00609C47 /* So18.swift in Sources */,
+				A414753828E1E6CD001EC901 /* Solution_452.swift in Sources */,
 				A4987CFF28DC84C90071A912 /* 子集组合排列.swift in Sources */,
 				A460BC3228D06E8A00B8DB24 /* Solution_39.swift in Sources */,
 				A49B0BB228A5EC9B003F9DC1 /* Solution_203.swift in Sources */,
@@ -898,6 +973,7 @@
 				A414752528E15BE1001EC901 /* Solution_188.swift in Sources */,
 				A49B0B9128A5EC7B003F9DC1 /* ViewController.swift in Sources */,
 				A475879E28DC13F8007E683F /* Solution_701.swift in Sources */,
+				A414753128E1AF40001EC901 /* Solution_253.swift in Sources */,
 				A4C2430228C84B9A00A56245 /* Solution_572.swift in Sources */,
 				A41DCF4328BDB49600FB6012 /* Solution_83.swift in Sources */,
 				A496084E28DF552600F31C7A /* Solution_718.swift in Sources */,
@@ -936,9 +1012,11 @@
 				A49B0BAA28A5EC96003F9DC1 /* Solution_3.swift in Sources */,
 				A41DCF4528BDB64F00FB6012 /* Solution_82.swift in Sources */,
 				A475875728D85F80007E683F /* Solution_92.swift in Sources */,
+				A414754028E1FDEA001EC901 /* Solution_986.swift in Sources */,
 				A45DAE4A28D33D9B001BAC30 /* Solution_121.swift in Sources */,
 				A475876B28D974FA007E683F /* Solution_875.swift in Sources */,
 				A45DAE3028D17D75001BAC30 /* Solution_47.swift in Sources */,
+				A441D83F28E29E1B00F5B99A /* Solution_45.swift in Sources */,
 				A475875B28D8A0C2007E683F /* Solution_27.swift in Sources */,
 				A475877B28D9F938007E683F /* Solution_76.swift in Sources */,
 				A49B0BB528A5EC9B003F9DC1 /* Solution_160.swift in Sources */,
@@ -952,7 +1030,9 @@
 				A475876F28D9A6D5007E683F /* Solution_48.swift in Sources */,
 				A475877728D9C11F007E683F /* Solution_523.swift in Sources */,
 				A475878128DAB939007E683F /* 二分搜索.swift in Sources */,
+				A414752E28E197A7001EC901 /* Solution_337.swift in Sources */,
 				A49B0B8D28A5EC7B003F9DC1 /* AppDelegate.swift in Sources */,
+				A414753628E1DEBE001EC901 /* Solution_435.swift in Sources */,
 				A496085B28E09AEA00F31C7A /* Solution_695.swift in Sources */,
 				A496085D28E09D9C00F31C7A /* Solution_1905.swift in Sources */,
 				A475879C28DC1003007E683F /* Solution_450.swift in Sources */,

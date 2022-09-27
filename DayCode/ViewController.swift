@@ -39,7 +39,8 @@ class ViewController: UIViewController {
         // testWindows()
         //testArraySort()
         // testpailie()
-        testdp()
+        // testdp()
+        testTX()
     }
     
     // 临时代码
@@ -281,6 +282,35 @@ extension ViewController {
 // MARK: -  二叉树
 extension ViewController {
     
+}
+
+
+// MARK: -  贪心
+extension ViewController {
+    // 区间问题
+    func testTX() {
+        //test435()
+        //test1288()
+        test56()
+    }
+    
+    func test435() {
+        let t = [[1,2],[2,3],[3,4],[1,3]]
+        let res = Solution_435().eraseOverlapIntervals(t)
+        
+    }
+    
+    func test1288() {
+        let t = [[1,4],[2,3]]
+        let res = Solution_1288().removeCoveredIntervals(t)
+        
+    }
+    
+    
+    func test56() {
+        let t = [[1,3],[2,6],[8,10],[15,18]]
+        let res = Solution_56().merge(t)
+    }
 }
 
 // MARK: -  动态规划
