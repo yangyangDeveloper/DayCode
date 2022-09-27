@@ -84,6 +84,32 @@ class Solution_53 {
     }
     
     
+    // 滚动窗口解法
+    func maxSubArray5(_ nums: [Int]) -> Int {
+        if nums.count == 0 {
+            return 0
+        }
+        var maxSum = Int.min
+        var curSum = 0
+        var left = 0
+        var right = 0
+        while right < nums.count {
+            var c = nums[right]
+            right += 1
+            curSum += c
+            maxSum = max(maxSum, curSum)
+            // 搜索左侧窗口
+            while curSum < 0 {
+                var d = nums[left]
+                left += 1
+                curSum -= d
+            }
+        }
+    
+        return maxSum
+        
+    }
+    
     // 前缀和
     func maxSubArray4(_ nums: [Int]) -> Int {
 
@@ -100,29 +126,5 @@ class Solution_53 {
             }
         }
         return res
-    }
-    
-    // 滚动窗口解法
-    func maxSubArray5(_ nums: [Int]) -> Int {
-        var maxSum = Int.min
-        var curSum = 0
-        var left = 0
-        var right = 0
-        while right < nums.count {
-            var c = nums[right]
-            right += 1
-            curSum += c
-            // 搜索左侧窗口
-            while curSum < 0 {
-                var d = nums[left]
-                left += 1
-                curSum -= d
-            }
-            
-            maxSum = max(maxSum, curSum)
-        }
-    
-        return maxSum
-        
     }
 }

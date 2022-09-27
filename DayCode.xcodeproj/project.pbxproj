@@ -50,6 +50,11 @@
 		A4253F9328DDFB8F00781D91 /* Solution_931.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4253F9228DDFB8F00781D91 /* Solution_931.swift */; };
 		A43A115B28C894E20011A530 /* So48.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A115A28C894E20011A530 /* So48.swift */; };
 		A441D83F28E29E1B00F5B99A /* Solution_45.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D83E28E29E1B00F5B99A /* Solution_45.swift */; };
+		A441D84128E2D6CB00F5B99A /* Solution_20.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D84028E2D6CB00F5B99A /* Solution_20.swift */; };
+		A441D84428E2DB2200F5B99A /* Solution_921.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D84328E2DB2200F5B99A /* Solution_921.swift */; };
+		A441D84628E2DC5400F5B99A /* Solution_1541.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D84528E2DC5400F5B99A /* Solution_1541.swift */; };
+		A441D84828E2E72000F5B99A /* 括号系列.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D84728E2E72000F5B99A /* 括号系列.swift */; };
+		A441D84A28E2E95D00F5B99A /* Solution_22.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D84928E2E95D00F5B99A /* Solution_22.swift */; };
 		A45DAE3028D17D75001BAC30 /* Solution_47.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE2F28D17D75001BAC30 /* Solution_47.swift */; };
 		A45DAE3228D17E60001BAC30 /* Solution_78.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE3128D17E60001BAC30 /* Solution_78.swift */; };
 		A45DAE3428D17EF4001BAC30 /* Solution_90.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE3328D17EF4001BAC30 /* Solution_90.swift */; };
@@ -213,6 +218,11 @@
 		A4253F9228DDFB8F00781D91 /* Solution_931.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_931.swift; sourceTree = "<group>"; };
 		A43A115A28C894E20011A530 /* So48.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = So48.swift; sourceTree = "<group>"; };
 		A441D83E28E29E1B00F5B99A /* Solution_45.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_45.swift; sourceTree = "<group>"; };
+		A441D84028E2D6CB00F5B99A /* Solution_20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_20.swift; sourceTree = "<group>"; };
+		A441D84328E2DB2200F5B99A /* Solution_921.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_921.swift; sourceTree = "<group>"; };
+		A441D84528E2DC5400F5B99A /* Solution_1541.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_1541.swift; sourceTree = "<group>"; };
+		A441D84728E2E72000F5B99A /* 括号系列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "括号系列.swift"; sourceTree = "<group>"; };
+		A441D84928E2E95D00F5B99A /* Solution_22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_22.swift; sourceTree = "<group>"; };
 		A45DAE2F28D17D75001BAC30 /* Solution_47.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_47.swift; sourceTree = "<group>"; };
 		A45DAE3128D17E60001BAC30 /* Solution_78.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_78.swift; sourceTree = "<group>"; };
 		A45DAE3328D17EF4001BAC30 /* Solution_90.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_90.swift; sourceTree = "<group>"; };
@@ -473,12 +483,24 @@
 			path = "跳跃游戏";
 			sourceTree = "<group>";
 		};
+		A441D84228E2DB0C00F5B99A /* 括号 */ = {
+			isa = PBXGroup;
+			children = (
+				A441D84728E2E72000F5B99A /* 括号系列.swift */,
+				A441D84028E2D6CB00F5B99A /* Solution_20.swift */,
+				A441D84328E2DB2200F5B99A /* Solution_921.swift */,
+				A441D84528E2DC5400F5B99A /* Solution_1541.swift */,
+				A441D84928E2E95D00F5B99A /* Solution_22.swift */,
+			);
+			path = "括号";
+			sourceTree = "<group>";
+		};
 		A45DAE3728D1D890001BAC30 /* 贪心 */ = {
 			isa = PBXGroup;
 			children = (
+				A45DAE3828D1D8AE001BAC30 /* Solution_53_2.swift */,
 				A414753428E1B82C001EC901 /* 区间调度 */,
 				A414752F28E1ABF5001EC901 /* 会议室 */,
-				A45DAE3828D1D8AE001BAC30 /* Solution_53_2.swift */,
 				A441D83D28E298F700F5B99A /* 跳跃游戏 */,
 			);
 			path = "贪心";
@@ -706,6 +728,7 @@
 		A49B0B8B28A5EC7B003F9DC1 /* DayCode */ = {
 			isa = PBXGroup;
 			children = (
+				A441D84228E2DB0C00F5B99A /* 括号 */,
 				A4253F8428DD57F300781D91 /* BFS */,
 				A475878228DABAD2007E683F /* 数组排序 */,
 				A41A4E6128C06DE900B7AB96 /* 剑指Offer II */,
@@ -891,6 +914,7 @@
 				A475878628DAF60E007E683F /* 二叉树.swift in Sources */,
 				A4F7F83228CC5EDA00A7CE2A /* Solution_106.swift in Sources */,
 				A41A4E6028C06D4C00B7AB96 /* So9.swift in Sources */,
+				A441D84428E2DB2200F5B99A /* Solution_921.swift in Sources */,
 				A49B0BB428A5EC9B003F9DC1 /* Solution_206.swift in Sources */,
 				A49B0BBD28A5ECA0003F9DC1 /* Solution_94.swift in Sources */,
 				A460BC3428D0788300B8DB24 /* Solution_40.swift in Sources */,
@@ -906,8 +930,10 @@
 				A4B1C25D28C2489800609C47 /* So25.swift in Sources */,
 				A475878E28DB4298007E683F /* Solution_654.swift in Sources */,
 				A414753328E1B29A001EC901 /* Solution_252.swift in Sources */,
+				A441D84828E2E72000F5B99A /* 括号系列.swift in Sources */,
 				A4EF360028C74A70006CFA25 /* Solution_235.swift in Sources */,
 				A496085728E0907900F31C7A /* Solution_1020.swift in Sources */,
+				A441D84628E2DC5400F5B99A /* Solution_1541.swift in Sources */,
 				A41DCF3B28B9D48000FB6012 /* Solution_237.swift in Sources */,
 				A496083E28DEF45800F31C7A /* Solution_583.swift in Sources */,
 				A496084828DF444200F31C7A /* Solution_64.swift in Sources */,
@@ -1022,10 +1048,12 @@
 				A49B0BB528A5EC9B003F9DC1 /* Solution_160.swift in Sources */,
 				A45DAE3228D17E60001BAC30 /* Solution_78.swift in Sources */,
 				A41DCF4C28BF861400FB6012 /* Solution_offer50.swift in Sources */,
+				A441D84128E2D6CB00F5B99A /* Solution_20.swift in Sources */,
 				A475879328DB451A007E683F /* So26.swift in Sources */,
 				A496084A28DF462900F31C7A /* So47.swift in Sources */,
 				A4EF35FA28C74997006CFA25 /* Sof27.swift in Sources */,
 				A4B1C25F28C249E000609C47 /* So24.swift in Sources */,
+				A441D84A28E2E95D00F5B99A /* Solution_22.swift in Sources */,
 				A4B1C25528C243C800609C47 /* So5.swift in Sources */,
 				A475876F28D9A6D5007E683F /* Solution_48.swift in Sources */,
 				A475877728D9C11F007E683F /* Solution_523.swift in Sources */,

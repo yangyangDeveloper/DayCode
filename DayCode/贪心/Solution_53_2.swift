@@ -19,6 +19,6 @@ class Solution_53_2 {
                 count = 0
             }
         }
-        return count
+        return res
     }
 }
