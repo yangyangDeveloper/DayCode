@@ -55,6 +55,9 @@
 		A441D84628E2DC5400F5B99A /* Solution_1541.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D84528E2DC5400F5B99A /* Solution_1541.swift */; };
 		A441D84828E2E72000F5B99A /* 括号系列.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D84728E2E72000F5B99A /* 括号系列.swift */; };
 		A441D84A28E2E95D00F5B99A /* Solution_22.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D84928E2E95D00F5B99A /* Solution_22.swift */; };
+		A441D84D28E2F98F00F5B99A /* Solution_319.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D84C28E2F98F00F5B99A /* Solution_319.swift */; };
+		A441D84F28E3065C00F5B99A /* Solution_292.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D84E28E3065C00F5B99A /* Solution_292.swift */; };
+		A441D85128E3067E00F5B99A /* Solution_877.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D85028E3067E00F5B99A /* Solution_877.swift */; };
 		A45DAE3028D17D75001BAC30 /* Solution_47.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE2F28D17D75001BAC30 /* Solution_47.swift */; };
 		A45DAE3228D17E60001BAC30 /* Solution_78.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE3128D17E60001BAC30 /* Solution_78.swift */; };
 		A45DAE3428D17EF4001BAC30 /* Solution_90.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE3328D17EF4001BAC30 /* Solution_90.swift */; };
@@ -223,6 +226,9 @@
 		A441D84528E2DC5400F5B99A /* Solution_1541.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_1541.swift; sourceTree = "<group>"; };
 		A441D84728E2E72000F5B99A /* 括号系列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "括号系列.swift"; sourceTree = "<group>"; };
 		A441D84928E2E95D00F5B99A /* Solution_22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_22.swift; sourceTree = "<group>"; };
+		A441D84C28E2F98F00F5B99A /* Solution_319.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_319.swift; sourceTree = "<group>"; };
+		A441D84E28E3065C00F5B99A /* Solution_292.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_292.swift; sourceTree = "<group>"; };
+		A441D85028E3067E00F5B99A /* Solution_877.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_877.swift; sourceTree = "<group>"; };
 		A45DAE2F28D17D75001BAC30 /* Solution_47.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_47.swift; sourceTree = "<group>"; };
 		A45DAE3128D17E60001BAC30 /* Solution_78.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_78.swift; sourceTree = "<group>"; };
 		A45DAE3328D17EF4001BAC30 /* Solution_90.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_90.swift; sourceTree = "<group>"; };
@@ -495,6 +501,16 @@
 			path = "括号";
 			sourceTree = "<group>";
 		};
+		A441D84B28E2F95700F5B99A /* 数学规律 */ = {
+			isa = PBXGroup;
+			children = (
+				A441D84C28E2F98F00F5B99A /* Solution_319.swift */,
+				A441D84E28E3065C00F5B99A /* Solution_292.swift */,
+				A441D85028E3067E00F5B99A /* Solution_877.swift */,
+			);
+			path = "数学规律";
+			sourceTree = "<group>";
+		};
 		A45DAE3728D1D890001BAC30 /* 贪心 */ = {
 			isa = PBXGroup;
 			children = (
@@ -728,6 +744,7 @@
 		A49B0B8B28A5EC7B003F9DC1 /* DayCode */ = {
 			isa = PBXGroup;
 			children = (
+				A441D84B28E2F95700F5B99A /* 数学规律 */,
 				A441D84228E2DB0C00F5B99A /* 括号 */,
 				A4253F8428DD57F300781D91 /* BFS */,
 				A475878228DABAD2007E683F /* 数组排序 */,
@@ -985,6 +1002,7 @@
 				A496085028DF5DEF00F31C7A /* Solution_674.swift in Sources */,
 				A4B1C25928C2465500609C47 /* So6.swift in Sources */,
 				A475878A28DB1999007E683F /* Solution_116.swift in Sources */,
+				A441D85128E3067E00F5B99A /* Solution_877.swift in Sources */,
 				A460BC3828D0989800B8DB24 /* Solution_131.swift in Sources */,
 				A475876D28D97EBA007E683F /* Solution_1011.swift in Sources */,
 				A496084428DF166D00F31C7A /* Solution_516.swift in Sources */,
@@ -992,6 +1010,7 @@
 				A475878C28DB19BA007E683F /* Solution_114.swift in Sources */,
 				A496085F28E0A36400F31C7A /* Solution_694.swift in Sources */,
 				A4253F8A28DD92E400781D91 /* Solution_509.swift in Sources */,
+				A441D84D28E2F98F00F5B99A /* Solution_319.swift in Sources */,
 				A4C242FC28C832B800A56245 /* So3.swift in Sources */,
 				A475876528D8AE8C007E683F /* Solution_5.swift in Sources */,
 				A475876728D95CC9007E683F /* Solution_34.swift in Sources */,
@@ -1012,6 +1031,7 @@
 				A496085328E0633900F31C7A /* Solution_200.swift in Sources */,
 				A45DAE3B28D1E0E5001BAC30 /* Solution_55.swift in Sources */,
 				A49B0BBE28A5ECA0003F9DC1 /* Solution_104.swift in Sources */,
+				A441D84F28E3065C00F5B99A /* Solution_292.swift in Sources */,
 				A496086128E0A9E900F31C7A /* Solution_463.swift in Sources */,
 				A49B0BBF28A5ECA0003F9DC1 /* Solution_102.swift in Sources */,
 				A41A4E6628C072C200B7AB96 /* Solution_704.swift in Sources */,

@@ -40,7 +40,8 @@ class ViewController: UIViewController {
         //testArraySort()
         // testpailie()
         // testdp()
-        testTX()
+        // testTX()
+        testSX()
     }
     
     // 临时代码
@@ -397,3 +398,18 @@ extension ViewController {
     
 }
 
+
+// MARK: -  动态规划
+
+extension ViewController {
+    func testSX() {
+        test319()
+    }
+    
+    func test319() {
+        let a = Int(4.7)
+        let t = Solution_319().bulbSwitch(6)
+        
+        
+    }
+}
