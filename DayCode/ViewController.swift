@@ -422,12 +422,27 @@ extension ViewController {
 // MARK: -  经典面试
 extension ViewController {
     func testMS() {
-        test43()
+        //test43()
+        //test391()
+        test969()
     }
     
     func test43() {
        let num1 = "0"
        let num2 = "0"
        let t = Solution_43().multiply(num1, num2)
+    }
+    
+    func test391() {
+        
+        let rectangles =
+        [[0,0,1,1],[0,1,3,2],[1,0,2,2]]
+        let t = Solution_391().isRectangleCover(rectangles)
+        
+    }
+    
+    func test969() {
+        let t = [3,2,4,1]
+        let res = Solution_969().pancakeSort(t)
     }
 }
