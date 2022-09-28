@@ -424,7 +424,8 @@ extension ViewController {
     func testMS() {
         //test43()
         //test391()
-        test969()
+        //test969()
+        test887()
     }
     
     func test43() {
@@ -444,5 +445,10 @@ extension ViewController {
     func test969() {
         let t = [3,2,4,1]
         let res = Solution_969().pancakeSort(t)
+    }
+    
+    func test887() {
+        let k = 1, n = 2
+        let res = Solution_887().superEggDrop(k, n)
     }
 }
