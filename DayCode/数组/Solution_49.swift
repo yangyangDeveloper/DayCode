@@ -30,4 +30,28 @@ class Solution_49 {
         // 返回一个字典的value
         return dict.map({$0.value})
     }
+    
+    // 排序 为空 hashmap
+    func groupAnagrams2(_ strs: [String]) -> [[String]] {
+        var dic = [String: [String]]()
+        for str in strs {
+            let key = String(str.sorted())
+            if dic[key] == nil {
+                dic[key] = [str]
+            }else {
+                dic[key]!.append(str)
+            }
+        }
+        return Array(dic.values)
+    }
+    
+    
+    func groupAnagrams3(_ strs: [String]) -> [[String]] {
+        var dic = [String: [String]]()
+        for str in strs {
+            let key = String(str.sorted())
+            dic[key, default: []].append(str)
+        }
+        return Array(dic.values)
+    }
 }

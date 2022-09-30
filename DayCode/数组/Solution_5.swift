@@ -21,8 +21,21 @@
 */
 
 // 5. 最长回文子串
+
+/*
+ 
+ 
+ 
+ var bugs = ["Aphid", "Bumblebee", "Cicada", "Damselfly", "Earwig"]
+ bugs.removeFirst(3)
+ print(bugs)
+ // Prints "["Damselfly", "Earwig"]"
+ 
+ */
 class Solution_5 {
-    
+    var maxlength = 0
+    var start = 0
+    var end = 0
     var res = String()
     func longestPalindrome(_ s: String) -> String {
         
@@ -32,20 +45,21 @@ class Solution_5 {
         for i in 0..<s.count {
             
             // 找到以 s[i] 为中心的回文串
-            let s1 = findLongestPalindrome(s, i, i)
+             findLongestPalindrome(s, i, i)
             // 找到以 s[i] 和 s[i+1] 为中心的回文串
-            let s2 = findLongestPalindrome(s, i, i + 1)
-            
-            // 更新答案
-            res = res.count > s1.count ? res : s1
-            res = res.count > s2.count ? res : s2
+            findLongestPalindrome(s, i, i + 1)
+
         }
         
-        return res
+        
+        s.removeFirst(start)
+        let sub = s.prefix(end - start + 1).joined()
+        return sub
+       // return res
     }
     
     // 最长回文串
-    func findLongestPalindrome(_ s: [String], _ left: Int, _ right: Int) ->String {
+    func findLongestPalindrome(_ s: [String], _ left: Int, _ right: Int) {
         var left = left
         var right = right
         while left >= 0 && right < s.count {
@@ -53,12 +67,12 @@ class Solution_5 {
                 left -= 1
                 right += 1
             }
+            // [2 4] 区间是2 其实长度是3
+            if right - left + 1 > maxlength {
+                start = left
+                end = right
+                maxlength = right - left + 1
+            }
         }
-        
-        print("left=\(left), right =\(right)")
-        
-        var str = s[left + 1 ... right].joined()
-        print(str)
-        return str
     }
 }

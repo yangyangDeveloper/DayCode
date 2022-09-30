@@ -33,8 +33,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //链表
         // testLikedList()
-        // testArray()
+        
+         testArray()
         // testPreSum()
         // testWindows()
         //testArraySort()
@@ -46,7 +48,7 @@ class ViewController: UIViewController {
         //testSX()
         
         // 经典面试题
-        testMS()
+        //testMS()
     }
     
     // 临时代码
@@ -88,7 +90,7 @@ class ViewController: UIViewController {
 extension ViewController {
 
     func testArray() {
-        //test5()
+        test5()
         //test34()
         //test54()
         //test523()
@@ -197,7 +199,8 @@ extension ViewController {
 extension ViewController {
     func testLikedList() {
         // 反转链表
-        test206()
+        //test206()
+        test92()
     }
     
     func test206() {
@@ -220,6 +223,23 @@ extension ViewController {
             print(cur?.val)
             cur = cur?.next
         }
+    }
+    
+    func test92(){
+        var nod1 = ListNode(1)
+        var nod2 = ListNode(2)
+        var nod3 = ListNode(3)
+        var nod4 = ListNode(4)
+        var nod5 = ListNode(5)
+        nod1.next = nod2
+        nod2.next = nod3
+        nod3.next = nod4
+        nod4.next = nod5
+        nod5.next = nil
+        
+        let t = Solution_92().reverseBetween(nod1, 2, 5)
+        
+        
     }
 }
 

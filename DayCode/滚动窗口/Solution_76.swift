@@ -5,7 +5,13 @@
 //  Created by zhangyangyang on 2022/9/20.
 //
 
-import Foundation
+/*
+  左闭右开区间 [left, right) 称为一个「窗口」
+  不包含right
+  s.removeFirst(start) 删除前3个元素
+  let str = s.prefix(len).joined()  抓取4个元素 拼接成字符串
+ 
+ */
 class Solution_76 {
     
     // 滑动窗口写
@@ -79,6 +85,10 @@ class Solution_76 {
             var s_strt = start
             var s_end = start + len - 1
             var str = s[s_strt...s_end].joined()
+            
+            // s.removeFirst(start)
+            // let str = s.prefix(len).joined()
+            
             return str
         }
         return ""

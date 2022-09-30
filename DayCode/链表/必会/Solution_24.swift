@@ -6,9 +6,9 @@
 //
 
 /*
-    考察点：算是两两交换吧  主要是要记录 subhead
-    1、 subhead的概念   先记录subhead
-    2、 node1 和 node2  的变化   node2.next = node1  node1.next = subhead
+    考察点：node1 和 node2 交换
+    1、 subhead记录node1
+    2、 temp处于 node1 和 node2 之前
  */
 
 // 24. 两两交换链表中的节点

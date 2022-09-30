@@ -7,6 +7,91 @@
 
 import Foundation
 
+
+
+/*
+ 精简模版
+
+func test {
+    var left = 0  right = 0
+    while left < str.size {
+        
+        c是将要进入的窗口的字符   还不在窗口内
+        char c = s[right]
+        right += 1  // right前进
+        
+        。。。。。 做一些操作
+        
+        while (需要收缩) {
+            char d = s[left] // 即将要离开窗口的字符
+            left += 1
+            。。。  进行一些窗口内的数据更新
+        }
+    }
+}
+
+ 注意收缩窗口的条件
+ 什么时候 while right - left >= p.count
+ 什么时候 while vavid == need.count
+ 
+*/
+
+/*
+ 
+ 详细模版：
+ func 模版() {
+     
+     var s1 = s1.map({String($0)})
+     var s2 = s2.map({String($0)})
+     
+     var need = [String: Int]()
+     var window = [String: Int]()
+     
+     // 统计条件
+     for char in s2 {
+         need[char,default: 0] += 1
+     }
+     
+     // 符合条件的次数
+     var visited = 0
+     
+     var left = 0
+     var right = 0
+     
+     while right < s1.count {
+         // c是讲进入窗口的字符
+         var c = s1[right]
+         
+         // 扩大窗口
+         right += 1
+         
+         // 进行窗口数据更新炒作
+         
+         print("window: left=\(left), right=\(right)")
+         
+         while window needs 缩小 {
+             // d 是讲要移出窗口的字符
+             char d = s1[left]
+             
+             // 缩小窗口
+             left += 1
+             
+             // 进行窗口缩小的一些列更新
+         }
+     }
+ }
+ 
+*/
+
+
+/*
+ 
+ 核心：  左闭右开  【left right）
+ 长度为  right - left   不要 + 1  因为是开区间
+ 
+*/
+
+
 /*
   滑动窗口算法思想：
 
@@ -34,31 +119,7 @@ import Foundation
 */
 
 
-/*
- 滚动窗口的模版
-func test {
-    var left = 0  right = 0
-    while left < str.size {
-        
-        c是将要进入的窗口的字符   还不在窗口内
-        char c = s[right]
-        right += 1  // right前进
-        
-        。。。。。 做一些操作
-        
-        while (需要收缩) {
-            char d = s[left] // 即将要离开窗口的字符
-            left += 1
-            。。。  进行一些窗口内的数据更新
-        }
-    }
-}
 
- 注意收缩窗口的条件
- 什么时候 while right - left >= p.count
- 什么时候 while vavid == need.count
- 
-*/
 
 
 func test2() {
@@ -86,3 +147,5 @@ func test2() {
     这个比之前的567 稍微复杂一点  套路之前的模版  只是记录下表就可以了  只是记录left的下表
 
  */
+
+

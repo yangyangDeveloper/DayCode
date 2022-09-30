@@ -84,8 +84,10 @@ class Solution_206 {
     }
     
     // 完全反转
+
     func reverse(_ head: ListNode?) -> ListNode? {
         // base case
+        // 如果链表为空或者只有一个链表时候 反转结果就是他自己 直接返回就可以
         if head == nil || head?.next == nil {
             return head
         }
@@ -100,6 +102,10 @@ class Solution_206 {
     }
     
     // 反转 【1 n】 链表索引从1开始
+    /*
+        1、base case 变为 n == 1，反转一个元素，就是它本身，同时要记录后驱节点。
+        
+     */
     var temp: ListNode?
     func reverseN(_ head: ListNode?, _ n: Int) -> ListNode? {
         print("n==\(n)")
@@ -123,7 +129,7 @@ class Solution_206 {
 
     
     // 反转一个索引区间[m n] 索引从 1 开始 仅仅反转区间内
-    func reverseBetween(_ head: ListNode?, _ n: Int, _ m: Int) -> ListNode? {
+    func reverseBetween(_ head: ListNode?, _ m: Int, _ n: Int) -> ListNode? {
         // base case
         if m == 1 {
             return reverseN(head, n)
