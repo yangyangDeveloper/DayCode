@@ -127,7 +127,6 @@ class Solution_206 {
         return node
     }
 
-    
     // 反转一个索引区间[m n] 索引从 1 开始 仅仅反转区间内
     func reverseBetween(_ head: ListNode?, _ m: Int, _ n: Int) -> ListNode? {
         // base case

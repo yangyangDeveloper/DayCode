@@ -26,6 +26,7 @@
 		A41A4E6028C06D4C00B7AB96 /* So9.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41A4E5F28C06D4C00B7AB96 /* So9.swift */; };
 		A41A4E6328C06E2E00B7AB96 /* Sof72.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41A4E6228C06E2E00B7AB96 /* Sof72.swift */; };
 		A41A4E6628C072C200B7AB96 /* Solution_704.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41A4E6528C072C200B7AB96 /* Solution_704.swift */; };
+		A41AD03028E9466200BC39ED /* Solution_105.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD02F28E9466200BC39ED /* Solution_105.swift */; };
 		A41DCF2F28B46A8D00FB6012 /* Solution_24.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF2E28B46A8D00FB6012 /* Solution_24.swift */; };
 		A41DCF3128B46BF000FB6012 /* Solution_25.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF3028B46BF000FB6012 /* Solution_25.swift */; };
 		A41DCF3328B7228E00FB6012 /* Solution_142.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF3228B7228E00FB6012 /* Solution_142.swift */; };
@@ -62,6 +63,7 @@
 		A441D85328E3321C00F5B99A /* Solution_42.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D85228E3321C00F5B99A /* Solution_42.swift */; };
 		A441D85528E3396B00F5B99A /* Solution_11.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D85428E3396B00F5B99A /* Solution_11.swift */; };
 		A441D85728E341BE00F5B99A /* Solution_43.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441D85628E341BE00F5B99A /* Solution_43.swift */; };
+		A45D9FF428E7EA9500C93ACA /* Solution_366.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D9FF328E7EA9500C93ACA /* Solution_366.swift */; };
 		A45DAE3028D17D75001BAC30 /* Solution_47.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE2F28D17D75001BAC30 /* Solution_47.swift */; };
 		A45DAE3228D17E60001BAC30 /* Solution_78.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE3128D17E60001BAC30 /* Solution_78.swift */; };
 		A45DAE3428D17EF4001BAC30 /* Solution_90.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DAE3328D17EF4001BAC30 /* Solution_90.swift */; };
@@ -210,6 +212,7 @@
 		A41A4E5F28C06D4C00B7AB96 /* So9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = So9.swift; sourceTree = "<group>"; };
 		A41A4E6228C06E2E00B7AB96 /* Sof72.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sof72.swift; sourceTree = "<group>"; };
 		A41A4E6528C072C200B7AB96 /* Solution_704.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_704.swift; sourceTree = "<group>"; };
+		A41AD02F28E9466200BC39ED /* Solution_105.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_105.swift; sourceTree = "<group>"; };
 		A41DCF2E28B46A8D00FB6012 /* Solution_24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_24.swift; sourceTree = "<group>"; };
 		A41DCF3028B46BF000FB6012 /* Solution_25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_25.swift; sourceTree = "<group>"; };
 		A41DCF3228B7228E00FB6012 /* Solution_142.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_142.swift; sourceTree = "<group>"; };
@@ -246,6 +249,7 @@
 		A441D85228E3321C00F5B99A /* Solution_42.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_42.swift; sourceTree = "<group>"; };
 		A441D85428E3396B00F5B99A /* Solution_11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_11.swift; sourceTree = "<group>"; };
 		A441D85628E341BE00F5B99A /* Solution_43.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_43.swift; sourceTree = "<group>"; };
+		A45D9FF328E7EA9500C93ACA /* Solution_366.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_366.swift; sourceTree = "<group>"; };
 		A45DAE2F28D17D75001BAC30 /* Solution_47.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_47.swift; sourceTree = "<group>"; };
 		A45DAE3128D17E60001BAC30 /* Solution_78.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_78.swift; sourceTree = "<group>"; };
 		A45DAE3328D17EF4001BAC30 /* Solution_90.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_90.swift; sourceTree = "<group>"; };
@@ -561,6 +565,17 @@
 			path = "经典面试";
 			sourceTree = "<group>";
 		};
+		A45D9FF228E7E32A00C93ACA /* 前序妙用 */ = {
+			isa = PBXGroup;
+			children = (
+				A4C242FF28C8433B00A56245 /* Solution_100.swift */,
+				A4EF360128C74AD2006CFA25 /* Solution_101.swift */,
+				A4EF35FB28C749EA006CFA25 /* Solution_617.swift */,
+				A49B0BBC28A5ECA0003F9DC1 /* Solution_257.swift */,
+			);
+			path = "前序妙用";
+			sourceTree = "<group>";
+		};
 		A45DAE3728D1D890001BAC30 /* 贪心 */ = {
 			isa = PBXGroup;
 			children = (
@@ -642,21 +657,25 @@
 			path = "二维数组";
 			sourceTree = "<group>";
 		};
-		A475878F28DB42A5007E683F /* 构造 */ = {
+		A475878F28DB42A5007E683F /* 构造二叉树 */ = {
 			isa = PBXGroup;
 			children = (
+				A41AD02F28E9466200BC39ED /* Solution_105.swift */,
+				A4F7F83128CC5EDA00A7CE2A /* Solution_106.swift */,
 				A475878D28DB4298007E683F /* Solution_654.swift */,
 			);
-			path = "构造";
+			path = "构造二叉树";
 			sourceTree = "<group>";
 		};
-		A475879028DB42C5007E683F /* 纲领 */ = {
+		A475879028DB42C5007E683F /* 后序妙用 */ = {
 			isa = PBXGroup;
 			children = (
 				A49B0BB828A5ECA0003F9DC1 /* Solution_104.swift */,
 				A475878728DB03FA007E683F /* Solution_543.swift */,
+				A4EF35F728C744CE006CFA25 /* Solution_110.swift */,
+				A45D9FF328E7EA9500C93ACA /* Solution_366.swift */,
 			);
-			path = "纲领";
+			path = "后序妙用";
 			sourceTree = "<group>";
 		};
 		A475879128DB430C007E683F /* 思路 */ = {
@@ -904,18 +923,13 @@
 			children = (
 				A475878528DAF60E007E683F /* 二叉树.swift */,
 				A428220228E74F6400D906DC /* 遍历 */,
-				A475879028DB42C5007E683F /* 纲领 */,
+				A45D9FF228E7E32A00C93ACA /* 前序妙用 */,
+				A475879028DB42C5007E683F /* 后序妙用 */,
+				A475878F28DB42A5007E683F /* 构造二叉树 */,
 				A475879128DB430C007E683F /* 思路 */,
-				A475878F28DB42A5007E683F /* 构造 */,
 				A475879428DBFC0E007E683F /* BST */,
-				A4CEB4B928C4E3B8002037D5 /* Solution_96.swift */,
-				A4C242FF28C8433B00A56245 /* Solution_100.swift */,
-				A4EF360128C74AD2006CFA25 /* Solution_101.swift */,
-				A4EF35F728C744CE006CFA25 /* Solution_110.swift */,
-				A49B0BBC28A5ECA0003F9DC1 /* Solution_257.swift */,
 				A4C2430128C84B9A00A56245 /* Solution_572.swift */,
-				A4EF35FB28C749EA006CFA25 /* Solution_617.swift */,
-				A4F7F83128CC5EDA00A7CE2A /* Solution_106.swift */,
+				A4CEB4B928C4E3B8002037D5 /* Solution_96.swift */,
 			);
 			path = "二叉树";
 			sourceTree = "<group>";
@@ -1063,6 +1077,7 @@
 				A4253F9328DDFB8F00781D91 /* Solution_931.swift in Sources */,
 				A43A115B28C894E20011A530 /* So48.swift in Sources */,
 				A4B1C26128C24AFE00609C47 /* So18.swift in Sources */,
+				A45D9FF428E7EA9500C93ACA /* Solution_366.swift in Sources */,
 				A414753828E1E6CD001EC901 /* Solution_452.swift in Sources */,
 				A4987CFF28DC84C90071A912 /* 子集组合排列.swift in Sources */,
 				A460BC3228D06E8A00B8DB24 /* Solution_39.swift in Sources */,
@@ -1117,6 +1132,7 @@
 				A460BC3628D078DB00B8DB24 /* Solution_216.swift in Sources */,
 				A4C242FA28C82EE100A56245 /* So21.swift in Sources */,
 				A49B0BA328A5EC8B003F9DC1 /* Solution_49.swift in Sources */,
+				A41AD03028E9466200BC39ED /* Solution_105.swift in Sources */,
 				A45DAE3628D1C5E7001BAC30 /* Solution_491.swift in Sources */,
 				A414752328E15731001EC901 /* Solution_123.swift in Sources */,
 				A475878328DABB27007E683F /* 链表.swift in Sources */,
