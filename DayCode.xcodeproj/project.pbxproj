@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A401D7F728C444C80085EBB5 /* Solution_145.swift in Sources */ = {isa = PBXBuildFile; fileRef = A401D7F628C444C80085EBB5 /* Solution_145.swift */; };
+		A408CDFD28EAA12700C56A65 /* Solution_1249.swift in Sources */ = {isa = PBXBuildFile; fileRef = A408CDFC28EAA12700C56A65 /* Solution_1249.swift */; };
 		A414752328E15731001EC901 /* Solution_123.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414752228E15731001EC901 /* Solution_123.swift */; };
 		A414752528E15BE1001EC901 /* Solution_188.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414752428E15BE1001EC901 /* Solution_188.swift */; };
 		A414752728E167C6001EC901 /* Solution_714.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414752628E167C6001EC901 /* Solution_714.swift */; };
@@ -196,6 +197,7 @@
 
 /* Begin PBXFileReference section */
 		A401D7F628C444C80085EBB5 /* Solution_145.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_145.swift; sourceTree = "<group>"; };
+		A408CDFC28EAA12700C56A65 /* Solution_1249.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_1249.swift; sourceTree = "<group>"; };
 		A414752228E15731001EC901 /* Solution_123.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_123.swift; sourceTree = "<group>"; };
 		A414752428E15BE1001EC901 /* Solution_188.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_188.swift; sourceTree = "<group>"; };
 		A414752628E167C6001EC901 /* Solution_714.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_714.swift; sourceTree = "<group>"; };
@@ -541,6 +543,7 @@
 				A441D84328E2DB2200F5B99A /* Solution_921.swift */,
 				A441D84528E2DC5400F5B99A /* Solution_1541.swift */,
 				A441D84928E2E95D00F5B99A /* Solution_22.swift */,
+				A408CDFC28EAA12700C56A65 /* Solution_1249.swift */,
 			);
 			path = "括号";
 			sourceTree = "<group>";
@@ -1112,6 +1115,7 @@
 				A49B0B9128A5EC7B003F9DC1 /* ViewController.swift in Sources */,
 				A475879E28DC13F8007E683F /* Solution_701.swift in Sources */,
 				A414753128E1AF40001EC901 /* Solution_253.swift in Sources */,
+				A408CDFD28EAA12700C56A65 /* Solution_1249.swift in Sources */,
 				A4C2430228C84B9A00A56245 /* Solution_572.swift in Sources */,
 				A41DCF4328BDB49600FB6012 /* Solution_83.swift in Sources */,
 				A496084E28DF552600F31C7A /* Solution_718.swift in Sources */,
