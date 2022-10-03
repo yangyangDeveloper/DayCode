@@ -625,8 +625,6 @@
 			isa = PBXGroup;
 			children = (
 				A4987CFA28DC6B8C0071A912 /* 子集组合排序 */,
-				A460BC3728D0989800B8DB24 /* Solution_131.swift */,
-				A45DAE3528D1C5E7001BAC30 /* Solution_491.swift */,
 			);
 			path = "回溯";
 			sourceTree = "<group>";
@@ -823,6 +821,8 @@
 				A45DAE3328D17EF4001BAC30 /* Solution_90.swift */,
 				A45DAE2F28D17D75001BAC30 /* Solution_47.swift */,
 				A460BC3328D0788300B8DB24 /* Solution_40.swift */,
+				A45DAE3528D1C5E7001BAC30 /* Solution_491.swift */,
+				A460BC3728D0989800B8DB24 /* Solution_131.swift */,
 			);
 			path = "有重复元素不可复选";
 			sourceTree = "<group>";
@@ -861,8 +861,8 @@
 				A408CDFE28EADC2700C56A65 /* DFS */,
 				A41DCF4A28BF85F900FB6012 /* 哈希 */,
 				A460BC2C28D02DE500B8DB24 /* 回溯 */,
-				A49B0BA528A5EC92003F9DC1 /* 动态规划 */,
 				A45DAE3728D1D890001BAC30 /* 贪心 */,
+				A49B0BA528A5EC92003F9DC1 /* 动态规划 */,
 				A45DAE4F28D43486001BAC30 /* 背包 */,
 				A441D84B28E2F95700F5B99A /* 数学规律 */,
 				A47A0A0D28E434AA0024F4EB /* 位运算 */,
