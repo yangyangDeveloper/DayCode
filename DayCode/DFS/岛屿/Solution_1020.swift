@@ -6,9 +6,12 @@
 //
 
 /*
-    考察点： 回溯二维
-    把边界岛屿淹没 然后剩下的就是内陆岛 然后res +1  就是面积  
- */
+    考察点： DFS遍历
+    图的dfs遍历
+    leetcode200 的衍生题   遍历一遍淹没   计算得到所有的岛屿（边界岛屿 和  封闭岛屿）
+    leetcode1254 求封闭岛屿个数   先把边界岛屿淹没 剩下的就是 封闭岛屿
+    leetcode1020 求封闭岛屿中岛的个数   先把边界淹没了  然后求 1的个数
+*/
 
 // 1020. 飞地的数量
 class Solution_1020 {
@@ -30,6 +33,7 @@ class Solution_1020 {
             dfs(&grid, i, n - 1)
         }
         
+        
         for i in 0..<m {
             for j in 0..<n {
                 if grid[i][j] == 1 {
@@ -38,6 +42,7 @@ class Solution_1020 {
             }
         }
         
+        // 0海水 1是陆地  
         func dfs(_ grid: inout [[Int]], _ i: Int, _ j: Int) {
             // base case  越界
             if i < 0 || i >= m || j < 0 || j >= n {

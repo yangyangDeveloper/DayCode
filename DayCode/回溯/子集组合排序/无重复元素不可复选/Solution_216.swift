@@ -58,4 +58,44 @@ class Solution_216 {
         backtrace(0, 1)
         return res
     }
+    
+    
+    
+    // 无剪支
+    func combinationSum4(_ k: Int, _ n: Int) -> [[Int]] {
+        var res = [[Int]]()
+        var path = [Int]()
+        var curSum = 0
+
+        func backtrack(_ startIndex: Int) {
+            if path.count == k {
+                if curSum == n {
+                    res.append(path)
+                    return
+                }
+            }
+
+            if curSum > n {
+                return
+            }
+
+            if startIndex > n {
+                return
+            }
+            
+            // 优化
+            let end = 9 - (k - path.count) + 1
+            
+            for i in startIndex...n {
+                curSum += i
+                path.append(i)
+                backtrack(i + 1)
+                path.removeLast()
+                curSum -= i
+            }
+        }
+
+        backtrack(1)
+        return res
+    }
 }

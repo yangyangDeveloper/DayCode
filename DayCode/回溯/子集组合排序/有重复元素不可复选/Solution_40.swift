@@ -93,6 +93,7 @@ class Solution_40 {
 
          if curSum == target {
              res.append(path)
+             return 
          }
 
          if curSum > target {

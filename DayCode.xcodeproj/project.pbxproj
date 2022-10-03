@@ -397,6 +397,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A408CDFE28EADC2700C56A65 /* DFS */ = {
+			isa = PBXGroup;
+			children = (
+				A496085128E05DFF00F31C7A /* 岛屿 */,
+			);
+			path = DFS;
+			sourceTree = "<group>";
+		};
 		A414751F28E14E3A001EC901 /* 买卖股票 */ = {
 			isa = PBXGroup;
 			children = (
@@ -616,7 +624,6 @@
 		A460BC2C28D02DE500B8DB24 /* 回溯 */ = {
 			isa = PBXGroup;
 			children = (
-				A496085128E05DFF00F31C7A /* 岛屿 */,
 				A4987CFA28DC6B8C0071A912 /* 子集组合排序 */,
 				A460BC3728D0989800B8DB24 /* Solution_131.swift */,
 				A45DAE3528D1C5E7001BAC30 /* Solution_491.swift */,
@@ -770,9 +777,9 @@
 				A496085228E0633900F31C7A /* Solution_200.swift */,
 				A496085428E06FF600F31C7A /* Solution_1254.swift */,
 				A496085628E0907900F31C7A /* Solution_1020.swift */,
-				A496085828E096FF00F31C7A /* Solution_130.swift */,
 				A496085A28E09AEA00F31C7A /* Solution_695.swift */,
 				A496085C28E09D9C00F31C7A /* Solution_1905.swift */,
+				A496085828E096FF00F31C7A /* Solution_130.swift */,
 				A496085E28E0A36400F31C7A /* Solution_694.swift */,
 				A496086028E0A9E900F31C7A /* Solution_463.swift */,
 			);
@@ -783,12 +790,10 @@
 			isa = PBXGroup;
 			children = (
 				A4987CFE28DC84C90071A912 /* 子集组合排列.swift */,
-				A460BC2F28D0695200B8DB24 /* Solution_17.swift */,
-				A460BC3328D0788300B8DB24 /* Solution_40.swift */,
-				A460BC3528D078DB00B8DB24 /* Solution_216.swift */,
+				A4987CFB28DC83A00071A912 /* 无重复元素不可复选 */,
 				A4987CFD28DC83CD0071A912 /* 有重复元素不可复选 */,
 				A4987CFC28DC83B20071A912 /* 无重复元素可复选 */,
-				A4987CFB28DC83A00071A912 /* 无重复元素不可复选 */,
+				A460BC2F28D0695200B8DB24 /* Solution_17.swift */,
 			);
 			path = "子集组合排序";
 			sourceTree = "<group>";
@@ -799,6 +804,7 @@
 				A45DAE3128D17E60001BAC30 /* Solution_78.swift */,
 				A460BC2D28D02DF900B8DB24 /* Solution_77.swift */,
 				A460BC3928D0DC7600B8DB24 /* Solution_46.swift */,
+				A460BC3528D078DB00B8DB24 /* Solution_216.swift */,
 			);
 			path = "无重复元素不可复选";
 			sourceTree = "<group>";
@@ -816,6 +822,7 @@
 			children = (
 				A45DAE3328D17EF4001BAC30 /* Solution_90.swift */,
 				A45DAE2F28D17D75001BAC30 /* Solution_47.swift */,
+				A460BC3328D0788300B8DB24 /* Solution_40.swift */,
 			);
 			path = "有重复元素不可复选";
 			sourceTree = "<group>";
@@ -851,6 +858,7 @@
 				A41A4E6128C06DE900B7AB96 /* 剑指Offer II */,
 				A41A4E5A28C0637900B7AB96 /* 剑指Offer */,
 				A45DAE5728D574E6001BAC30 /* 前缀和 */,
+				A408CDFE28EADC2700C56A65 /* DFS */,
 				A41DCF4A28BF85F900FB6012 /* 哈希 */,
 				A460BC2C28D02DE500B8DB24 /* 回溯 */,
 				A49B0BA528A5EC92003F9DC1 /* 动态规划 */,

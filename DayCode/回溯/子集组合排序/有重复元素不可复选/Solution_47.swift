@@ -32,26 +32,25 @@ class Solution_47 {
      
      */
     
+    
     func permuteUnique(_ nums: [Int]) -> [[Int]] {
-        var res:[[Int]] = []
-        var used: [Bool] = Array(repeating: false, count: nums.count)
-        var path: [Int] = []
         
-        var arr = nums.sorted()
+        var nums = nums.sorted()
         
+        var res = [[Int]]()
+        var used = [Bool](repeating: false, count: nums.count)
+        var path = [Int]()
         
-        dfs(arr)
-        func dfs(_ nums: [Int]) {
-            guard path.count != nums.count else {
+        func backtrack() {
+            
+            if path.count == nums.count {
                 res.append(path)
                 return
             }
             
-            for i in 0 ..< nums.count {
-                /*
-                 剪枝条件1：
-                 搜索起点与上一次搜索的起点一样
-                 */
+            for i in 0..<nums.count {
+                
+                // 剪纸1: 避免复选
                 if used[i] {
                     continue
                 }
@@ -62,16 +61,20 @@ class Solution_47 {
                  此处可以这么理解：
                  当前搜索的数字和上次的一样，但是上一次的刚被撤销，正是因为刚被撤销，下面的搜索还会被用到，因此会产生重复，那么就应该剪枝
                  */
+                
                 if i > 0 && nums[i] == nums[i - 1] && !used[i - 1] {
                     continue
                 }
-                path.append(nums[i])
+                
                 used[i] = true
-                dfs(nums)
+                path.append(nums[i])
+                backtrack()
                 path.removeLast()
                 used[i] = false
             }
         }
+        
+        backtrack()
         return res
     }
 }

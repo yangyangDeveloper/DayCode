@@ -43,32 +43,33 @@ class Solution_46 {
 //
      
     
-     // 模版题解
-     // 无重复元素 不可复选 全排列  used
-
-     var used = [Bool]()
-     var res = [[Int]]()
-     var path = [Int]()
-     func permute(_ nums: [Int]) -> [[Int]] {
-         used = [Bool](repeating:false, count: nums.count)
-         backtrace(nums)
-         return res
-     }
-
-     func backtrace(_ nums: [Int]) {
-         if path.count == nums.count {
-             res.append(path)
-         }
-     
-         for i in 0..<nums.count {
-             if used[i] {
-                 continue
-             }
-             used[i] = true
-             path.append(nums[i])
-             backtrace(nums)
-             path.removeLast()
-             used[i] = false
-         }
-     }
+    // 模版题解
+    // 无重复元素 不可复选 全排列  used
+    var used = [Bool]()
+    var res = [[Int]]()
+    var path = [Int]()
+    func permute(_ nums: [Int]) -> [[Int]] {
+        
+        func backtrack() {
+            if path.count == nums.count {
+                res.append(path)
+                return
+            }
+            
+            for i in 0..<nums.count {
+                if used[i] {
+                    continue
+                }
+                used[i] = true
+                path.append(nums[i])
+                backtrack()
+                path.removeLast()
+                used[i] = false
+            }
+        }
+        
+        used = [Bool](repeating: false, count: nums.count)
+        backtrack()
+        return res
+    }
 }
