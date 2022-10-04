@@ -59,25 +59,50 @@ class Solution_516 {
      
      */
     func longestPalindromeSubseq2(_ s: String) -> Int {
-        var s = Array(s)
-        var n = s.count
-        var dp = [[Int]](repeating: [Int](repeating: 0 ,count: n), count: n)
+        var s = s
+        var s1 = s
+        var s2 = revers(s)
+        let t = longestCommonSubsequence(s1, s2)
+        return t
+    }
 
-        // base case
-        for i in 0..<n {
-            dp[i][i] = 1
-        }
+    func revers(_ s: String) -> String {
         
-        for i in (0..<n).reversed() {
-            for j in i+1..<n {
-                print("i ==\(i), j =\(j)")
-                if s[i] == s[j] {
-                    dp[i][j] =  dp[i+1][j-1] + 2
-                }else {
-                    dp[i][j] = max(dp[i+1][j], dp[i][j-1])
-                }
-            }
+        var s = s.map({String($0)})
+        var left = 0
+        var right = s.count - 1
+        while left < right {
+            var temp = s[right]
+            s[right] = s[left]
+            s[left] = temp
+            left += 1
+            right -= 1
         }
-        return dp[0][n - 1]
+        return s.joined()
+    }
+
+    func longestCommonSubsequence(_ text1: String, _ text2: String) -> Int {
+         let m = text1.count
+         let n = text2.count
+
+         var s1 = text1.map({String($0)})
+         var s2 = text2.map({String($0)})
+
+         var dp1 = [Int](repeating: 0, count: n + 1)
+         var dp = [[Int]](repeating: dp1, count: m + 1)
+
+         for i in 1...m {
+             for j in 1...n {
+                 // 现在 i 和 j 从 1 开始，所以要减一
+                 if s1[i - 1] == s2[j - 1] {
+                     // 从对角线过来  // s1[i-1] 和 s2[j-1] 必然在 lcs 中
+                     dp[i][j] = 1 + dp[i - 1][j - 1]
+                 }else {
+                     // 上左最大    // s1[i-1] 和 s2[j-1] 至少有一个不在 lcs 中
+                    dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+                 }
+             }
+         }
+         return dp[m][n]
     }
 }

@@ -7,17 +7,18 @@
 
 /*
  
-   考察点： 动态规划
-   思考： 可以从顶往下 递归  也可以直接for循环从下往上推 + dp数组
+   考察点： dp[i] = min(dp[i], dp[i - coin] + 1)
+   思考： 状态是金额  选择是硬币
  */
-
 // 322. 零钱兑换
 class Solution_322 {
     
     // 使用dp
     func coinChange3(_ coins: [Int], _ amount: Int) -> Int {
+        if amount == 0 {
+            return 0
+        }
         var dp = [Int](repeating: amount + 1, count: amount + 1)
-        
         dp[0] = 0
         
         // 遍历所有状态： 就是 dp[amout]代表凑够amout需要的硬币数

@@ -7,25 +7,18 @@
 
 
 /*
- 考察点： 经典的dp题目
- 解法：
- 1、贪心 2种解法
- 2、数组前缀和
- 3、dp
- 4、滑动窗口解法
+ 考察点： 最长子数组和  也就是最长连续子数组 同时还需要和是最大的
  
- */
+ 解法：
+ 1、dp一维模版 数学归纳法
+ 2、贪心 2种解法
+ 3、数组前缀和
+ 4、滑动窗口解法
+*/
 
 // 53. 最大子数组和
 class Solution_53 {
-    /*
-     
-       定义 dp[i] 代表以nums[i]结尾的最大子数组的和
-       状态列表  【1.。。nums.count-1】
-       方程 dp[i] = max(nums[i], dp[i - 1] + nums[i])
-       最后for循环里面查找
-     
-     */
+    // 定义 dp[i] 代表以nums[i]结尾的最大子数组的和
     func maxSubArray(_ nums: [Int]) -> Int {
         if nums.count == 0  {
             return 0
@@ -33,11 +26,10 @@ class Solution_53 {
         
         // 穷举所有
         var dp = [Int](repeating: 0, count: nums.count)
-        // base case
+
         dp[0] = nums[0]
         
         // 状态转移方程
-
         for i in 1..<nums.count {
             dp[i] = max(nums[i], dp[i - 1] + nums[i])
         }
@@ -49,6 +41,7 @@ class Solution_53 {
         }
         return res
     }
+    
     
     // 贪心算法1
     func maxSubArray2(_ nums: [Int]) -> Int {

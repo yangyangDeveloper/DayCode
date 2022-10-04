@@ -38,63 +38,66 @@ import Foundation
         }
 */
 
+/*
+ 
+ 当i件商品商品时候 重量为j
+ dp[i][j] == true, i = 1, j = 1
+ // 当1件商品 重量为2  有空
+ dp[i][j] == false, i = 1, j = 2
+ dp[i][j] == false, i = 1, j = 3
+ 根本装不进去dp[i][j] == true, i = 2, j = 1
+ dp[i][j] == true, i = 2, j = 2
+ dp[i][j] == true, i = 2, j = 3
+ 根本装不进去dp[i][j] == true, i = 3, j = 1
+ 根本装不进去dp[i][j] == true, i = 3, j = 2
+ dp[i][j] == true, i = 3, j = 3
+*/
 
 class Solution_416 {
     
-    /*
-        // 背包问题
-         背包体积 sum/2
-         背包要放入的物品 重量为元素值  价值可为元素值
-         背包刚好装好 说明找到了总和 sum/2的子集
-         背包里面的每一个元素不可以重复放入
-     */
+    // 给你一个背包重量为 和/2 的包 和 n件商品  每个商品重量为num[i] 让你装物品 是否能有一种装发 能够恰好将背包装满
+    // 状态 背包容量  可选的商品
+    // 选择 装进背包 和 不装进背包
+    // dp[i][j] = x   i个商品 j为重量  对于前 i 个物品，当前背包的容量为 j 时，若 x 为 true，则说明可以恰好将背包装满，若 x 为 false，则说明不能恰好将背包装满
+    // dp[i][j] = dp[i - 1][j]  dp[i][j] = dp[i - 1][j - nums[i - 1]]
     
-    /*
-     //01背包
-     for (int i = 0; i < n; i++) {
-         for (int j = m; j >= V[i]; j--) {
-             f[j] = max(f[j], f[j-V[i]] + W[i]);
-         }
-     }
-     
-     //完全背包
-     for (int i = 0; i < n; i++) {
-         for (int j = V[i]; j <= m; j++) {
-             f[j] = max(f[j], f[j-V[i]] + W[i]);
-         }
-     }
-     f[j]代表当前背包容量为j的时候，可以获取的最大价值。
-     完全背包是从左向右遍历，f[j-V[i]]取到的是拿第i个物品时的值，是新值，可以重复无限的拿，f[j]的值也会随之增加。
-     V：商品的体积
-     W：商品的价值
-     */
     func canPartition(_ nums: [Int]) -> Bool {
-        var sum = 0  //nums.reduce(0, { $0 + $1 })
-        for i in 0..<nums.count {
-            let num = nums[i]
-            sum += num
+        
+        var nums = nums
+        var sum = 0
+        for item in nums {
+            sum += item
         }
         
-        // 和为奇数时，不可能划分成两个和相等的集合
         if sum % 2 != 0 {
             return false
         }
         
-        let count = nums.count
+        let n = nums.count
         sum = sum / 2
+        // 转化为背包问题
+        var dp1 = [Bool](repeating: false, count: sum + 1)
+        var dp = [[Bool]](repeating: dp1, count: n + 1)
         
+        for i in 0..<n {
+            dp[i][0] = true
+        }
         
-        // 方法二：一维数组dp
-        var dp = [Bool](repeating: false, count: sum + 1)
-        dp[0] = true
-        
-        for i in 0..<count {
-            for j in (0..<dp.count).reversed() {
-                if j - nums[i] >= 0 {
-                    dp[j] = dp[j] || dp[j - nums[i]]
+        for i in 1...n {  // 商品
+            for j in 1...sum { // 背包重量
+                if j - nums[i - 1] < 0 {
+                    // 过重装不进去
+                    dp[i][j] = dp[i - 1][j]
+                    //print(dp[i - 1][j])
+                    print("根本装不进去dp[i][j] == \(dp[i][j]), i = \(i), j = \(j)")
+                }else {
+                    // i 从1开始  要减去偏移   装入或者不装入背包
+                    dp[i][j] = dp[i - 1][j] || dp[i - 1][j - nums[i - 1]]
+                    print("dp[i][j] == \(dp[i][j]), i = \(i), j = \(j)")
                 }
             }
         }
-        return dp[sum]
+        
+        return dp[n][sum]
     }
 }

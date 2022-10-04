@@ -5,39 +5,18 @@
 //  Created by zhangyangyang on 2022/9/26.
 //
 
-import Foundation
+/*
+ 
+ 考察点：  股票通用方程 三维dp k最多为2
+ 思考：
+ 1、状态变化 有k  所以循环需要加上 k的列表
+ 2、k为0的  base case
+ 3、return dp[n-1][max_k][0]
+ */
 
+// 123. 买卖股票的最佳时机 III
 class Solution_123 {
-    /*
-     
-     1前面就不持有 dp[i-1][k][0]
-     2昨天持有今天卖出  dp[i-1][k][1] + prices[i]
-     dp[i][k][0]  = max(dp[i-1][k][0], dp[i-1][k][1] + prices[i])
-     
-     1、前面就持有 dp[i-1][k][1]
-     2、昨天不持有哟今天买入  dp[i-1][k -1][0] - prices[i]
-     dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k -1][0] - prices[i])
-     
-     
-     // base case
-      需要考虑 i
-      需要考虑 k
-     
-      4个隐藏的boss
-      dp[-1][k][0] = 0
-      dp[-1][k][1] = min
-      dp[i][0][0] = 0
-      dp[i][0][1] = min
-       
-      4个初始化
-      dp[0][k][0] = prices[i]
-      
-      
-     */
-    // 当k = 1 一次买卖就结束了
-    // 当k不受限制  就是 k 和 k -1  都行
-    // 当k = 2 时候 就需要穷举所有的k
-    // 当k = 指定数字时候  如果k > n/2 就是不限制k
+
     func maxProfit(_ prices: [Int]) -> Int {
         
         let n = prices.count

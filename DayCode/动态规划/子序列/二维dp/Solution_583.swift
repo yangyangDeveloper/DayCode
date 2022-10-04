@@ -6,7 +6,7 @@
 //
 
 /*
-    考察点： dp 两个字符串lcs 模版
+    考察点： 两个字符串lcs 模版
     思路：  找到lcs长度 然后 （m - lcs）  +  （n - lcs） 就是最少步数
  */
 
@@ -40,8 +40,10 @@ class Solution_583 {
         for i in 1...m {
             for j in 1...n {
                 if s1[i - 1] == s2[j - 1] {
+                    // 在lcs中
                     dp[i][j] = 1 + dp[i - 1][j - 1]
                 }else {
+                    // 最少一个不在lcs中
                     dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
                 }
             }

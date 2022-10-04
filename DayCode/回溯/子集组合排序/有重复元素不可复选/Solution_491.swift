@@ -12,7 +12,9 @@
         3、 收集答案之后 不需要 return
 */
 
-// 491. 递增子序列
+// 491. 递增子序列 不需要连续
+// 674  最长连续递增序列  这个需要连续
+
 class Solution_491 {
     func findSubsequences(_ nums: [Int]) -> [[Int]] {
          var res = [[Int]]()
@@ -51,5 +53,22 @@ class Solution_491 {
          backtrack(0)
          return res
      }
+    
+    
+    // 最长连续递增
+    func findLengthOfLCIS(_ nums: [Int]) -> Int {
+        if nums.count == 1 {
+            return 1
+        }
+        var dp = [Int](repeating: 1, count: nums.count)
+        var res = 0
+        for i in 0..<nums.count - 1 {
+            if nums[i + 1] > nums[i] {
+                dp[i + 1] = dp[i] + 1
+            }
+            res = max(res, dp[i + 1])
+        }
+        return res
+    }
 
 }

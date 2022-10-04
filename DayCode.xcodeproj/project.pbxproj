@@ -410,10 +410,10 @@
 			children = (
 				A45DAE4928D33D9B001BAC30 /* Solution_121.swift */,
 				A45DAE4B28D373BF001BAC30 /* Solution_122.swift */,
-				A414752228E15731001EC901 /* Solution_123.swift */,
-				A414752428E15BE1001EC901 /* Solution_188.swift */,
 				A414752628E167C6001EC901 /* Solution_714.swift */,
 				A45DAE4D28D4119C001BAC30 /* Solution_309.swift */,
+				A414752228E15731001EC901 /* Solution_123.swift */,
+				A414752428E15BE1001EC901 /* Solution_188.swift */,
 			);
 			path = "买卖股票";
 			sourceTree = "<group>";
@@ -514,11 +514,7 @@
 			children = (
 				A496084128DF07D800F31C7A /* 子序列.swift */,
 				A496084528DF405600F31C7A /* 一维dp */,
-				A4253F8D28DDA37000781D91 /* Solution_72.swift */,
-				A496083B28DEEB1B00F31C7A /* Solution_1143.swift */,
-				A496083D28DEF45800F31C7A /* Solution_583.swift */,
-				A496083F28DEFC4F00F31C7A /* Solution_712.swift */,
-				A496084328DF166D00F31C7A /* Solution_516.swift */,
+				A4AA28FC28EBF3D100666D0D /* 二维dp */,
 			);
 			path = "子序列";
 			sourceTree = "<group>";
@@ -745,6 +741,7 @@
 			isa = PBXGroup;
 			children = (
 				A4253F8F28DDB01700781D91 /* Solution_300.swift */,
+				A496084F28DF5DEF00F31C7A /* Solution_674.swift */,
 				A49B0BA628A5EC92003F9DC1 /* Solution_53.swift */,
 			);
 			path = "一维dp";
@@ -754,19 +751,10 @@
 			isa = PBXGroup;
 			children = (
 				A496084728DF444200F31C7A /* Solution_64.swift */,
-				A4253F9228DDFB8F00781D91 /* Solution_931.swift */,
 				A496084928DF462900F31C7A /* So47.swift */,
+				A4253F9228DDFB8F00781D91 /* Solution_931.swift */,
 			);
 			path = "路径和";
-			sourceTree = "<group>";
-		};
-		A496084C28DF550800F31C7A /* 子数组 */ = {
-			isa = PBXGroup;
-			children = (
-				A496084D28DF552600F31C7A /* Solution_718.swift */,
-				A496084F28DF5DEF00F31C7A /* Solution_674.swift */,
-			);
-			path = "子数组";
 			sourceTree = "<group>";
 		};
 		A496085128E05DFF00F31C7A /* 岛屿 */ = {
@@ -851,22 +839,22 @@
 				A49B0BA028A5EC8B003F9DC1 /* 数组 */,
 				A41A4E6428C06F2F00B7AB96 /* 二分查找 */,
 				A49B0BA828A5EC96003F9DC1 /* 滚动窗口 */,
+				A475878228DABAD2007E683F /* 数组排序 */,
 				A49B0BB628A5ECA0003F9DC1 /* 二叉树 */,
 				A441D84228E2DB0C00F5B99A /* 括号 */,
 				A4253F8428DD57F300781D91 /* BFS */,
-				A475878228DABAD2007E683F /* 数组排序 */,
-				A41A4E6128C06DE900B7AB96 /* 剑指Offer II */,
-				A41A4E5A28C0637900B7AB96 /* 剑指Offer */,
-				A45DAE5728D574E6001BAC30 /* 前缀和 */,
 				A408CDFE28EADC2700C56A65 /* DFS */,
-				A41DCF4A28BF85F900FB6012 /* 哈希 */,
 				A460BC2C28D02DE500B8DB24 /* 回溯 */,
+				A41DCF4A28BF85F900FB6012 /* 哈希 */,
 				A45DAE3728D1D890001BAC30 /* 贪心 */,
 				A49B0BA528A5EC92003F9DC1 /* 动态规划 */,
 				A45DAE4F28D43486001BAC30 /* 背包 */,
 				A441D84B28E2F95700F5B99A /* 数学规律 */,
 				A47A0A0D28E434AA0024F4EB /* 位运算 */,
 				A441D85828E3452800F5B99A /* 经典面试 */,
+				A41A4E6128C06DE900B7AB96 /* 剑指Offer II */,
+				A41A4E5A28C0637900B7AB96 /* 剑指Offer */,
+				A45DAE5728D574E6001BAC30 /* 前缀和 */,
 				A49B0B8C28A5EC7B003F9DC1 /* AppDelegate.swift */,
 				A49B0B8E28A5EC7B003F9DC1 /* SceneDelegate.swift */,
 				A49B0B9028A5EC7B003F9DC1 /* ViewController.swift */,
@@ -899,14 +887,13 @@
 			isa = PBXGroup;
 			children = (
 				A4253F8B28DD9F1C00781D91 /* 动态规划.swift */,
-				A496084628DF40D300F31C7A /* 路径和 */,
-				A496084C28DF550800F31C7A /* 子数组 */,
-				A4253F9128DDB81B00781D91 /* 子序列 */,
-				A414752828E19049001EC901 /* 打家劫舍 */,
-				A414751F28E14E3A001EC901 /* 买卖股票 */,
 				A4253F8928DD92E400781D91 /* Solution_509.swift */,
 				A45DAE3C28D22735001BAC30 /* Solution_322.swift */,
 				A4CEB4B728C4DA9D002037D5 /* Solution_70.swift */,
+				A496084628DF40D300F31C7A /* 路径和 */,
+				A4253F9128DDB81B00781D91 /* 子序列 */,
+				A414752828E19049001EC901 /* 打家劫舍 */,
+				A414751F28E14E3A001EC901 /* 买卖股票 */,
 			);
 			path = "动态规划";
 			sourceTree = "<group>";
@@ -949,6 +936,19 @@
 				A475879428DBFC0E007E683F /* BST */,
 			);
 			path = "二叉树";
+			sourceTree = "<group>";
+		};
+		A4AA28FC28EBF3D100666D0D /* 二维dp */ = {
+			isa = PBXGroup;
+			children = (
+				A4253F8D28DDA37000781D91 /* Solution_72.swift */,
+				A496084D28DF552600F31C7A /* Solution_718.swift */,
+				A496083B28DEEB1B00F31C7A /* Solution_1143.swift */,
+				A496083D28DEF45800F31C7A /* Solution_583.swift */,
+				A496083F28DEFC4F00F31C7A /* Solution_712.swift */,
+				A496084328DF166D00F31C7A /* Solution_516.swift */,
+			);
+			path = "二维dp";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

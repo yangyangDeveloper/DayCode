@@ -13,6 +13,40 @@
 // 1143. 最长公共子序列
 class Solution_1143 {
     
+    /*
+     解法三 dp
+     
+     dp[i][j] 表示text1的前i个元素与text2的前j个元素的最长公共子序列长度;
+     如果text1[i-1] == text2[j-1]，那么dp[i][j] = dp[i-1][j-1] + 1;
+     如果text1[i-1] != text2[j-1]，那么dp[i][j] = max(dp[i-1][j], dp[i][j-1]);
+     
+     想清楚上面的关系，问题就迎刃而解了。
+     
+     定义dp长度从 1 到  m + 1    从1开始遍历
+     */
+    var dp = [[Int]]()
+    func longestCommonSubsequence3(_ text1: String, _ text2: String) -> Int {
+        let m = text1.count
+        let n = text2.count
+        dp = [[Int]](repeating: [Int](repeating: 0, count: n + 1), count: m  + 1)
+        
+        let s1 = text1.map({String($0)})
+        let s2 = text2.map({String($0)})
+        
+        for i in 1...m {
+            for j in 1...n {
+                // 现在 i 和 j 从 1 开始，所以要减一
+                if s1[i - 1] == s2[j - 1] {
+                    dp[i][j] = 1 + dp[i - 1][j - 1]
+                }else {
+                    dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+                }
+            }
+        }
+        return dp[m][n]
+    }
+    
+    
     // 解法1 暴力穷举
     func longestCommonSubsequence(_ text1: String, _ text2: String) -> Int {
         var m = text1.count
@@ -100,36 +134,5 @@ class Solution_1143 {
     
     
 
-/*
-    解法三 dp
 
-    dp[i][j] 表示text1的前i个元素与text2的前j个元素的最长公共子序列长度;
-    如果text1[i-1] == text2[j-1]，那么dp[i][j] = dp[i-1][j-1] + 1;
-    如果text1[i-1] != text2[j-1]，那么dp[i][j] = max(dp[i-1][j], dp[i][j-1]);
-
-    想清楚上面的关系，问题就迎刃而解了。
- 
-    定义dp长度从 1 到  m + 1    从1开始遍历
-*/
-    var dp = [[Int]]()
-    func longestCommonSubsequence3(_ text1: String, _ text2: String) -> Int {
-        let m = text1.count
-        let n = text2.count
-        dp = [[Int]](repeating: [Int](repeating: 0, count: n + 1), count: m  + 1)
-        
-        let s1 = text1.map({String($0)})
-        let s2 = text2.map({String($0)})
-            
-        for i in 1...m {
-            for j in 1...n {
-                // 现在 i 和 j 从 1 开始，所以要减一
-                if s1[i - 1] == s2[j - 1] {
-                    dp[i][j] = 1 + dp[i - 1][j - 1]
-                }else {
-                    dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
-                }
-            }
-        }
-        return dp[m][n]
-    }
 }

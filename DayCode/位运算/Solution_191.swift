@@ -9,8 +9,8 @@ import Foundation
 
 /*
   考察点： 位运算技巧  n & （n - 1） 可以消除二进制中的最后1位1
- 
- */
+*/
+
 class Solution_191 {
     // 为运算
     func hammingWeight(_ n: Int) -> Int {

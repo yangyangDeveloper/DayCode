@@ -6,98 +6,58 @@
 //
 
 
-
 /*
-    考察点： 3维dp
-    只关心相邻关系
+    考察点： 股票通用方程 三维dp k为1 
+
+    dp[i][k][0 or 1]
+    0 <= i <= n - 1, 1 <= k <= K
+    n 为天数，大 K 为交易数的上限，0 和 1 代表是否持有股票。
+
+    dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1] + prices[i])
+         max( 今天选择 rest,        今天选择 sell )
+
+
+    dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0] - prices[i])
+         max( 今天选择 rest,         今天选择 buy )
+
+    通用 base case：
+    dp[-1][...][0] = dp[...][0][0] = 0
+    dp[-1][...][1] = dp[...][0][1] = -infinity
+
+
+     如果k = 1
  
-    定义： dp[i][k][不持有 或者 持有]   第i天 最大交易次数为k时候的利润
-    0<= i < n    1<=k<=k
- 
-    方程：
-    // i天不持有
-    1、昨天就不持有 dp[i - 1][k][0]
-    2、昨天持有 今天卖出 dp[i- 1][k][1] + price[i]
-    dp[i][k][0]  = max(dp[i - 1][k][0], dp[i- 1][k][1] + price[i])
- 
-    // i天持有
-    1、i-1就持有   dp[i-1][k][1]
-    2、i-1不持有今天买入   dp[i-1][k][0] - price[i]
-    dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k][0] - price[i])
- 
-    穷举：
-    for i in 0..<n {
-            
-    }
-    
+     dp[i][1][0]  = max(dp[i - 1][1][0], dp[i- 1][1][1] + price[i])
+     dp[i][1][1] = max(dp[i-1][1][1], dp[i-1][0][0] - price[i])
+     状态转移方程：
+     dp[i][0] = max(dp[i-1][0], dp[i-1][1] + prices[i])
+     dp[i][1] = max(dp[i-1][1], -prices[i])
+
+     base case：
+     dp[i][0] = 0;
+     dp[i][1] = -prices[i]
+
+
     返回值
     return dp[n-1][k][0]
- 
-    basecase
-    dp[-1][k][0]  = 0  // -1天不持有
-    dp[-1][k][1] = int.min  // -1天持有
     
-    dp[i][0][0] = 0 // k = 0  没有交易次数  利润为0
-    dp[i][0][1] = int.min  //  没有交易次数 还持有
-    
-    如果k = 1
-    
-    dp[i][1][0]  = max(dp[i - 1][1][0], dp[i- 1][1][1] + price[i])
-    dp[i][1][1] = max(dp[i-1][1][1], dp[i-1][1][0] - price[i])
-    
- 去除k
- dp[-1][0]  = 0  // -1天不持有
- dp[-1][[1] = int.min  // -1天持有
- 
- dp[i][0]  = max(dp[i - 1][0], dp[i- 1][1] + price[i])
- dp[i][1] = max(dp[i-1][1], dp[i-1][0] - price[i])
- 
- if i - 1  = -1 也就是 i = 0 第一天
- dp[i][1] = max(dp[i-1][1],- price[i])
- 
- 
- 最终方程
- dp[i][0]  = max(dp[i - 1][0], dp[i- 1][1] + price[i])
- dp[i][1] = max(dp[i-1][1],- price[i])
- 
- 
- dp[i][0] = max(dp[i - 1][0], dp[i - 1][1] + prices[i])
- dp[i][1] = max(dp[i - 1][1], dp[i - 1][2] - prices[i])
- // 处于冷冻期 肯定是卖出了    买入 卖出  冷冻期  买入        不是 买入 冷冻期 卖出
- dp[i][2] = dp[i - 1][0]
- 
 */
 
+// 121. 买卖股票的最佳时机
 class Solution_121 {
     
-    // 套用股票dp三维公式
     func maxProfit3(_ prices: [Int]) -> Int {
         var n = prices.count
         var prices = prices
         // 定义二维
         var dp = [[Int]](repeating: [Int](repeating: 0, count: 2), count: prices.count)
-        
-        // 推理base
-        //dp[-1][0]  = 0  // -1天不持有
-        //dp[-1][[1] = int.min  // -1天持有
-               
+                       
         for i in 0..<prices.count {
             if i - 1 == -1 {
-                dp[i][0] = 0;
-                // 根据状态转移方程可得：
-                //   dp[i][0]
-                // = max(dp[-1][0], dp[-1][1] + prices[i])
-                // = max(0, -infinity + prices[i]) = 0
-
-                dp[i][1] = -prices[i];
-                // 根据状态转移方程可得：
-                //   dp[i][1]
-                // = max(dp[-1][1], dp[-1][0] - prices[i])
-                // = max(-infinity, 0 - prices[i])
-                // = -prices[i]
+                dp[i][0] = 0
+                dp[i][1] = -prices[i]
                 continue
             }
-            
             dp[i][0]  = max(dp[i - 1][0], dp[i - 1][1] + prices[i])
             dp[i][1] = max(dp[i-1][1], -prices[i])
             
