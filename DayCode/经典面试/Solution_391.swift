@@ -6,6 +6,7 @@
 //
 
 /*
+    
     考察点： 面积必须相等 + 顶点必须是4个 而且是大巨型的
     顶点：偶数次移除  奇数次添加
 */
@@ -15,7 +16,7 @@ class Solution_391 {
     // 第一关： 面积不同 一定不完美
     // 第二关： 面积相同 也不一定完美  还需要借助顶点来辅助
     
-    var set = Set<Int>()
+    var set = Set<[Int]>()
     func isRectangleCover(_ rectangles: [[Int]]) -> Bool {
         // 大巨型的左下角和右上角
         var X1 = Int.max
@@ -40,7 +41,7 @@ class Solution_391 {
             // 计算叠加的面积
             ac_area += (x2 - x1) * (y2 - y1)
             
-            // 记录每个顶点出现的次数
+           // 记录每个顶点出现的次数
            record(x1, y1)
            record(x1, y2)
            record(x2, y1)
@@ -77,13 +78,11 @@ class Solution_391 {
         return true
     }
     
-    // // 二维坐标转一维，方便比较
-    func key(_ x: Int, _ y: Int) -> Int {
-        // 10000007 是随便取的一个大质数
-        return x * 100000007 + y
+    func key(_ x: Int, _ y: Int) -> [Int] {
+        return [x, y]
     }
     
-    // 记录顶点出现的次数，如果一个顶点出现偶数次，则移除
+    // 记录顶点出现的次数，出现偶数次移除 出现奇数次 那就是顶点
     func record(_ x: Int, _ y: Int) {
         let key = key(x, y)
         if set.contains(key) {

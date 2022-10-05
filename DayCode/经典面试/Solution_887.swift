@@ -59,7 +59,8 @@ class Solution_887 {
 
     */
 
-
+    //dp[n][k] = m    n楼层 k个基点 最小次数为m
+    
     func superEggDrop(_ k: Int, _ n: Int) -> Int {
         var t = k
         var dp1 = [Int](repeating:0, count: k + 1)
@@ -70,15 +71,17 @@ class Solution_887 {
             return n
         }
         
-        // 就一个鸡蛋
+        // base case  1个鸡蛋
         for i in 0...n {
             dp[i][1] = i
         }
 
         for i in 1...n {
-            for k in k...t {
+            for k in 2...t {
                 var res = Int.max
                 for j in 1...i {
+                     // 碎了dp[j - 1][k - 1]
+                     // 没碎dp[i - j][k]  4层碎了  [1 8]   还有4层
                      let t = max(dp[j - 1][k - 1], dp[i - j][k]) + 1
                      res = min(res, t)
                 }

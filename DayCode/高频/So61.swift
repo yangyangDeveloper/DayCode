@@ -22,6 +22,7 @@
 class So61 {
     
     func isStraight(_ nums: [Int]) -> Bool {
+        let n = nums.count
         let list = nums.sorted()
         var jk = 0
         for i in 0..<4 {
@@ -34,7 +35,6 @@ class So61 {
                 }
             }
         }
-        
-        return list[4] - list[jk] < 5
+        return (nums[n - 1] - nums[jk]) < 5
     }
 }

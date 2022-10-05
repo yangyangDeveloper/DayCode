@@ -5,6 +5,20 @@
 //  Created by zhangyangyang on 2022/9/27.
 //
 
+/*
+ 
+  考察点： 双指针
+       i
+   1 2 3
+       j
+     4 5
+ 
+   双指针 i j  到序右走
+ 
+   结果存放到res
+   num[i]*nums[j]  对应结果存放在 res[i + j]  res[i + j + 1] 的位置
+*/
+
 // 43. 字符串相乘
 class Solution_43 {
     
@@ -29,8 +43,8 @@ class Solution_43 {
                 
                 // 叠加到 res 上
                 let sum = mul + arr[p2]
-                arr[p2] = sum % 10
                 arr[p1] += sum / 10
+                arr[p2] = sum % 10
             }
         }
         

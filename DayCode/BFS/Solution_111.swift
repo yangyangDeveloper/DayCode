@@ -22,6 +22,50 @@
 // 111. 二叉树的最小深度
 class Solution_111 {
     
+    
+    // bfs 更快
+    func minDepth2(_ root: TreeNode?) -> Int {
+        if root == nil {
+            return 0
+        }
+        var queue = [TreeNode]()
+        queue.append(root!)
+        // visited数组 避免走回头路
+        var level = 1 // 记录扩散的步数
+        while queue.count > 0 {
+            var size = queue.count
+
+            // 取出来队列所有节点 然后向四周扩展
+            for i in 0..<size {
+                var temp = queue.removeLast()
+
+                if temp.left == nil && temp.right == nil {
+                    // 说明到达了叶子结点
+                    print("到到了叶子结点")
+                    return level
+                }
+
+                // 把四周节点装进去  for循环的 但是二叉树 只有2个子节点  所以可以直接写
+                if let left = temp.left {
+                    // if visited 没有访问过 那么装进queue
+                    queue.append(left)
+                    // 更新改节点 visited
+                }
+                if let right = temp.right {
+                    // if visited 没有访问过 那么装进queue
+                    queue.append(right)
+                    // 更新改节点 visited
+                }
+            }
+
+            level += 1
+        }
+
+        return level
+    }
+    
+    
+    
     // 模版解法 找start到target的最短路径  start就是根节点 target就是叶子结点
     func minDepth(_ root: TreeNode?) -> Int {
         if root == nil {

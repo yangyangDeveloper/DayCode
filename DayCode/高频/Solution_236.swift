@@ -22,13 +22,17 @@ class Solution_236 {
            return root
        }
 
-       // 往上传递
+       // 从底往上传递
        let left = lowestCommonAncestor(root?.left,p,q)
        let right = lowestCommonAncestor(root?.right,p,q)
  
        // 后序位置 查找到了 root 的左边和右边刚好有 p 和 q  那root就是公共节点
        if left != nil && right != nil {
            return root
+       }
+        // 情况 2
+       if left == nil && right == nil {
+            return nil
        }
        return left != nil ? left : right
     }
