@@ -7,7 +7,8 @@
 
 /*
      考察点： 双指针在链表中的技巧 -> 快慢指针找链表中心点
-     思想： fast走2步  slow走1步   偶数链表 fast.next为空 slow在 中间     奇数链表 fast为nil  slow指向中间的右边
+     思想：
+     fast走2步  slow走1步   偶数链表 fast.next为空 slow在 中间     奇数链表 fast为nil  slow指向中间的右边
      模版
      while fast != nil && fast?.next != nil  {
         fast = fast?.next?.next

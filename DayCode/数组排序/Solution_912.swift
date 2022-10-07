@@ -8,67 +8,62 @@
 import Foundation
 
 class Solution_912 {
-
+    
+    // 创建一个临时辅助数组
     var temp = [Int]()
-    func sortArray(_ nums: [Int]) -> [Int] {
-        
-        if nums.count == 0 {
-            return []
-        }
-        if nums.count == 1 {
+    var curindex = 0
+    func sortArray2(_ nums: [Int]) -> [Int] {
+        var nums = nums
+        let n = nums.count
+        guard n > 1 else {
             return nums
         }
-        
-        var nums = nums
-        temp = [Int](repeating:0, count: nums.count)
-        helper(&nums, 0, nums.count - 1)
+        temp = [Int](repeating: 0, count: nums.count)
+        mergeSort(&nums, 0, n - 1)
         return nums
     }
     
-    // 定义：将子数组 nums[lo..hi] 进行排序
-    func helper(_ nums: inout [Int], _ left: Int, _ right: Int) {
-        if left == right {
-            // 单个元素不用排序
+    // 将数组 nums[left..right] 进行排序
+    func mergeSort(_ nums: inout [Int], _ left: Int, _ right: Int) {
+        // 分离到只有1个元素
+        if left >= right {
             return
         }
-
-        let mid =  left + (right - left ) / 2
-        helper(&nums, left, mid)
-        
-        // 再对右半部分数组 nums[mid+1..hi] 排序
-        helper(&nums, mid + 1, right)
-        
+        let mid = left + (right - left) / 2
+        mergeSort(&nums, left, mid)
+        mergeSort(&nums, mid + 1, right)
+        print("left == \(left), right == \(right), mid ==\(mid)")
         merge(&nums, left, mid, right)
     }
+
+    // 给2个数组 进行合并到一个有序数组  【left mid】 和  【mid+1  right】 合并在一起
+    func merge(_ nums : inout [Int], _ left: Int, _ mid: Int, _ right: Int)  {
        
-    // 将 nums[lo..mid] 和 nums[mid+1..hi] 这两个有序数组合并成一个有序数组
-    func merge(_ nums: inout [Int], _ left: Int, _ mid: Int, _ right: Int) {
-         
-         for i in left...right {
-             temp[i] = nums[i]
-         }
+        for i in left...right {
+            temp[i] = nums[i]
+        }
         
-         var i = left
-         var j = mid + 1
-         
-         for p in left...right {
-             
-             // 左半数组是否全部合并
-             if i == mid + 1 {
-                 nums[p] = temp[j]
-                 j += 1
-             // 右半数组是否全部合并
-             } else if j == right + 1 {
-                 nums[p] = temp[i]
-                 i += 1
-             
-             } else if temp[i] > temp[j] {
-                 nums[p] = temp[j]
-                 j += 1
-             } else {
-                 nums[p] = temp[i]
+        var i = left
+        var j = mid + 1
+        
+        for p in left...right {
+            if i == mid + 1 {   // i的区间为 [left mid]  i = mid + 1 就说明 左边装满了
+                // 左半数组已全部被合并
+                nums[p] = temp[j]
+                j += 1
+            }else if j == right + 1 { // j的区间为 [mid+1, right] j = right + 1 就说明 右边装满了
+                //右半边数组已全部被合并
+                nums[p] = temp[i]
                 i += 1
-             }
-         }
+            }else if temp[i] < temp[j] {
+                nums[p] = temp[i]
+                i += 1
+            }else {
+                nums[p] = temp[j]
+                j += 1
+            }
+        }
+        
+       print(nums)
     }
 }

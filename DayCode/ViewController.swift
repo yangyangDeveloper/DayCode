@@ -34,12 +34,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //链表
-        // testLikedList()
+        testLikedList()
         
-         testArray()
+         //testArray()
         // testPreSum()
         // testWindows()
-        //testArraySort()
+        // testArraySort()
         // testpailie()
         // testdp()
         // testTX()
@@ -141,15 +141,16 @@ extension ViewController {
 extension ViewController {
     
     func testArraySort() {
-        test912()
+        //test912()
+        quickSort()
     }
     
     // 归并排序
     func test912() {
         var nums = [5,2,3,1]
-        //var res = Solution_912().sortArray(nums)
+        var res = Solution_912().sortArray2(nums)
         
-        var res = Solution_912().merge(&nums, 0, 1, 3)
+        //var res = Solution_912().merge(&nums, 0, 1, 3)
         
         
     }
@@ -180,7 +181,7 @@ extension ViewController {
     // 快速排序
     func quickSort() {
         let sort = Solution_Sort()
-        let nums = [5,1,1,2,0,0]
+        let nums = [5,1,1,2,6,4]
         let n = sort.quicksortArray(nums)
         print(n)
     }
@@ -200,7 +201,8 @@ extension ViewController {
     func testLikedList() {
         // 反转链表
         //test206()
-        test92()
+        //test92()
+        test234()
     }
     
     func test206() {
@@ -240,6 +242,20 @@ extension ViewController {
         let t = Solution_92().reverseBetween(nod1, 2, 5)
         
         
+    }
+    
+    func test234() {
+        var nod1 = ListNode(1)
+        var nod2 = ListNode(2)
+        var nod3 = ListNode(3)
+        var nod4 = ListNode(2)
+        var nod5 = ListNode(1)
+        nod1.next = nod2
+        nod2.next = nod3
+        nod3.next = nod4
+        nod4.next = nod5
+        nod5.next = nil
+        let t = Solution_234().isPalindrome5(nod1)
     }
 }
 

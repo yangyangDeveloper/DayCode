@@ -59,8 +59,7 @@
 
 // 328. 奇偶链表
 class Solution_328 {
- 
-    
+
     func oddEvenList3(_ head: ListNode?) -> ListNode? {
         if head == nil  {
             return head

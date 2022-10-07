@@ -18,9 +18,10 @@
 
 // 234. 回文链表
 class Solution_234 {
-    
+
+    // MARK: -  后序遍历
     var left: ListNode?
-    func isPalindrome4(_ head: ListNode?) -> Bool {
+    func isPalindrome(_ head: ListNode?) -> Bool {
         left = head
         return traver(head)
     }
@@ -36,7 +37,9 @@ class Solution_234 {
         return res
     }
     
-    func isPalindrome(_ head: ListNode?) -> Bool {
+    
+    // MARK: -  借助arr 比较
+    func isPalindrome2(_ head: ListNode?) -> Bool {
         guard head != nil else {return false}
         var res = [Int]()
         var cur = head
@@ -67,7 +70,7 @@ class Solution_234 {
         3个是 0 2  比1次   所以比的次数是  3/2
         找到比较次数
      */
-    func isPalindrome2(_ head: ListNode?) -> Bool {
+    func isPalindrome3(_ head: ListNode?) -> Bool {
         guard head != nil else {return false}
         var res = [Int]()
         var cur = head
@@ -91,7 +94,8 @@ class Solution_234 {
         return true
     }
     
-    func isPalindrome3(_ head: ListNode?) -> Bool {
+    // MARK: -  借助stack
+    func isPalindrome4(_ head: ListNode?) -> Bool {
         guard head != nil else { return false }
         var res = [ListNode]()
         var cur = head
@@ -109,4 +113,48 @@ class Solution_234 {
         }
         return true
     }
+    
+    
+    // MARK: -  双指针
+    func isPalindrome5(_ head: ListNode?) -> Bool {
+
+         // 找中心
+         var slow = head
+         var fast = head
+         while fast != nil && fast?.next != nil {
+             fast = fast?.next?.next
+             slow = slow?.next
+         }
+
+         if fast != nil {
+             slow = slow?.next
+         }
+
+         var left = head
+         var right = reverse(slow)
+
+         // 前后指针
+         while right != nil {
+             if left!.val != right!.val {
+                 return false
+             }
+             left = left?.next
+             right = right?.next
+         }
+        return true
+     }
+
+     // 反转 [head, nil)
+     func reverse(_ head: ListNode?) -> ListNode? {
+         var pre: ListNode?
+         var cur = head
+         var net = head
+         while cur != nil {
+             net = cur?.next
+             cur?.next = pre
+             pre = cur
+             cur = net
+         }
+         return pre
+     }
 }
