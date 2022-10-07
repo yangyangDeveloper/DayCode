@@ -497,6 +497,7 @@
 			isa = PBXGroup;
 			children = (
 				A45DAE5A28D57B18001BAC30 /* Solution_1.swift */,
+				A475876028D8A997007E683F /* Solution_167.swift */,
 				A49B0BA128A5EC8B003F9DC1 /* Solution_49.swift */,
 				A41DCF4B28BF861400FB6012 /* Solution_offer50.swift */,
 			);
@@ -657,6 +658,7 @@
 			children = (
 				A41DCF4828BF270400FB6012 /* Solution_Sort.swift */,
 				A4987CF828DC479D0071A912 /* Solution_912.swift */,
+				A49B0BA228A5EC8B003F9DC1 /* Solution_215.swift */,
 			);
 			path = "数组排序";
 			sourceTree = "<group>";
@@ -879,10 +881,8 @@
 				A475875828D89B16007E683F /* Solution_26.swift */,
 				A475875A28D8A0C2007E683F /* Solution_27.swift */,
 				A475875C28D8A526007E683F /* Solution_283.swift */,
-				A475876028D8A997007E683F /* Solution_167.swift */,
 				A475876228D8AC67007E683F /* Solution_344.swift */,
 				A475876428D8AE8C007E683F /* Solution_5.swift */,
-				A49B0BA228A5EC8B003F9DC1 /* Solution_215.swift */,
 			);
 			path = "数组";
 			sourceTree = "<group>";
