@@ -11,13 +11,23 @@
    中序遍历数组为 inorder[inStart..inEnd]，
    后序遍历数组为 perorder[perStart..perEnd]，
  
- 技巧：
- 记边界
- 
- 左子树就1个  leftsize = 1    index
 
- 所有左子树后序区间是  [preorder + 1  preStart + leftsize]     [1, 1]  才是1个元素
- */
+basecase:
+instart > inend {
+   return nil
+}
+ 
+统计左子树数量 index - instart
+ 
+左子树
+[inStart, index-1]
+[preStart + 1  preStart + leftsize]
+
+右子树
+[index + 1, inEnd]
+[preStart + leftsize + 1  preEnd]
+ 
+*/
 
 // 105. 从前序与中序遍历序列构造二叉树
 class Solution_105 {
