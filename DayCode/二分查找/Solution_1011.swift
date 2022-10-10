@@ -85,6 +85,16 @@ class Solution_1011 {
                 days += 1
             }
         }
+     // 等价上面的算法 
+//        for i in 0..<weights.count {
+//            wight += weights[i]
+//            if wight > x {
+//                days += 1
+//                // 第二天清零了
+//                wight = weights[i]
+//            }
+//        }
+        
         return days
     }
 }

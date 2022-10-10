@@ -15,7 +15,7 @@ class Solution_701 {
     
     func insertIntoBST(_ root: TreeNode?, _ val: Int) -> TreeNode? {
         if root == nil {
-            return TreeNode(root!.val)
+            return TreeNode(val)
         }
         if root!.val > val {
             root?.left = insertIntoBST(root?.left, val)
