@@ -49,7 +49,7 @@ class Solution_23 {
     func backtrace(_ left: Int, _ right: Int,  _ path: inout String, _ res: inout [String]) {
         
         // 若左括号剩下的多，说明不合法 (一定要注意 左括号剩下的多 这句话)
-        if left < right {
+        if left > right {
             return
         }
         
