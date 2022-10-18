@@ -44,6 +44,7 @@
 		A41DCF4728BF021500FB6012 /* Solution_148.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF4628BF021500FB6012 /* Solution_148.swift */; };
 		A41DCF4928BF270400FB6012 /* Solution_Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF4828BF270400FB6012 /* Solution_Sort.swift */; };
 		A41DCF4C28BF861400FB6012 /* Solution_offer50.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DCF4B28BF861400FB6012 /* Solution_offer50.swift */; };
+		A41F5E7128FE99F9004303CC /* Solution_146.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F5E7028FE99F9004303CC /* Solution_146.swift */; };
 		A4253F8628DD580C00781D91 /* Solution_111.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4253F8528DD580C00781D91 /* Solution_111.swift */; };
 		A4253F8828DD647100781D91 /* Solution_752.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4253F8728DD647100781D91 /* Solution_752.swift */; };
 		A4253F8A28DD92E400781D91 /* Solution_509.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4253F8928DD92E400781D91 /* Solution_509.swift */; };
@@ -239,6 +240,7 @@
 		A41DCF4628BF021500FB6012 /* Solution_148.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_148.swift; sourceTree = "<group>"; };
 		A41DCF4828BF270400FB6012 /* Solution_Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_Sort.swift; sourceTree = "<group>"; };
 		A41DCF4B28BF861400FB6012 /* Solution_offer50.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_offer50.swift; sourceTree = "<group>"; };
+		A41F5E7028FE99F9004303CC /* Solution_146.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solution_146.swift; sourceTree = "<group>"; };
 		A4253F8528DD580C00781D91 /* Solution_111.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_111.swift; sourceTree = "<group>"; };
 		A4253F8728DD647100781D91 /* Solution_752.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_752.swift; sourceTree = "<group>"; };
 		A4253F8928DD92E400781D91 /* Solution_509.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_509.swift; sourceTree = "<group>"; };
@@ -667,14 +669,15 @@
 			path = "必会";
 			sourceTree = "<group>";
 		};
-		A475878228DABAD2007E683F /* 数组排序 */ = {
+		A475878228DABAD2007E683F /* 数组链表排序 */ = {
 			isa = PBXGroup;
 			children = (
+				A41DCF4628BF021500FB6012 /* Solution_148.swift */,
 				A41DCF4828BF270400FB6012 /* Solution_Sort.swift */,
 				A4987CF828DC479D0071A912 /* Solution_912.swift */,
 				A49B0BA228A5EC8B003F9DC1 /* Solution_215.swift */,
 			);
-			path = "数组排序";
+			path = "数组链表排序";
 			sourceTree = "<group>";
 		};
 		A475878428DABC18007E683F /* 二维数组 */ = {
@@ -855,13 +858,14 @@
 		A49B0B8B28A5EC7B003F9DC1 /* DayCode */ = {
 			isa = PBXGroup;
 			children = (
+				A41F5E7028FE99F9004303CC /* Solution_146.swift */,
 				A47A0A1628E43D5C0024F4EB /* 高频 */,
 				A49B0BAB28A5EC9B003F9DC1 /* 链表 */,
 				A49B0BA028A5EC8B003F9DC1 /* 数组 */,
 				A4E8A1F228FAD2A40070D8EA /* 栈 */,
 				A41A4E6428C06F2F00B7AB96 /* 二分查找 */,
 				A49B0BA828A5EC96003F9DC1 /* 滚动窗口 */,
-				A475878228DABAD2007E683F /* 数组排序 */,
+				A475878228DABAD2007E683F /* 数组链表排序 */,
 				A49B0BB628A5ECA0003F9DC1 /* 二叉树 */,
 				A441D84228E2DB0C00F5B99A /* 括号 */,
 				A4253F8428DD57F300781D91 /* BFS */,
@@ -935,7 +939,6 @@
 				A475875328D82EFF007E683F /* 必会 */,
 				A41DCF3C28BB23E900FB6012 /* Solution_61.swift */,
 				A41DCF4428BDB64F00FB6012 /* Solution_82.swift */,
-				A41DCF4628BF021500FB6012 /* Solution_148.swift */,
 				A49B0BAD28A5EC9B003F9DC1 /* Solution_203.swift */,
 				A41DCF3A28B9D48000FB6012 /* Solution_237.swift */,
 			);
@@ -1124,6 +1127,7 @@
 				A43A115B28C894E20011A530 /* So48.swift in Sources */,
 				A4B1C26128C24AFE00609C47 /* So18.swift in Sources */,
 				A45D9FF428E7EA9500C93ACA /* Solution_366.swift in Sources */,
+				A41F5E7128FE99F9004303CC /* Solution_146.swift in Sources */,
 				A414753828E1E6CD001EC901 /* Solution_452.swift in Sources */,
 				A4987CFF28DC84C90071A912 /* 子集组合排列.swift in Sources */,
 				A460BC3228D06E8A00B8DB24 /* Solution_39.swift in Sources */,

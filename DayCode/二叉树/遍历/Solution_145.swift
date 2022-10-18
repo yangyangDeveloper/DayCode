@@ -32,7 +32,7 @@ class Solution_145 {
             }
         }
         
-        while stack2.count > 2 {
+        while stack2.count > 0 {
             var temp = stack2.removeLast()
             res.append(temp.val)
         }

@@ -34,12 +34,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //链表
-        testLikedList()
+        // testLikedList()
         
          //testArray()
         // testPreSum()
         // testWindows()
-        // testArraySort()
+         testArraySort()
         // testpailie()
         // testdp()
         // testTX()
@@ -142,54 +142,65 @@ extension ViewController {
     
     func testArraySort() {
         //test912()
-        quickSort()
+        
+        // 冒泡排序
+        // bubbleSort()
+        
+        // 选择排序
+        selSort()
+        
+        // 插入排序
+        insertSort()
+        
+        // 快速排序
+        // quickSort()
+        
+        // 归并排序
+        //mergeSort()
     }
     
     // 归并排序
     func test912() {
         var nums = [5,2,3,1]
         var res = Solution_912().sortArray2(nums)
-        
-        //var res = Solution_912().merge(&nums, 0, 1, 3)
-        
-        
     }
+    
     // 冒泡排序
-    func maopaoSort() {
+    func bubbleSort() {
         let sort = Solution_Sort()
         let nums = [8,1,7,4,5,2,3,6]
-        let n = sort.sortArray(nums)
+        let n = sort.bubbleSort(nums)
         print("冒泡排序\(n)")
     }
     
     // 选择排序
-    func xuanzheSort(){
+    func selSort(){
         let sort = Solution_Sort()
         let nums = [8,1,7,4,5,2,3,6]
-        let n = sort.sortArray2(nums)
+        let n = sort.selSort(nums)
         print(n)
     }
     
     // 插入排序
-    func charuSort() {
+    func insertSort() {
         let sort = Solution_Sort()
-        let nums = [5,2,3,1]
-        let n = sort.charusortArray(nums)
+        let nums = [5,2,3,1,99,15,18,2,5,9]
+        let n = sort.insertSort(nums)
         print(n)
     }
     
     // 快速排序
     func quickSort() {
         let sort = Solution_Sort()
-        let nums = [5,1,1,2,6,4]
+        let nums = [5,1,1,2,6,4,11,2]
         let n = sort.quicksortArray(nums)
         print(n)
     }
     
     // 归并排序
-    func guibingSort() {
+    func mergeSort() {
         let sort = Solution_Sort()
-        let nums = [5,1,1,2,0,0]
+        let nums = [1,2,6,4,5]
         let n = sort.guibingsortArray(nums)
         print("归并排序\(n)")
     }

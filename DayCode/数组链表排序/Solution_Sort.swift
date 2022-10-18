@@ -12,14 +12,15 @@ class Solution_Sort {
 }
 
 
-// 冒泡排序
+// 冒泡排序  两两比较
 extension Solution_Sort {
-    func sortArray(_ nums: [Int]) -> [Int] {
+    
+    func bubbleSort(_ nums: [Int]) -> [Int] {
         var n = nums
-        // i 没走一次 就会确定一个队尾的 值
+        // i 没走一次 就会确定一个队尾的 值    // 确定的数字扔到右边
         for i in 0 ..< n.count - 1 {  // 3个 只需要比2次  所以 0<2   0 1 就行了
             // 每走一次 剩下的元素就越来越少
-            for j in 0 ..< n.count - 1 - i {  // 没走完一次 就会确定一个  第一次进来 i = 0
+            for j in 0 ..< n.count - 1 - i {  // 循环一次 确定一个 第一次进来 i = 0   j的可选范围越来越少   右边确定的元素的越来越多
                 // 两个两个比较
                 if n[j] > n[j+1] {
                     var temp = n[j]
@@ -35,13 +36,13 @@ extension Solution_Sort {
 // 选择排序
 extension Solution_Sort {
    
-    func sortArray2(_ nums: [Int]) -> [Int] {
+    func selSort(_ nums: [Int]) -> [Int] {
         var list = nums
         for i in 0..<list.count - 1 {
             var minIndex = i
             for j in (i + 1)..<list.count {  // 遍历未排序的元素
                 if list[j] <  list[minIndex] {  // 找到本轮目前最小值
-                    minIndex = j  //  记录最小下标
+                    minIndex = j  //  记录最小下标   不断的修正最小下标
                 }
             }
             list.swapAt(i, minIndex) // 没论结束 把当论最小值移动到数组前面
@@ -50,7 +51,7 @@ extension Solution_Sort {
     }
 }
 
-// 插入排序
+// MARK: - 插入排序
 extension Solution_Sort {
     
     // 维护一个有序队列 一般拿第一个元素 当成一个有序队列
@@ -70,9 +71,37 @@ extension Solution_Sort {
         }
         return list
     }
+    
+    // 插入排序
+    /*
+        维护一个有序队列 刚开始拿第一个元素 当成一个有序队列
+     
+     */
+    func insertSort(_ nums: [Int]) -> [Int] {
+        var nums = nums
+        let n = nums.count
+        var j = 0
+        
+        for i in 0..<n {
+            j = i - 1
+            // 抽到的牌
+            var temp = nums[i]
+            
+            // 手里有牌时候  并且手的牌 比 新牌大  那么要移动手里的牌,  移动当前手里所有大于temp的牌
+            while j >= 0 && nums[j] > temp {
+                // 往后移动
+                nums[j + 1] = nums[j]
+                j -= 1
+            }
+            
+            nums[j + 1] = temp
+        }
+        
+        return nums
+    }
 }
 
-// 快速排序
+// MARK: -  快速排序
 extension Solution_Sort {
     
     func quicksortArray(_ nums: [Int]) -> [Int] {
@@ -80,11 +109,9 @@ extension Solution_Sort {
         return quickSort(&arr, 0, nums.count - 1)
     }
     
-
     // 拿到新的pivot下标q 继续划分
     // 一直拆分到只有一个元素  一个元素不需要排序
     // 一旦到  a  p  b  时候 其实就结束了
-
     func quickSort(_ arr: inout [Int], _ le: Int, _ r: Int) -> [Int] {
         if r <= le {
             return arr
@@ -125,7 +152,8 @@ extension Solution_Sort {
     }
 }
 
-// 归并排序
+
+// MARK: - 归并排序
 extension Solution_Sort {
     
     /*
