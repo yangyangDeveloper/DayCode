@@ -68,8 +68,8 @@ class Solution_24 {
     
     // k个一组反转链表
     func reverseKGroup(_ head: ListNode?, _ k: Int) -> ListNode? {
-        if head == nil {
-            return nil
+        if head == nil || head?.next == nil {
+            return head
         }
         var a: ListNode?
         var b: ListNode?

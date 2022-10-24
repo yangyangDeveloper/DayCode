@@ -29,8 +29,78 @@ class TreeNode {
     }
 }
 
-class ViewController: UIViewController {
 
+class TreeNodeHelper{
+    var array:[String]
+    var index = -1
+    
+    init(_ array:[String]) {
+        self.array = array
+    }
+    
+//    // 创建一颗二叉树
+//    func createTree() -> TreeNode? {
+//
+//        self.index = self.index + 1
+//        if index < self.array.count && index >= 0 {
+//
+//            let value = self.array[index]
+//
+//            if value == "" {
+//                return nil
+//            } else {
+//                let note = TreeNode(value)
+//                note.leftChild = createTree()
+//                note.rightChild = createTree()
+//                return note
+//            }
+//        }
+//        return nil;
+//    }
+//
+    
+//    func lowestCommendAnc(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> ListNode? {
+//        if root == nil {
+//            return nil
+//        }
+//        
+//        if root === p || root === q {
+//            return root
+//        }
+//        let left = lowestCommendAnc(root?.left, p, q)
+//    }
+    
+}
+
+
+
+
+
+
+
+class ViewController: UIViewController {
+    
+    
+//    //创建二叉树
+//    func createTree() -> TreeNode? {
+//
+//        self.index = self.index + 1
+//        if index < self.array.count && index >= 0 {
+//
+//            let value = self.array[index]
+//
+//            if value == "" {
+//                return nil
+//            } else {
+//                let note = BinaryTreeNote(value)
+//                note.leftChild = createTree()
+//                note.rightChild = createTree()
+//                return note
+//            }
+//        }
+//        return nil;
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //链表

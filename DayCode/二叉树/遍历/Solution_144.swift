@@ -7,6 +7,7 @@
 
 // 144. 二叉树的前序遍历
 class Solution_144 {
+    
     // 方法一  右子树入栈 然后 左子树入栈
     func preorderTraversal(_ root: TreeNode?) -> [Int] {
         guard root != nil else { return [] }
