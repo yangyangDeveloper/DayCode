@@ -17,7 +17,16 @@
  */
 // 160. 相交链表
 class Solution_160 {
-    func getIntersectionNode(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
+    class ListNode {
+        var val: Int
+        var next: ListNode?
+        init(_ val: Int) {
+            self.val = val
+            self.next = nil
+        }
+    }
+    
+    func findCross(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
         if headA == nil || headB == nil {
             return nil
         }

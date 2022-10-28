@@ -7,6 +7,73 @@
 
 import Foundation
 
+/*
+    双链表  + hashmap
+
+    链表：
+    1、添加
+    2、删除
+    3、移除第一个元素
+    4、长度
+
+    4个辅助函数：
+
+    升级为最近使用  get
+     
+    添加进去  put
+    移除某个key   如果已经存在 put辅助函数
+    移除最不经常使用的  如果容量满了 put辅助函数
+
+    get{
+        map不存在
+            return - 1
+        map存在
+            makeRecently   提升等级
+    }
+
+    put {
+        1、key已经存在
+            删除旧的 hash 移除这个节点
+            创建addRecently
+            return
+        2、key不存在 需要建立新的node
+            如果容量满了  首先要删除最近不经常使用的 removeLastRecently
+            创建addRecently
+    }
+
+
+    容量为2
+    LRUCache cache = new LRUCache(2);
+    // 你可以把 cache 理解成一个队列
+    // 假设左边是队头，右边是队尾
+    // 最近使用的排在队头，久未使用的排在队尾
+
+    cache.put(1, 1);
+    // cache = [(1, 1)]
+
+
+
+    cache.put(2, 2);
+    // cache = [(2, 2), (1, 1)]
+
+
+    cache.get(1);    // 返回 1
+    因为最近访问了1 所以把1 提取到最前面
+    // cache = [(1, 1), (2, 2)]
+
+    cache.put(3, 3); // 超出容量2了
+    cache = [(3, 3), (1, 1)]
+
+
+    cache.get(2);       // 返回 -1 (未找到)
+
+
+    cache.put(1, 4);
+    // cache = [(1, 4), (3, 3)]
+    // 解释：键 1 已存在，把原始值 1 覆盖为 4
+    // 不要忘了也要将键值对提前到队头
+*/
+
 class LNode : NSObject {
     public var key: Int
     public var val: Int
