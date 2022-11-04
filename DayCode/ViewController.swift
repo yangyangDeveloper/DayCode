@@ -103,13 +103,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var str1 = "hello"
+        // substring to就是要多长
+        var str2 = String(str1.prefix(1))
+        print(str2)
+        
         //链表
         // testLikedList()
         
          //testArray()
         // testPreSum()
         // testWindows()
-         testArraySort()
+        // testArraySort()
         // testpailie()
         // testdp()
         // testTX()
