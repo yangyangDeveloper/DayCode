@@ -12,7 +12,7 @@ class Solution_912 {
     // 创建一个临时辅助数组
     var temp = [Int]()
     var curindex = 0
-    func sortArray2(_ nums: [Int]) -> [Int] {
+    func sortArray(_ nums: [Int]) -> [Int] {
         var nums = nums
         let n = nums.count
         guard n > 1 else {
